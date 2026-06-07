@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>THE K LINKS</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg0: #f3f1ec;
+  --bg1: #e8e4dc;
+  --ink: #1f1d19;
+  --sub: #706b61;
+  --soft: rgba(255,255,255,.72);
+  --card: rgba(255,255,255,.86);
+  --line: rgba(56,52,45,.16);
+  --deep: #171512;
+  --gold: #9b8462;
+  --gold2: #c7b18d;
+  --shadow: 0 24px 70px rgba(29, 25, 18, .12);
+}
+html { scroll-behavior: smooth; }
+body {
+  min-height: 100vh;
+  font-family: "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 12% 8%, rgba(255,255,255,.92), transparent 26%),
+    radial-gradient(circle at 86% 10%, rgba(199,177,141,.24), transparent 28%),
+    radial-gradient(circle at 50% 100%, rgba(34,30,25,.10), transparent 35%),
+    linear-gradient(180deg, var(--bg0), var(--bg1));
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(31,29,25,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(31,29,25,.028) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(180deg, rgba(0,0,0,.8), transparent 78%);
+}
+a { color: inherit; text-decoration: none; }
+button, input { font-family: inherit; }
+button { border-radius: 4px; }
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid rgba(31,29,25,.11);
+  background: rgba(244,242,237,.74);
+  backdrop-filter: blur(20px);
+}
+.navinner {
+  width: min(1240px, calc(100% - 36px));
+  min-height: 74px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+.logo {
+  display: grid;
+  gap: 2px;
+  color: var(--deep);
+}
+.logo strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: .34em;
+  line-height: 1;
+}
+.logo span {
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: .34em;
+  color: var(--gold);
+}
+.navright {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.navlink, .logoutbtn {
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(31,29,25,.16);
+  background: rgba(255,255,255,.62);
+  color: #2b2925;
+  padding: 0 13px;
+  font-size: 12px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.navlink.dark {
+  border-color: transparent;
+  background: #1e1b17;
+  color: #f7f2e9;
+}
+main {
+  position: relative;
+  width: min(1240px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 26px 0 76px;
+}
+.hero {
+  position: relative;
+  min-height: 235px;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  padding: 34px;
+  border: 1px solid rgba(31,29,25,.14);
+  background:
+    linear-gradient(90deg, rgba(23,21,18,.92), rgba(40,36,30,.76) 46%, rgba(255,255,255,.42)),
+    radial-gradient(circle at 78% 34%, rgba(255,255,255,.72), transparent 30%),
+    linear-gradient(135deg, #d7d1c6, #f5f2ec);
+  box-shadow: var(--shadow);
+}
+.hero::after {
+  content: "ONE K";
+  position: absolute;
+  right: clamp(14px, 5vw, 70px);
+  bottom: -8px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(64px, 13vw, 170px);
+  letter-spacing: .08em;
+  color: rgba(255,255,255,.16);
+  white-space: nowrap;
+}
+.heroin {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+}
+.kicker {
+  color: var(--gold2);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .34em;
+  margin-bottom: 14px;
+}
+h1 {
+  color: #fffaf0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 7vw, 76px);
+  font-weight: 500;
+  letter-spacing: .22em;
+  line-height: 1;
+}
+.herosub {
+  margin-top: 16px;
+  color: rgba(255,250,240,.72);
+  font-size: 14px;
+  font-weight: 850;
+  letter-spacing: .08em;
+}
+.topbox {
+  margin-top: 18px;
+  padding: 14px;
+  border: 1px solid rgba(31,29,25,.13);
+  background: rgba(255,255,255,.66);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 16px 44px rgba(29,25,18,.08);
+  display: grid;
+  grid-template-columns: minmax(230px, 1fr) auto auto;
+  gap: 10px;
+  align-items: center;
+}
+#searchInput {
+  width: 100%;
+  min-height: 45px;
+  border: 1px solid rgba(31,29,25,.18);
+  background: rgba(255,255,255,.82);
+  color: var(--ink);
+  outline: none;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 850;
+  border-radius: 4px;
+}
+#searchInput:focus {
+  border-color: rgba(155,132,98,.75);
+  box-shadow: 0 0 0 4px rgba(155,132,98,.14);
+}
+.guide, .sortbtn {
+  min-height: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+  border: 1px solid rgba(31,29,25,.15);
+  background: rgba(255,255,255,.68);
+  color: #514b42;
+  font-size: 12px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+.sortbtn {
+  cursor: pointer;
+  transition: .14s ease;
+}
+.sortbtn:hover { transform: translateY(-1px); box-shadow: 0 10px 22px rgba(29,25,18,.10); }
+.sortbtn.active {
+  border-color: transparent;
+  color: #fffaf0;
+  background: linear-gradient(135deg, #191713, #594c38);
+}
+.rangetabs {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 8px;
+}
+.rangebtn {
+  min-height: 40px;
+  border: 1px solid rgba(31,29,25,.14);
+  background: rgba(255,255,255,.58);
+  color: #4d493f;
+  font-size: 12px;
+  font-weight: 950;
+  cursor: pointer;
+  transition: .14s ease;
+}
+.rangebtn:hover { transform: translateY(-1px); box-shadow: 0 10px 22px rgba(29,25,18,.08); }
+.rangebtn.active {
+  border-color: transparent;
+  color: #fffaf0;
+  background: linear-gradient(135deg, #191713, #837052);
+}
+.content { margin-top: 24px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 10px;
+}
+.card {
+  min-width: 0;
+  padding: 7px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid rgba(31,29,25,.12);
+  background: rgba(255,255,255,.72);
+  box-shadow: 0 14px 30px rgba(29,25,18,.07);
+  transition: .14s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(155,132,98,.35);
+  box-shadow: 0 18px 38px rgba(29,25,18,.12);
+}
+.card.playing {
+  border-color: rgba(155,132,98,.78);
+  box-shadow: 0 0 0 3px rgba(155,132,98,.18), 0 18px 38px rgba(29,25,18,.14);
+}
+.card.loading {
+  border-color: rgba(31,29,25,.52);
+  box-shadow: 0 0 0 3px rgba(31,29,25,.11), 0 18px 38px rgba(29,25,18,.14);
+}
+.thumb, .noimage {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  object-fit: cover;
+  background: linear-gradient(135deg, #ded8cc, #f6f2ea);
+}
+.noimage {
+  display: grid;
+  place-items: center;
+  color: #8b806e;
+  font-size: 12px;
+  font-weight: 950;
+}
+.name {
+  min-height: 30px;
+  margin-top: 8px;
+  color: #25221d;
+  font-size: 12px;
+  font-weight: 950;
+  line-height: 1.25;
+  word-break: keep-all;
+}
+.number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 22px;
+  margin-top: 5px;
+  padding: 0 7px;
+  border: 1px solid rgba(155,132,98,.32);
+  background: rgba(244,239,230,.78);
+  color: #6d5d45;
+  font-size: 10px;
+  font-weight: 950;
+}
+.copyrow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin-top: 7px;
+}
+.copybtn {
+  min-height: 30px;
+  border: 1px solid rgba(31,29,25,.14);
+  background: rgba(255,255,255,.72);
+  color: #3d382f;
+  font-size: 10px;
+  font-weight: 950;
+  cursor: pointer;
+  transition: .14s ease;
+}
+.copybtn:hover {
+  transform: translateY(-1px);
+  background: #1f1d19;
+  color: #fffaf0;
+}
+.copybtn.copied {
+  border-color: transparent;
+  background: linear-gradient(135deg, #191713, #9b8462);
+  color: #fffaf0;
+}
+.copybtn.disabled {
+  cursor: default;
+  opacity: .45;
+  background: #e5e1d8;
+  color: #81796b;
+}
+.copybtn.disabled:hover { transform: none; }
+.empty {
+  padding: 42px 18px;
+  border: 1px solid rgba(31,29,25,.13);
+  background: rgba(255,255,255,.68);
+  color: #6d675c;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 950;
+}
+.volumecontrol {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 65;
+  min-width: 230px;
+  min-height: 46px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid rgba(31,29,25,.16);
+  background: rgba(255,255,255,.86);
+  color: #3d382f;
+  box-shadow: 0 18px 40px rgba(29,25,18,.16);
+  backdrop-filter: blur(16px);
+}
+.volumecontrol span {
+  flex: none;
+  font-size: 11px;
+  font-weight: 950;
+  white-space: nowrap;
+}
+.volumecontrol input {
+  width: 110px;
+  accent-color: var(--gold);
+}
+.volumestop {
+  flex: none;
+  min-width: 34px;
+  height: 24px;
+  padding: 0 6px;
+  border: 1px solid rgba(31,29,25,.16);
+  background: rgba(31,29,25,.08);
+  color: #3d382f;
+  font-size: 10px;
+  font-weight: 950;
+  cursor: pointer;
+}
+.volumestop:hover {
+  background: #1f1d19;
+  color: #fffaf0;
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  z-index: 60;
+  transform: translateX(-50%) translateY(20px);
+  opacity: 0;
+  pointer-events: none;
+  min-width: 180px;
+  padding: 12px 16px;
+  background: rgba(25,23,20,.94);
+  color: #fffaf0;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 950;
+  box-shadow: 0 18px 40px rgba(0,0,0,.18);
+  transition: .18s ease;
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+@media (max-width: 980px) {
+  .grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .topbox { grid-template-columns: 1fr; }
+  .rangetabs { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .navinner, main { width: min(100% - 18px, 1240px); }
+  .navinner { min-height: 62px; }
+  .logo strong { font-size: 22px; letter-spacing: .24em; }
+  .logo span { font-size: 8px; letter-spacing: .24em; }
+  .navlink, .logoutbtn { min-height: 32px; padding: 0 9px; font-size: 11px; }
+  main { padding-top: 14px; padding-bottom: 44px; }
+  .hero { min-height: 136px; padding: 18px; }
+  .kicker { font-size: 9px; letter-spacing: .20em; margin-bottom: 8px; }
+  h1 { font-size: 34px; letter-spacing: .14em; }
+  .herosub { margin-top: 9px; font-size: 11px; }
+  .topbox { margin-top: 10px; padding: 8px; gap: 6px; grid-template-columns: 1fr 1fr; }
+  #searchInput { grid-column: 1 / -1; min-height: 36px; font-size: 11px; padding: 0 10px; }
+  .guide, .sortbtn { min-height: 34px; padding: 0 8px; font-size: 10px; }
+  .rangetabs { margin-top: 7px; gap: 5px; }
+  .rangebtn { min-height: 30px; font-size: 9px; }
+  .content { margin-top: 13px; }
+  .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+  .card { padding: 4px; }
+  .name { min-height: 24px; margin-top: 5px; font-size: 9px; line-height: 1.12; }
+  .number { min-height: 18px; margin-top: 3px; padding: 0 4px; font-size: 8px; }
+  .copyrow { gap: 3px; margin-top: 5px; }
+  .copybtn { min-height: 23px; font-size: 8px; }
+  .noimage { font-size: 9px; }
+  .volumecontrol {
+    right: 9px;
+    bottom: 9px;
+    min-width: 178px;
+    min-height: 38px;
+    padding: 7px 8px;
+    gap: 6px;
+  }
+  .volumecontrol span { font-size: 9px; }
+  .volumecontrol input { width: 78px; }
+  .volumestop { min-width: 29px; height: 21px; padding: 0 4px; font-size: 8px; }
+}
+@media (max-width: 420px) {
+  .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+</style>
+</head>
+<body>
+<header class="navbar">
+  <div class="navinner">
+    <a class="logo" href="/thek/" aria-label="THE K">
+      <strong>THE K</strong>
+      <span>LINK PORTAL</span>
+    </a>
+    <div class="navright">
+      <a class="navlink" href="/thek/admin/">관리자</a>
+      <button class="logoutbtn" type="button" onclick="logout()">나가기</button>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero" aria-label="더케이 외부링크 복사 페이지">
+    <div class="heroin">
+      <div class="kicker">K UNIV · THE K · SHOW K</div>
+      <h1>LINKS</h1>
+      <p class="herosub">음원 · 이미지 외부링크 복사 전용 페이지</p>
+    </div>
+  </section>
+  <section class="topbox">
+    <input id="searchInput" type="text" placeholder="번호, 이름, 개인방송 검색" autocomplete="off" />
+    <div class="guide">버튼을 누르면 링크가 복사됩니다</div>
+    <button id="bjSortBtn" class="sortbtn" type="button">개인 방송</button>
+  </section>
+  <section class="rangetabs" id="rangeTabs"></section>
+  <section class="content" id="content"></section>
+</main>
+<div class="toast" id="toast">복사되었습니다</div>
+<div class="volumecontrol" aria-label="음량 조절">
+  <span>음량</span>
+  <input id="volumeControl" type="range" min="0" max="1" step="0.01" value="0.3" />
+  <span id="volumeText">30%</span>
+  <button id="volumeStopBtn" class="volumestop" type="button">끄기</button>
+</div>
+<audio id="player" playsinline preload="none"></audio>
+<script>
+const DATA_URL = "/thek/api/data";
+const PREVIEW_DATA_URL = "../thekdata.json";
+const IMAGE_FOLDER = "../images/";
+const LOGIN_URL = "/thek/";
+const LOGOUT_URL = "/thek/logout";
+const SESSION_URL = "/thek/session";
+
+const ranges = [
+  { key: "all", label: "전체", min: 0, max: Infinity },
+  { key: "1000", label: "1~1999", min: 1, max: 1999 },
+  { key: "2000", label: "2000~2999", min: 2000, max: 2999 },
+  { key: "3000", label: "3000~4999", min: 3000, max: 4999 },
+  { key: "5000", label: "5000~9999", min: 5000, max: 9999 },
+  { key: "10000", label: "10000~300000", min: 10000, max: 300000 }
+];
+
+let allData = [];
+let currentRange = "all";
+let sortMode = "number";
+let toastTimer = null;
+let currentUrl = "";
+let currentCard = null;
+let volume = 0.3;
+
+const content = document.getElementById("content");
+const searchInput = document.getElementById("searchInput");
+const rangeTabs = document.getElementById("rangeTabs");
+const bjSortBtn = document.getElementById("bjSortBtn");
+const toast = document.getElementById("toast");
+const player = document.getElementById("player");
+const volumeControl = document.getElementById("volumeControl");
+const volumeText = document.getElementById("volumeText");
+const volumeStopBtn = document.getElementById("volumeStopBtn");
+
+function showToast(text) {
+  toast.textContent = text || "복사되었습니다";
+  toast.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove("show"), 900);
+}
+
+function getFileName(url) {
+  if (!url) return "";
+  try {
+    return decodeURIComponent(String(url).split("/").pop().split("?")[0]);
+  } catch {
+    return String(url).split("/").pop().split("?")[0];
+  }
+}
+
+function getImageCandidates(url) {
+  if (!url) return [];
+  const fileName = getFileName(url);
+  const baseName = fileName.replace(/\.(png|jpg|jpeg|gif|webp)$/i, "");
+  if (!baseName) return [];
+  return [
+    IMAGE_FOLDER + baseName + ".webp",
+    IMAGE_FOLDER + baseName + ".png",
+    IMAGE_FOLDER + baseName + ".gif"
+  ];
+}
+
+function createNoImage() {
+  const div = document.createElement("div");
+  div.className = "noimage";
+  div.textContent = "이미지 없음";
+  return div;
+}
+
+function applyImageWithFallback(img, candidates) {
+  let index = 0;
+  function tryNext() {
+    if (index >= candidates.length) {
+      img.replaceWith(createNoImage());
+      return;
+    }
+    img.src = candidates[index];
+    index += 1;
+  }
+  img.onerror = tryNext;
+  tryNext();
+}
+
+async function copyText(text, button) {
+  if (!text) return;
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch {
+    const temp = document.createElement("textarea");
+    temp.value = text;
+    document.body.appendChild(temp);
+    temp.select();
+    document.execCommand("copy");
+    temp.remove();
+  }
+  button.classList.add("copied");
+  showToast("링크가 복사되었습니다");
+  setTimeout(() => button.classList.remove("copied"), 650);
+}
+
+function prepareAudioFirst(url) {
+  document.querySelectorAll('link[data-audio-preload="true"]').forEach(link => link.remove());
+
+  const preloadLink = document.createElement("link");
+  preloadLink.rel = "preload";
+  preloadLink.as = "audio";
+  preloadLink.href = url;
+  preloadLink.setAttribute("data-audio-preload", "true");
+  preloadLink.fetchPriority = "high";
+  document.head.appendChild(preloadLink);
+}
+
+function playAudio(url, card) {
+  if (!url) {
+    showToast("등록된 음원이 없습니다");
+    return;
+  }
+
+  if (currentUrl === url && !player.paused) {
+    stopAudio();
+    return;
+  }
+
+  stopAudio();
+
+  currentUrl = url;
+  currentCard = card;
+  if (currentCard) currentCard.classList.add("loading");
+
+  prepareAudioFirst(url);
+
+  player.preload = "auto";
+  player.src = url;
+  player.volume = volume;
+  player.load();
+
+  const playPromise = player.play();
+  if (playPromise && typeof playPromise.catch === "function") {
+    playPromise.catch(() => stopAudio());
+  }
+}
+
+function setPlayingState() {
+  if (!currentCard) return;
+  currentCard.classList.remove("loading");
+  currentCard.classList.add("playing");
+}
+
+function stopAudio() {
+  player.pause();
+  player.removeAttribute("src");
+  player.load();
+
+  if (currentCard) {
+    currentCard.classList.remove("playing");
+    currentCard.classList.remove("loading");
+  }
+
+  currentUrl = "";
+  currentCard = null;
+}
+
+function createTabs() {
+  rangeTabs.innerHTML = "";
+  ranges.forEach(range => {
+    const btn = document.createElement("button");
+    btn.className = "rangebtn";
+    btn.type = "button";
+    btn.textContent = range.label;
+    if (range.key === currentRange) btn.classList.add("active");
+    btn.addEventListener("click", () => {
+      currentRange = range.key;
+      createTabs();
+      render();
+    });
+    rangeTabs.appendChild(btn);
+  });
+}
+
+function getFilteredData() {
+  const keyword = searchInput.value.trim().toLowerCase();
+  const range = ranges.find(r => r.key === currentRange) || ranges[0];
+  const filtered = allData.filter(item => {
+    const number = Number(item.number) || 0;
+    const inRange = number >= range.min && number <= range.max;
+    const text = `${item.number || ""} ${item.name || ""} ${item.bj || ""} ${item.member || ""}`.toLowerCase();
+    return inRange && (!keyword || text.includes(keyword));
+  });
+  return filtered.sort((a, b) => {
+    if (sortMode === "bj") {
+      const aHasBj = a.bj !== undefined && a.bj !== null && a.bj !== "" && !Number.isNaN(Number(a.bj));
+      const bHasBj = b.bj !== undefined && b.bj !== null && b.bj !== "" && !Number.isNaN(Number(b.bj));
+      if (aHasBj !== bHasBj) return aHasBj ? -1 : 1;
+      if (aHasBj && bHasBj) {
+        const bjDiff = Number(a.bj) - Number(b.bj);
+        if (bjDiff !== 0) return bjDiff;
+      }
+    }
+    return Number(a.number || 0) - Number(b.number || 0);
+  });
+}
+
+function render() {
+  const data = getFilteredData();
+  if (!data.length) {
+    content.innerHTML = `<div class="empty">검색 결과가 없습니다.</div>`;
+    return;
+  }
+  const grid = document.createElement("div");
+  grid.className = "grid";
+  data.forEach(item => {
+    const card = document.createElement("article");
+    card.className = "card";
+
+    const candidates = getImageCandidates(item.image);
+    if (!candidates.length) {
+      card.appendChild(createNoImage());
+    } else {
+      const img = document.createElement("img");
+      img.className = "thumb";
+      img.alt = item.name || "";
+      img.loading = "lazy";
+      applyImageWithFallback(img, candidates);
+      card.appendChild(img);
+    }
+
+    const name = document.createElement("div");
+    name.className = "name";
+    name.textContent = item.name || "이름 없음";
+
+    const number = document.createElement("div");
+    number.className = "number";
+    number.textContent = item.bj ? `${item.number || "-"}개 · 개인 ${item.bj}` : `${item.number || "-"}개`;
+
+    const copyRow = document.createElement("div");
+    copyRow.className = "copyrow";
+
+    const audioBtn = document.createElement("button");
+    audioBtn.className = "copybtn";
+    audioBtn.type = "button";
+    audioBtn.textContent = "음원";
+    if (item.audio) {
+      audioBtn.addEventListener("click", event => {
+        event.stopPropagation();
+        copyText(item.audio, audioBtn);
+      });
+    } else {
+      audioBtn.classList.add("disabled");
+      audioBtn.disabled = true;
+    }
+
+    const imageBtn = document.createElement("button");
+    imageBtn.className = "copybtn";
+    imageBtn.type = "button";
+    imageBtn.textContent = "이미지";
+    if (item.image) {
+      imageBtn.addEventListener("click", event => {
+        event.stopPropagation();
+        copyText(item.image, imageBtn);
+      });
+    } else {
+      imageBtn.classList.add("disabled");
+      imageBtn.disabled = true;
+    }
+
+    copyRow.appendChild(audioBtn);
+    copyRow.appendChild(imageBtn);
+    card.appendChild(name);
+    card.appendChild(number);
+    card.appendChild(copyRow);
+
+    if (item.audio && currentUrl === item.audio && !player.paused) {
+      currentCard = card;
+      card.classList.add("playing");
+    }
+
+    card.addEventListener("click", () => {
+      playAudio(item.audio || "", card);
+    });
+
+    grid.appendChild(card);
+  });
+  content.innerHTML = "";
+  content.appendChild(grid);
+}
+
+async function fetchData() {
+  let res;
+  try {
+    res = await fetch(DATA_URL, { cache: "no-store", credentials: "include" });
+    if (res.status === 401 || res.status === 403) {
+      location.href = LOGIN_URL;
+      return [];
+    }
+    if (!res.ok) throw new Error("api data error");
+  } catch (err) {
+    if (location.protocol === "file:" || location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+      res = await fetch(PREVIEW_DATA_URL, { cache: "no-store" });
+      if (!res.ok) throw new Error("preview data error");
+    } else {
+      throw err;
+    }
+  }
+  const data = await res.json();
+  return Array.isArray(data) ? data : [];
+}
+
+async function init() {
+  try {
+    allData = await fetchData();
+    allData.sort((a, b) => Number(a.number || 0) - Number(b.number || 0));
+    createTabs();
+    render();
+  } catch (err) {
+    content.innerHTML = `<div class="empty">데이터를 불러오지 못했습니다.</div>`;
+    console.error(err);
+  }
+}
+
+async function logout() {
+  try {
+    await fetch(LOGOUT_URL, { method: "POST", credentials: "include" });
+  } catch {}
+  location.href = LOGIN_URL;
+}
+
+bjSortBtn.addEventListener("click", () => {
+  sortMode = sortMode === "bj" ? "number" : "bj";
+  bjSortBtn.classList.toggle("active", sortMode === "bj");
+  render();
+});
+volumeControl.addEventListener("input", event => {
+  volume = Number(event.target.value);
+  volumeText.textContent = Math.round(volume * 100) + "%";
+  player.volume = volume;
+});
+
+volumeStopBtn.addEventListener("click", stopAudio);
+
+player.addEventListener("playing", setPlayingState);
+player.addEventListener("ended", stopAudio);
+player.addEventListener("error", stopAudio);
+
+searchInput.addEventListener("input", render);
+init();
+</script>
+</body>
+</html>

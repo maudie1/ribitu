@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE K ADMIN</title>
+<link rel="icon" type="image/png" href="../thekicon.png">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#f3f1ec;
+  --paper:#ffffff;
+  --ink:#1d1c1a;
+  --muted:#746f68;
+  --soft:#e7e1d7;
+  --line:#d8d1c5;
+  --dark:#181715;
+  --gold:#b99a5f;
+  --gold2:#d7c08c;
+  --danger:#9d3131;
+  --shadow:0 20px 55px rgba(35,31,25,.10);
+}
+body{min-height:100vh;font-family:"Pretendard","Noto Sans KR",system-ui,sans-serif;background:radial-gradient(circle at 18% 0,rgba(215,192,140,.22),transparent 30%),linear-gradient(180deg,#faf9f5 0%,var(--bg) 48%,#ebe7df 100%);color:var(--ink)}
+a{text-decoration:none;color:inherit}button,input,select{font-family:inherit}.nav{position:sticky;top:0;z-index:10;background:rgba(250,249,245,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(216,209,197,.72)}.navin{width:min(1280px,calc(100% - 32px));min-height:74px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{display:flex;flex-direction:column;align-items:flex-start;gap:2px}.brand small{font-size:10px;font-weight:900;letter-spacing:.28em;color:var(--gold);line-height:1}.logo{font-size:25px;font-weight:950;letter-spacing:.18em;color:var(--dark);line-height:1.05}.navlinks{display:flex;gap:8px}.navlinks a{padding:10px 13px;border:1px solid var(--line);background:rgba(255,255,255,.7);color:#4e4941;font-size:12px;font-weight:900}.navlinks a.main{background:var(--dark);border-color:var(--dark);color:#fff}main{width:min(1280px,calc(100% - 32px));margin:auto;padding:24px 0 70px}.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#1f1e1b 0%,#36322c 52%,#8b764e 100%);padding:26px 28px;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.35)}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 8%,rgba(255,255,255,.13) 44%,transparent 76%);opacity:.8}.heroin{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:20px}.kicker{font-size:12px;font-weight:900;letter-spacing:.32em;color:var(--gold2);margin-bottom:8px}.hero h1{font-size:clamp(32px,5vw,58px);color:#fff;letter-spacing:.16em;font-weight:950}.hero p{margin-top:9px;color:#eee6d8;font-size:13px;font-weight:750}.status{margin-top:14px;padding:13px 15px;background:rgba(255,255,255,.72);border:1px solid var(--line);color:#5f574d;font-size:13px;font-weight:750;line-height:1.55;white-space:pre-line}.tabs{margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.tab{min-height:44px;border:1px solid var(--line);background:rgba(255,255,255,.72);color:#4d4840;font-size:13px;font-weight:950;cursor:pointer;transition:.14s ease}.tab:hover{transform:translateY(-1px)}.tab.active{color:#fff;border-color:var(--dark);background:linear-gradient(135deg,#191816,#3c382f)}.panel{display:none;margin-top:16px}.panel.active{display:block}.box{background:rgba(255,255,255,.78);border:1px solid var(--line);box-shadow:0 14px 36px rgba(35,31,25,.07);padding:16px;margin-bottom:14px}.head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.title{font-size:18px;font-weight:950;color:#25231f}.help{margin-top:7px;color:var(--muted);font-size:12px;font-weight:750;line-height:1.55}.row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.btn{min-height:38px;border:0;padding:0 13px;background:var(--dark);color:#fff;font-size:12px;font-weight:950;cursor:pointer}.btn.light{color:#3f3a33;background:#fff;border:1px solid var(--line)}.btn.gold{background:linear-gradient(135deg,#927844,#c2a466);color:#fff}.btn.danger{background:var(--danger)}.input,.select{width:100%;border:1px solid var(--line);background:#fff;color:var(--ink);outline:0;padding:10px 11px;font-size:13px;font-weight:750}.input:focus,.select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(185,154,95,.14)}.form{display:grid;grid-template-columns:110px 1fr 120px 130px 120px 170px 90px auto;gap:8px;align-items:center}.scroll{overflow-x:auto}table{width:100%;min-width:1120px;border-collapse:collapse;background:rgba(255,255,255,.84)}th,td{border-bottom:1px solid rgba(216,209,197,.78);padding:9px 8px;text-align:left;vertical-align:middle;font-size:12px}th{background:#eee8dc;color:#3d372e;font-weight:950;white-space:nowrap}td{color:#403b34;font-weight:720}.tin,.tsel{width:100%;min-height:34px;border:1px solid var(--line);background:#fff;padding:7px 8px;font-size:12px;font-weight:750;color:var(--ink)}.tin.file{min-width:170px}.rbtn{min-height:32px;border:0;padding:0 9px;font-size:11px;font-weight:950;cursor:pointer;white-space:nowrap}.rbtn.p{background:#e7decb;color:#4d3d1d}.rbtn.r{background:#ead6d6;color:#8b2525}.thumb{width:58px;height:36px;object-fit:cover;background:#eee8dc;display:block}.badge{display:inline-flex;align-items:center;justify-content:center;min-width:46px;min-height:24px;padding:0 7px;font-size:11px;font-weight:950;background:#ede4d2;color:#6e5726}.upload{display:grid;grid-template-columns:minmax(220px,1fr) auto;gap:10px}.files{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.filecard{border:1px solid var(--line);background:#fff;padding:7px;overflow:hidden}.prev{width:100%;aspect-ratio:16/9;background:#eee8dc;display:grid;place-items:center;overflow:hidden;color:#5f574d;font-size:12px;font-weight:950}.prev img{width:100%;height:100%;object-fit:cover}.fname{margin-top:6px;font-size:10px;font-weight:950;word-break:break-all}.fmeta{margin-top:3px;font-size:10px;font-weight:750;color:var(--muted)}.factions{margin-top:6px;display:grid;grid-template-columns:1fr 1fr;gap:4px}.viewerToolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.viewerSections{display:grid;gap:18px}.viewerSectionTitle{margin:8px 0 10px;padding:10px 12px;background:#eee8dc;color:#3d372e;font-size:14px;font-weight:950}.viewerGrid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.viewerCard{position:relative;border:1px solid var(--line);background:#fff;overflow:hidden}.viewerCard.off{opacity:.32}.viewerCard img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#eee8dc}.viewerCardName{padding:7px 6px 9px;text-align:center;font-size:12px;font-weight:950;color:#3f3a33}.eyeBtn{position:absolute;right:6px;top:6px;z-index:2;min-width:30px;height:24px;border:0;background:rgba(0,0,0,.62);color:#fff;font-size:13px;font-weight:950;cursor:pointer}.viewerModal{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;background:rgba(20,18,15,.62);padding:20px}.viewerModal.show{display:flex}.viewerModalBox{width:min(560px,100%);background:#fff;padding:18px;box-shadow:0 28px 80px rgba(0,0,0,.24);border:1px solid var(--line)}.viewerModalHead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}.viewerModalTitle{font-size:18px;font-weight:950;color:#25231f}.viewerChecks{display:grid;gap:8px;margin:12px 0}.viewerCheckGroup{margin-top:6px;padding:8px 10px;background:#25231f;color:#d7c08c;font-size:12px;font-weight:950;letter-spacing:.04em}.viewerCheck{display:flex;align-items:center;gap:10px;border:1px solid var(--line);padding:11px;background:#faf7f0;font-size:13px;font-weight:900;color:#3f3a33}.viewerCheck input{width:16px;height:16px}.viewerModalActions{display:flex;justify-content:flex-end;gap:8px;margin-top:14px}.viewerClose{border:0;background:#fff;color:#5f574d;font-size:20px;font-weight:950;cursor:pointer}.memberNote{font-size:12px;font-weight:750;color:var(--muted);line-height:1.55}@media(max-width:900px){.heroin{display:block}.tabs{grid-template-columns:repeat(3,1fr)}.form{grid-template-columns:1fr 1fr}.files{grid-template-columns:repeat(3,1fr)}.viewerGrid{grid-template-columns:repeat(4,1fr)}}@media(max-width:560px){.navin,main{width:min(100% - 20px,1280px)}.navin{min-height:62px}.logo{font-size:20px}.navlinks a{padding:8px 9px;font-size:11px}.hero{padding:18px}.box{padding:12px}.head{align-items:flex-start;flex-direction:column}.tabs{gap:6px}.tab{min-height:38px;font-size:12px}.form,.upload{grid-template-columns:1fr}.files{grid-template-columns:1fr}.viewerGrid{grid-template-columns:repeat(2,1fr)}}
+
+.noimgbox{
+  width:54px;
+  height:34px;
+  display:grid;
+  place-items:center;
+  background:#eee8dc;
+  color:#7e735f;
+  border:1px solid #d8cfbd;
+  font-size:10px;
+  font-weight:900;
+  line-height:1.1;
+  text-align:center;
+}
+.viewerNoImage{
+  width:100%;
+  aspect-ratio:16/9;
+  display:grid;
+  place-items:center;
+  background:#eee8dc;
+  color:#7e735f;
+  border:1px solid #d8cfbd;
+  font-size:12px;
+  font-weight:900;
+}
+
+
+.noimgbox{
+  width:54px;
+  height:34px;
+  display:grid;
+  place-items:center;
+  background:#eee8dc;
+  color:#766c59;
+  border:1px solid #d7cdb8;
+  font-size:10px;
+  font-weight:900;
+  line-height:1.1;
+  text-align:center;
+}
+.viewerNoImage{
+  width:100%;
+  aspect-ratio:16/9;
+  display:grid;
+  place-items:center;
+  background:#eee8dc;
+  color:#766c59;
+  border:1px solid #d7cdb8;
+  font-size:12px;
+  font-weight:900;
+  line-height:1.2;
+  text-align:center;
+}
+
+
+.viewerTopTitle{
+  margin:0 0 18px;
+  padding:28px 18px 24px;
+  background:linear-gradient(135deg,#171614 0%,#2c2924 55%,#6f5b37 100%);
+  color:#fff;
+  text-align:center;
+  border:1px solid rgba(215,192,140,.42);
+}
+.viewerTopTitle .main{
+  font-size:clamp(26px,4vw,42px);
+  font-weight:950;
+  letter-spacing:.04em;
+  color:#d9c18c;
+}
+.viewerTopTitle .sub{
+  margin-top:8px;
+  color:#eee6d8;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.18em;
+}
+.viewerGroupTitle{
+  margin:20px 0 10px;
+  padding:11px 13px;
+  background:#25231f;
+  color:#d7c08c;
+  font-size:14px;
+  font-weight:950;
+  letter-spacing:.06em;
+}
+.personalViewerRows{display:grid;gap:10px}
+.personalViewerRow{
+  display:grid;
+  grid-template-columns:150px 1fr;
+  gap:8px;
+  align-items:stretch;
+}
+.personalViewerLabel{
+  border:1px solid #9f7bd8;
+  background:linear-gradient(135deg,#221833,#2e2142);
+  color:#d9c2ff;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-height:118px;
+  font-size:15px;
+  font-weight:950;
+  text-align:center;
+}
+.personalViewerLabel small{
+  display:block;
+  margin-top:7px;
+  color:#a98ce0;
+  font-size:12px;
+  font-weight:900;
+}
+.personalViewerGrid{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:8px;
+}
+.viewerPlaceholder{
+  min-height:118px;
+  border:1px dashed rgba(153,118,199,.28);
+  background:rgba(32,24,45,.04);
+  display:grid;
+  place-items:center;
+  color:rgba(153,118,199,.45);
+  font-weight:900;
+}
+@media(max-width:900px){
+  .personalViewerRow{grid-template-columns:1fr}
+  .personalViewerGrid{grid-template-columns:repeat(4,1fr)}
+}
+@media(max-width:560px){
+  .personalViewerGrid{grid-template-columns:repeat(2,1fr)}
+}
+
+
+/* viewer compact layout */
+.viewerGrid{
+  grid-template-columns:repeat(7,1fr);
+  gap:6px;
+}
+.viewerCard{
+  border:1px solid #d8d1c5;
+  background:#fff;
+}
+.viewerCard img{
+  aspect-ratio:16/9;
+}
+.viewerCardName{
+  padding:4px 4px 6px;
+  font-size:10.5px;
+  line-height:1.15;
+}
+.eyeBtn{
+  right:4px;
+  top:4px;
+  min-width:24px;
+  height:18px;
+  font-size:10px;
+}
+.viewerSectionTitle{
+  margin:10px 0 8px;
+  padding:9px 11px;
+  background:#eee8dc;
+  color:#3d372e;
+  font-size:13px;
+  font-weight:950;
+}
+@media(max-width:900px){
+  .viewerGrid{grid-template-columns:repeat(5,1fr)}
+}
+@media(max-width:560px){
+  .viewerGrid{grid-template-columns:repeat(3,1fr)}
+}
+
+
+.viewerSectionTitle[data-personal="thek"]{
+  background:linear-gradient(135deg,#f6efe0,#e5d7bd);
+  color:#4c3b20;
+  border:1px solid #b99a5f;
+}
+.viewerSectionTitle[data-personal="showk"]{
+  background:linear-gradient(135deg,#efeaff,#d9cef5);
+  color:#4b347a;
+  border:1px solid #8b6fd1;
+}
+
+</style>
+</head>
+<body>
+<header class="nav"><div class="navin"><a class="brand" href="../links/"><span class="logo">THE K</span><small>ADMIN PORTAL</small></a><div class="navlinks"><a href="../links/">링크 페이지</a><a class="main" href="../">입장 화면</a></div></div></header>
+<main>
+<section class="hero"><div class="heroin"><div><div class="kicker">PRIVATE SIGNATURE ADMIN</div><h1>THE K ADMIN</h1><p>시그니처 데이터 · 파일 업로드 · 시그 뷰어 관리 페이지</p></div></div></section>
+<div id="status" class="status">페이지 준비 완료. 불러오기를 눌러 데이터를 확인하세요.</div>
+<section class="tabs"><button class="tab active" data-tab="signature">시그 관리</button><button class="tab" data-tab="upload">업로드</button><button class="tab" data-tab="viewer">시그 뷰어</button></section>
+<section id="signature" class="panel active"><div class="box"><div class="head"><div><div class="title">시그 관리</div><div class="help">파일이름은 확장자 없이 입력합니다. 예: 200000_svip / 이미지와 음원은 같은 파일이름을 사용합니다.</div></div><div class="row"><button class="btn light" onclick="loadSignatureData()">불러오기</button><button class="btn gold" onclick="saveSignatureData()">저장</button></div></div><div class="form"><input id="newNumber" class="input" type="number" placeholder="숫자"><input id="newName" class="input" type="text" placeholder="이름"><input id="newBj" class="input" type="text" placeholder="개인방송"><input id="newMember" class="input" type="text" placeholder="멤버"><select id="newGroup" class="select"><option value="">그룹 없음</option><option value="더케이">더케이</option><option value="쇼케이">쇼케이</option></select><input id="newFileBase" class="input" type="text" placeholder="파일이름"><select id="newImageExt" class="select"><option value="png">png</option><option value="gif">gif</option></select><button class="btn" onclick="addSignatureItem()">추가</button></div></div><div class="box"><div class="head"><div class="title">시그 목록</div><input id="signatureSearch" class="input" type="text" placeholder="번호, 이름, 멤버, 그룹, 파일이름 검색" oninput="renderSignatureTable()"></div><div class="scroll"><table><thead><tr><th>이미지</th><th>번호</th><th>이름</th><th>개인방송</th><th>멤버</th><th>그룹</th><th>파일이름</th><th>이미지</th><th>관리</th></tr></thead><tbody id="signatureTableBody"></tbody></table></div></div></section>
+<section id="upload" class="panel"><div class="box"><div class="head"><div><div class="title">업로드</div><div class="help">가능 파일: mp3, png, gif / 음원과 이미지는 같은 파일이름을 사용합니다 / 파일명 규칙: 숫자_소문자영문숫자.확장자</div></div><button class="btn light" onclick="loadFiles()">목록 새로고침</button></div><div class="upload"><input id="uploadFile" class="input" type="file" accept=".mp3,.png,.gif"><button class="btn" onclick="uploadFile()">업로드</button></div><div class="help">예: 200000_svip.mp3 와 200000_svip.png처럼 음원과 이미지는 이름을 같게 맞춥니다.</div></div><div class="box"><div class="head"><div class="title">파일 목록</div><input id="fileSearch" class="input" type="text" placeholder="파일 검색" oninput="renderFiles()"></div><div id="fileList" class="files"></div></div></section>
+<section id="viewer" class="panel"><div class="box"><div class="head"><div><div class="title">시그 뷰어</div><div class="help">게시판 업로드용 시그니처 목록 이미지를 만듭니다. 눈을 끈 시그는 다운로드 이미지에 포함되지 않습니다.</div></div><div class="viewerToolbar"><button class="btn light" onclick="loadSignatureData()">불러오기</button><button class="btn" onclick="openViewerDownloadModal()">선택 다운로드</button><button class="btn light" onclick="downloadAllViewerSections()">전체 다운로드</button></div></div><div class="row" style="margin-bottom:10px"><input id="viewerSearch" class="input" type="text" placeholder="번호, 이름, 멤버 검색" oninput="renderViewer()"><button class="btn light" onclick="showAllViewerCards()">전체 켜기</button><button class="btn light" onclick="hideVisibleViewerCards()">보이는 것 끄기</button></div><div class="memberNote">다운로드는 ZIP이 아니라 섹션별 PNG 파일로 따로 저장됩니다. 크롬에서 여러 파일 다운로드 허용 안내가 뜨면 허용을 눌러주세요.</div></div><div class="box"><div id="viewerContent" class="viewerSections"></div></div></section>
+<div id="viewerDownloadModal" class="viewerModal"><div class="viewerModalBox"><div class="viewerModalHead"><div class="viewerModalTitle">다운로드 할 섹션 선택</div><button class="viewerClose" onclick="closeViewerDownloadModal()">×</button></div><div id="viewerDownloadChecks" class="viewerChecks"></div><div class="row"><button class="btn light" onclick="setViewerChecks(true)">전체 선택</button><button class="btn light" onclick="setViewerChecks(false)">전체 해제</button></div><div class="viewerModalActions"><button class="btn light" onclick="closeViewerDownloadModal()">취소</button><button class="btn" onclick="downloadCheckedViewerSections()">다운로드</button></div></div></div>
+</main>
+<script>
+
+
+
+function getFileNameOnly(url){
+  if(!url)return"";
+  try{return decodeURIComponent(String(url).split("/").pop().split("?")[0])}
+  catch{return String(url).split("/").pop().split("?")[0]}
+}
+function getFileBaseFromUrl(url){
+  return getFileNameOnly(url).replace(/\.(mp3|png|gif|jpg|jpeg|webp)$/i,"");
+}
+function isCleanFileBase(base){
+  return /^[0-9]+_[a-z0-9]+$/i.test(String(base||"").trim());
+}
+function getLocalWebpFromItem(item){
+  const imageBase=getFileBaseFromUrl(item&&item.image||"");
+  const audioBase=getFileBaseFromUrl(item&&item.audio||"");
+  if(isCleanFileBase(imageBase))return "../images/"+imageBase+".webp";
+  if(isCleanFileBase(audioBase))return "../images/"+audioBase+".webp";
+  const fallback=imageBase||audioBase;
+  return fallback?"../images/"+fallback+".webp":"";
+}
+function makeNoImageBox(className){
+  const div=document.createElement("div");
+  div.className=className||"noimgbox";
+  div.textContent="이미지 없음";
+  return div;
+}
+function imageFailToNoImage(img,className){
+  if(!img)return;
+  img.onerror=null;
+  img.replaceWith(makeNoImageBox(className||"noimgbox"));
+}
+function getViewerImageHtml(item){
+  const src=getLocalWebpFromItem(item);
+  if(!src)return '<div class="viewerNoImage">이미지 없음</div>';
+  return `<img loading="lazy" src="${esc(src)}" alt="" onerror="imageFailToNoImage(this,'viewerNoImage')">`;
+}
+function getThumbImageHtml(item){
+  const src=getLocalWebpFromItem(item);
+  if(!src)return '<div class="noimgbox">이미지 없음</div>';
+  return `<img class="thumb" loading="lazy" src="${esc(src)}" alt="" onerror="imageFailToNoImage(this,'noimgbox')">`;
+}
+
+
+
+const CDN_BASE="https://thek.ribitu.kr/";
+const LOCAL_DATA_URL="../thekdata.json";
+const IMAGE_FOLDER="../images/";
+const API={signatureData:"/thek/api/data",signatureSave:"/thek/api/save",upload:"/thek/api/upload",files:"/thek/api/files",fileDelete:"/thek/api/filedelete"};
+let signatureData=[];let fileData=[];const statusEl=document.getElementById("status");function setStatus(t){statusEl.textContent=t||""}function esc(v){return String(v??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;")}function fmtSize(s){const v=Number(s||0);if(v>=1048576)return(v/1048576).toFixed(2)+" MB";if(v>=1024)return(v/1024).toFixed(1)+" KB";return v+" B"}async function fetchJson(url,options){const r=await fetch(url,options);const d=await r.json();if(!r.ok)throw new Error(d.detail||d.message||"요청 실패");return d}function fileName(url){if(!url)return"";try{return decodeURIComponent(String(url).split("/").pop().split("?")[0])}catch{return String(url).split("/").pop().split("?")[0]}}function fileBase(item){return fileName(item.image||item.audio||"").replace(/\.(mp3|png|gif|webp)$/i,"")}function imageExt(item){return fileName(item.image||"").toLowerCase().endsWith(".gif")?"gif":"png"}function imageUrl(base,ext){return base?CDN_BASE+base+"."+ext:""}function audioUrl(base){return base?CDN_BASE+base+".mp3":""}function webpUrl(base){return base?IMAGE_FOLDER+base+".webp":""}function displayImageUrl(item){return getLocalWebpFromItem(item)}function validBase(b){return /^[0-9]+_[a-z0-9]+$/.test(String(b||"").trim())}function collectRows(){
+  for(let i=0;i<signatureData.length;i++){
+    const row=document.querySelector(`[data-sig-row="${i}"]`);
+    if(!row)continue;
+    const number=Number(row.querySelector("[data-field='number']").value);
+    const name=row.querySelector("[data-field='name']").value.trim();
+    const bjText=row.querySelector("[data-field='bj']").value.trim();
+    const member=row.querySelector("[data-field='member']").value.trim();
+    const group=row.querySelector("[data-field='group']").value.trim();
+    const base=row.querySelector("[data-field='fileBase']").value.trim();
+    const ext=row.querySelector("[data-field='imageExt']").value;
+    const videos=Array.isArray(signatureData[i].videos)?signatureData[i].videos:[];
+    if(number>0){
+      signatureData[i]={
+        number,
+        name,
+        image:imageUrl(base,ext),
+        audio:audioUrl(base),
+        bj:bjText?(Number.isFinite(Number(bjText))?Number(bjText):bjText):"",
+        member,
+        group,
+        videos
+      };
+    }
+  }
+  signatureData=signatureData.filter(item=>Number(item&&item.number)>0).sort((a,b)=>Number(a.number||0)-Number(b.number||0));
+}
+async function loadSignatureData(){try{setStatus("시그니처 데이터를 불러오는 중입니다...");let data;try{const r=await fetchJson(API.signatureData,{cache:"no-store",credentials:"include"});data=Array.isArray(r)?r:(r.data||[])}catch(e){const r=await fetch(LOCAL_DATA_URL,{cache:"no-store"});if(!r.ok)throw e;data=await r.json()}signatureData=Array.isArray(data)?data:[];signatureData.sort((a,b)=>Number(a.number||0)-Number(b.number||0));renderSignatureTable();renderViewer();setStatus(`시그니처 ${signatureData.length}개를 불러왔습니다.`)}catch(e){console.error(e);setStatus("시그니처 데이터를 불러오지 못했습니다.\n"+(e.message||e))}}
+async function saveSignatureData(){try{collectRows();if(signatureData.length<1)return alert("저장할 데이터가 없습니다.");const bad=signatureData.find(i=>{const b=fileBase(i);return b&&!validBase(b)});if(bad)throw new Error(`${bad.number}번 파일이름 규칙이 맞지 않습니다.`);if(!confirm(`시그니처 ${signatureData.length}개를 저장할까요?`))return;setStatus("저장 중입니다...");const r=await fetchJson(API.signatureSave,{method:"POST",headers:{"Content-Type":"application/json"},credentials:"include",body:JSON.stringify({data:signatureData})});signatureData=Array.isArray(r.data)?r.data:signatureData;renderSignatureTable();renderViewer();setStatus(`저장 완료: ${r.count||signatureData.length}개`)}catch(e){console.error(e);setStatus("아직 저장 API가 연결되지 않았습니다. 우선 JSON 다운로드로 저장본을 받을 수 있습니다.\n"+(e.message||e))}}
+function downloadJson(){collectRows();const blob=new Blob([JSON.stringify(signatureData,null,2)],{type:"application/json"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="thekdata.json";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);setStatus("thekdata.json 다운로드를 시작했습니다.")}
+function addSignatureItem(){
+  const number=Number(document.getElementById("newNumber").value);
+  const name=document.getElementById("newName").value.trim();
+  const bjText=document.getElementById("newBj").value.trim();
+  const member=document.getElementById("newMember").value.trim();
+  const group=document.getElementById("newGroup").value.trim();
+  const base=document.getElementById("newFileBase").value.trim();
+  const ext=document.getElementById("newImageExt").value;
+  if(!Number.isFinite(number)||number<=0)return alert("숫자를 입력해주세요.");
+  if(!name)return alert("이름을 입력해주세요.");
+  if(!validBase(base))return alert("파일이름은 숫자_소문자영문숫자 형식만 가능합니다. 예: 200000_svip");
+  if(signatureData.some(i=>Number(i.number)===number))return alert("이미 같은 번호가 있습니다.");
+  signatureData.push({
+    number,
+    name,
+    image:imageUrl(base,ext),
+    audio:audioUrl(base),
+    bj:bjText?(Number.isFinite(Number(bjText))?Number(bjText):bjText):"",
+    member,
+    group,
+    videos:[]
+  });
+  ["newNumber","newName","newBj","newMember","newFileBase"].forEach(id=>document.getElementById(id).value="");
+  document.getElementById("newGroup").value="";
+  signatureData.sort((a,b)=>Number(a.number||0)-Number(b.number||0));
+  renderSignatureTable();
+  renderViewer();
+}
+function deleteSignatureItem(i){const item=signatureData[i];if(!item)return;if(!confirm(`${item.number} ${item.name||""} 시그를 삭제할까요?\n파일은 삭제되지 않습니다.`))return;signatureData.splice(i,1);renderSignatureTable();renderViewer()}
+function renderSignatureTable(){
+  const tb=document.getElementById("signatureTableBody");
+  const kw=document.getElementById("signatureSearch").value.trim().toLowerCase();
+  const rows=signatureData
+    .map((item,index)=>({item,index}))
+    .filter(({item})=>!kw||`${item.number} ${item.name||""} ${item.bj||""} ${item.member||""} ${item.group||""} ${fileBase(item)}`.toLowerCase().includes(kw));
+  if(!rows.length){
+    tb.innerHTML=`<tr><td colspan="9">표시할 시그가 없습니다.</td></tr>`;
+    return;
+  }
+  tb.innerHTML=rows.map(({item,index})=>{
+    const base=fileBase(item);
+    const ext=imageExt(item);
+    const group=String(item.group||"").trim();
+    return `<tr data-sig-row="${index}">
+      <td>${getThumbImageHtml(item)}</td>
+      <td><input class="tin" data-field="number" type="number" value="${esc(item.number||"")}"></td>
+      <td><input class="tin" data-field="name" type="text" value="${esc(item.name||"")}"></td>
+      <td><input class="tin" data-field="bj" type="text" value="${esc(item.bj||"")}"></td>
+      <td><input class="tin" data-field="member" type="text" value="${esc(item.member||"")}"></td>
+      <td><select class="tsel" data-field="group">
+        <option value="" ${group===""?"selected":""}>빈칸</option>
+        <option value="더케이" ${group==="더케이"?"selected":""}>더케이</option>
+        <option value="쇼케이" ${group==="쇼케이"?"selected":""}>쇼케이</option>
+      </select></td>
+      <td><input class="tin file" data-field="fileBase" type="text" value="${esc(base)}"></td>
+      <td><select class="tsel" data-field="imageExt"><option value="png" ${ext==="png"?"selected":""}>png</option><option value="gif" ${ext==="gif"?"selected":""}>gif</option></select></td>
+      <td><button class="rbtn r" onclick="deleteSignatureItem(${index})">삭제</button></td>
+    </tr>`;
+  }).join("");
+}
+async function uploadFile(){try{const input=document.getElementById("uploadFile");const file=input.files&&input.files[0];if(!file)return alert("파일을 선택해주세요.");if(!/^[0-9]+_[a-z0-9]+\.(mp3|png|gif)$/.test(file.name))return alert("파일명 규칙이 맞지 않습니다.\n예: 200000_svip.mp3");const fd=new FormData();fd.append("file",file);setStatus("파일 업로드 중입니다...");const res=await fetch(API.upload,{method:"POST",body:fd,credentials:"include"});const r=await res.json();if(!res.ok||!r.ok)throw new Error(r.detail||r.message||"업로드 실패");input.value="";setStatus(`업로드 완료\n${r.file?.url||""}`);await loadFiles()}catch(e){console.error(e);setStatus("아직 업로드 API가 연결되지 않았습니다.\n"+(e.message||e))}}
+async function loadFiles(){try{setStatus("파일 목록을 불러오는 중입니다...");const r=await fetchJson(API.files,{cache:"no-store",credentials:"include"});fileData=Array.isArray(r.files)?r.files:[];renderFiles();setStatus(`파일 ${fileData.length}개를 불러왔습니다.`)}catch(e){console.error(e);setStatus("아직 파일 목록 API가 연결되지 않았습니다.\n"+(e.message||e));renderFiles()}}
+function renderFiles(){const wrap=document.getElementById("fileList");const kw=document.getElementById("fileSearch").value.trim().toLowerCase();const files=fileData.filter(f=>!kw||String(f.name||"").toLowerCase().includes(kw)).sort((a,b)=>String(a.name||"").localeCompare(String(b.name||""),"en"));if(!files.length){wrap.innerHTML=`<div class="filecard">표시할 파일이 없습니다.</div>`;return}wrap.innerHTML=files.map(f=>{const img=/\.(png|gif)$/i.test(f.name||"");return `<article class="filecard"><div class="prev">${img?`<img loading="lazy" src="${esc(f.url)}" alt="" onerror="imageFailToNoImage(this,\'viewerNoImage\')">`:`<span>MP3</span>`}</div><div class="fname">${esc(f.name)}</div><div class="fmeta">${esc(f.type||"")} · ${esc(fmtSize(f.size))}</div><div class="factions"><button class="rbtn p" onclick="copyText('${esc(f.url)}')">주소복사</button><button class="rbtn r" onclick="deleteFile('${esc(f.name)}')">삭제</button></div></article>`}).join("")}
+async function deleteFile(name){if(!confirm(`${name} 파일을 삭제할까요?\n시그 정보는 수정되지 않습니다.`))return;try{setStatus("파일 삭제 중입니다...");await fetchJson(API.fileDelete,{method:"POST",headers:{"Content-Type":"application/json"},credentials:"include",body:JSON.stringify({fileName:name})});setStatus("파일 삭제 완료");await loadFiles()}catch(e){console.error(e);setStatus("아직 파일 삭제 API가 연결되지 않았습니다.\n"+(e.message||e))}}
+async function copyText(t){try{await navigator.clipboard.writeText(t);setStatus("주소를 복사했습니다.\n"+t)}catch{setStatus("복사에 실패했습니다.")}}
+
+function viewerGroupValue(item){
+  const g=String(item&&item.group||"").trim();
+  if(g.includes("쇼"))return "쇼케이";
+  if(g.includes("더"))return "더케이";
+  return "";
+}
+const VIEWER_DOWNLOAD_DELAY=60;
+function viewerKoreanDate(){
+  const d=new Date();
+  return `${String(d.getMonth()+1).padStart(2,"0")}월 ${String(d.getDate()).padStart(2,"0")}일`;
+}
+function normGroup(v){return String(v||"").trim();}
+let viewerHiddenNumbers=new Set();const viewerImageCache=new Map();function viewerToday(){const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`}function viewerItemKey(item){return String(item&&item.number||"")}function isViewerVisible(item){return !viewerHiddenNumbers.has(viewerItemKey(item))}function getViewerAllItems(){return signatureData.filter(item=>item&&Number(item.number)>0&&fileBase(item)).sort((a,b)=>Number(a.number||0)-Number(b.number||0))}function getViewerSections(){
+  const all=getViewerAllItems();
+  const normal=all.filter(item=>!String(item.member||"").trim());
+  const personal=all.filter(item=>String(item.member||"").trim());
+
+  const inRange=(arr,a,b)=>arr.filter(item=>Number(item.number)>=a&&Number(item.number)<=b);
+
+  const thekPersonal=personal.filter(item=>viewerGroupValue(item)==="더케이");
+  const showkPersonal=personal.filter(item=>viewerGroupValue(item)==="쇼케이");
+  const etcPersonal=personal.filter(item=>viewerGroupValue(item)==="");
+
+  const sections=[
+    {id:"827to1999",label:"827~1999",items:inRange(normal,827,1999),type:"compact",groupTitle:"전체 시그"},
+    {id:"2000to9999",label:"2000~9999",items:inRange(normal,2000,9999),type:"compact",groupTitle:"전체 시그"},
+    {id:"10000to19999",label:"10000~19999",items:inRange(normal,10000,19999),type:"compact",groupTitle:"전체 시그"},
+    {id:"20000to300000",label:"20000~300000",items:inRange(normal,20000,300000),type:"compact",groupTitle:"전체 시그"},
+    {id:"thekpersonal",label:"더케이 개인시그",items:thekPersonal,type:"personal",groupTitle:"개인시그"},
+    {id:"showkpersonal",label:"쇼케이 개인시그",items:showkPersonal,type:"personal",groupTitle:"개인시그"}
+  ];
+
+  if(etcPersonal.length){
+    sections.push({id:"etcpersonal",label:"미분류 개인시그",items:etcPersonal,type:"personal",groupTitle:"개인시그"});
+  }
+
+  return sections;
+}
+function viewerFilterItems(items){const kw=(document.getElementById("viewerSearch")?.value||"").trim().toLowerCase();if(!kw)return items;return items.filter(item=>`${item.number||""} ${item.name||""} ${item.member||""} ${item.bj||""}`.toLowerCase().includes(kw))}function renderViewer(){
+  const wrap=document.getElementById("viewerContent");
+  if(!wrap)return;
+  const sections=getViewerSections();
+  const html=sections.map(section=>{
+    const items=viewerFilterItems(section.items);
+    const visibleCount=items.filter(isViewerVisible).length;
+    if(!items.length)return"";
+    const personalAttr=section.id==="thekpersonal"?' data-personal="thek"':(section.id==="showkpersonal"?' data-personal="showk"':"");
+    return `<div><div class="viewerSectionTitle"${personalAttr}>${esc(section.label)} (${visibleCount}/${items.length}개)</div><div class="viewerGrid">${items.map(item=>renderViewerCard(item)).join("")}</div></div>`;
+  }).join("");
+  wrap.innerHTML=html||`<div class="help">표시할 시그가 없습니다. 시그 데이터를 먼저 불러와주세요.</div>`;
+}
+function renderViewerCard(item){
+  const off=!isViewerVisible(item);
+  const key=viewerItemKey(item);
+  const title=`${item.number||""} ${item.name||""}`;
+  return `<article class="viewerCard ${off?"off":""}" data-viewer-card="${esc(key)}"><button class="eyeBtn" onclick="toggleViewerEye('${esc(key)}')">${off?"🙈":"👁"}</button>${getViewerImageHtml(item)}<div class="viewerCardName">${esc(title)}</div></article>`;
+}
+function toggleViewerEye(key){if(viewerHiddenNumbers.has(key))viewerHiddenNumbers.delete(key);else viewerHiddenNumbers.add(key);renderViewer()}function showAllViewerCards(){viewerHiddenNumbers.clear();renderViewer()}function hideVisibleViewerCards(){viewerFilterItems(getViewerAllItems()).forEach(item=>viewerHiddenNumbers.add(viewerItemKey(item)));renderViewer()}function openViewerDownloadModal(){
+  const modal=document.getElementById("viewerDownloadModal");
+  const checks=document.getElementById("viewerDownloadChecks");
+  const sections=getViewerSections();
+  let lastGroup="";
+  checks.innerHTML=sections.map(section=>{
+    const count=section.items.filter(item=>isViewerVisible(item)&&displayImageUrl(item)).length;
+    const groupHead=section.groupTitle&&section.groupTitle!==lastGroup
+      ? `<div class="viewerCheckGroup">${esc(section.groupTitle)}</div>`
+      : "";
+    if(section.groupTitle)lastGroup=section.groupTitle;
+    return groupHead+`<label class="viewerCheck"><input type="checkbox" data-viewer-section="${esc(section.id)}" ${count>0?"checked":""} ${count>0?"":"disabled"}><span>${esc(section.label)} (${count}개)</span></label>`;
+  }).join("");
+  modal.classList.add("show");
+}
+function closeViewerDownloadModal(){document.getElementById("viewerDownloadModal").classList.remove("show")}function setViewerChecks(value){document.querySelectorAll("[data-viewer-section]").forEach(ch=>{if(!ch.disabled)ch.checked=value})}async function downloadCheckedViewerSections(){const ids=[...document.querySelectorAll("[data-viewer-section]:checked")].map(ch=>ch.dataset.viewerSection);closeViewerDownloadModal();await downloadViewerSections(ids)}async function downloadAllViewerSections(){const ids=getViewerSections().filter(section=>section.items.some(item=>isViewerVisible(item)&&displayImageUrl(item))).map(section=>section.id);await downloadViewerSections(ids)}async function downloadViewerSections(ids){const sections=getViewerSections().filter(section=>ids.includes(section.id));if(!sections.length){alert("다운로드 할 섹션이 없습니다.");return}setStatus(`${sections.length}개 섹션 이미지를 만드는 중입니다...`);for(let i=0;i<sections.length;i++){const section=sections[i];const items=section.items.filter(item=>isViewerVisible(item)&&displayImageUrl(item));if(!items.length)continue;try{await preloadViewerImages(items);const canvas=section.type==="personal"?await makePersonalSectionCanvas(section,items):await makeNormalSectionCanvas(section,items);await downloadCanvasAsPng(canvas,viewerFileName(section,items.length));setStatus(`${i+1}/${sections.length} 다운로드 완료: ${section.label}`);await sleep(VIEWER_DOWNLOAD_DELAY)}catch(error){console.error(error);setStatus(`${section.label} 이미지 생성 실패\n${error.message||error}`)}}}
+function viewerMainTitle(){
+  return `더케이 쇼케이 시그니처 목록 (${viewerKoreanDate()})`;
+}
+function drawViewerMainTitle(ctx,width,y,h){
+  const grad=ctx.createLinearGradient(0,y,width,y);
+  grad.addColorStop(0,"#1f1e1b");
+  grad.addColorStop(0.52,"#36322c");
+  grad.addColorStop(1,"#8b764e");
+  ctx.fillStyle=grad;
+  ctx.fillRect(0,y,width,h);
+  ctx.fillStyle="#f0d596";
+  ctx.font="900 34px Arial";
+  ctx.textAlign="center";
+  ctx.textBaseline="middle";
+  ctx.fillText(viewerMainTitle(),width/2,y+42);
+  ctx.fillStyle="#ffffff";
+  ctx.font="900 12px Arial";
+  ctx.fillText("THE K · SHOW K SIGNATURE LIST",width/2,y+72);
+}
+function viewerFileName(section,count){const safe=section.label.replace(/[\\/:*?"<>|]/g,"").replace(/\s+/g,"");return `thek${safe}${count}개${viewerToday()}.png`}function sleep(ms){return new Promise(resolve=>setTimeout(resolve,ms))}function loadCanvasImage(src){const key=String(src||"");if(viewerImageCache.has(key))return viewerImageCache.get(key);const promise=new Promise(resolve=>{if(!key){resolve(null);return}const img=new Image();img.crossOrigin="anonymous";img.decoding="async";img.onload=()=>resolve(img);img.onerror=()=>resolve(null);img.src=key+(key.includes("?")?"&":"?")+"v="+Date.now()});viewerImageCache.set(key,promise);return promise}async function preloadViewerImages(items){await Promise.all(items.map(item=>loadCanvasImage(displayImageUrl(item))))}function getCachedCanvasImage(src){return viewerImageCache.get(String(src||""))||loadCanvasImage(src)}function coverDraw(ctx,img,x,y,w,h){if(!img){ctx.fillStyle="#f0ece4";ctx.fillRect(x,y,w,h);ctx.fillStyle="#6b6258";ctx.font="800 18px Arial";ctx.textAlign="center";ctx.textBaseline="middle";ctx.fillText("이미지 없음",x+w/2,y+h/2);return}const ir=img.width/img.height;const br=w/h;let sx=0,sy=0,sw=img.width,sh=img.height;if(ir>br){sw=img.height*br;sx=(img.width-sw)/2}else{sh=img.width/br;sy=(img.height-sh)/2}ctx.drawImage(img,sx,sy,sw,sh,x,y,w,h)}function roundRect(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.lineTo(x+w-r,y);ctx.quadraticCurveTo(x+w,y,x+w,y+r);ctx.lineTo(x+w,y+h-r);ctx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);ctx.lineTo(x+r,y+h);ctx.quadraticCurveTo(x,y+h,x,y+h-r);ctx.lineTo(x,y+r);ctx.quadraticCurveTo(x,y,x+r,y);ctx.closePath()}async function makeNormalSectionCanvas(section,items){
+  const cols=10;
+  const pad=24;
+  const gapX=8;
+  const gapY=11;
+  const cardW=118;
+  const imgH=66;
+  const textH=36;
+  const cardH=imgH+textH;
+  const titleH=104;
+  const headerH=40;
+  const hasMainTitle=section.id==="827to1999";
+  const rows=Math.ceil(items.length/cols);
+  const width=pad*2+cols*cardW+(cols-1)*gapX;
+  const height=(hasMainTitle?titleH:0)+pad+headerH+12+rows*cardH+Math.max(0,rows-1)*gapY+pad;
+
+  const canvas=document.createElement("canvas");
+  canvas.width=width;
+  canvas.height=height;
+  const ctx=canvas.getContext("2d");
+
+  ctx.fillStyle="#ffffff";
+  ctx.fillRect(0,0,width,height);
+
+  let y=0;
+  if(hasMainTitle){
+    drawViewerMainTitle(ctx,width,y,titleH);
+    y+=titleH;
+  }
+
+  y+=pad;
+  ctx.fillStyle="#111111";
+  ctx.font="900 30px Arial";
+  ctx.textAlign="left";
+  ctx.textBaseline="middle";
+  ctx.fillText(`THE K 시그 ${section.label}`,pad,y+headerH/2-2);
+  y+=headerH+12;
+
+  for(let i=0;i<items.length;i++){
+    const item=items[i];
+    const col=i%cols;
+    const row=Math.floor(i/cols);
+    const x=pad+col*(cardW+gapX);
+    const cy=y+row*(cardH+gapY);
+    await drawViewerCompactCardToCanvas(ctx,item,x,cy,cardW,imgH,textH);
+  }
+  return canvas;
+}
+async function makePersonalSectionCanvas(section,items){
+  const groups=new Map();
+  items.forEach(item=>{
+    const member=String(item.member||"기타").trim()||"기타";
+    if(!groups.has(member))groups.set(member,[]);
+    groups.get(member).push(item);
+  });
+
+  const isShowK=section.id==="showkpersonal";
+  const isTheK=section.id==="thekpersonal";
+
+  const cols=9;
+  const pad=24;
+  const gapX=8;
+  const gapY=10;
+  const labelW=118;
+  const cardW=118;
+  const imgH=66;
+  const textH=36;
+  const cardH=imgH+textH;
+  const headerH=44;
+  const groupGap=13;
+
+  const width=pad*2+labelW+gapX+cols*cardW+(cols-1)*gapX;
+  let height=pad+headerH+14+pad;
+
+  for(const arr of groups.values()){
+    const rows=Math.max(1,Math.ceil(arr.length/cols));
+    height+=rows*cardH+Math.max(0,rows-1)*gapY+groupGap;
+  }
+
+  const canvas=document.createElement("canvas");
+  canvas.width=width;
+  canvas.height=height;
+  const ctx=canvas.getContext("2d");
+
+  ctx.fillStyle="#ffffff";
+  ctx.fillRect(0,0,width,height);
+
+  let y=pad;
+
+  // 개인시그 제목도 좌측 정렬
+  ctx.fillStyle="#111111";
+  ctx.font="900 34px Arial";
+  ctx.textAlign="left";
+  ctx.textBaseline="middle";
+  ctx.fillText(section.label,pad,y+headerH/2-2);
+  y+=headerH+14;
+
+  for(const [member,arr] of groups){
+    const rows=Math.max(1,Math.ceil(arr.length/cols));
+    const groupH=rows*cardH+Math.max(0,rows-1)*gapY;
+
+    // 더케이 / 쇼케이 이름 카드 디자인 구분
+    if(isTheK){
+      const grad=ctx.createLinearGradient(pad,y,pad+labelW,y+groupH);
+      grad.addColorStop(0,"#f6efe0");
+      grad.addColorStop(1,"#e5d7bd");
+      ctx.fillStyle=grad;
+      ctx.fillRect(pad,y,labelW,groupH);
+      ctx.strokeStyle="#b99a5f";
+      ctx.lineWidth=2;
+      ctx.strokeRect(pad,y,labelW,groupH);
+      ctx.fillStyle="#4c3b20";
+    }else if(isShowK){
+      const grad=ctx.createLinearGradient(pad,y,pad+labelW,y+groupH);
+      grad.addColorStop(0,"#efeaff");
+      grad.addColorStop(1,"#d9cef5");
+      ctx.fillStyle=grad;
+      ctx.fillRect(pad,y,labelW,groupH);
+      ctx.strokeStyle="#8b6fd1";
+      ctx.lineWidth=2;
+      ctx.strokeRect(pad,y,labelW,groupH);
+      ctx.fillStyle="#4b347a";
+    }else{
+      ctx.fillStyle="#f6f1e8";
+      ctx.fillRect(pad,y,labelW,groupH);
+      ctx.strokeStyle="#d8d1c5";
+      ctx.lineWidth=1.5;
+      ctx.strokeRect(pad,y,labelW,groupH);
+      ctx.fillStyle="#4c3b20";
+    }
+
+    ctx.font="900 18px Arial";
+    ctx.textAlign="center";
+    ctx.textBaseline="middle";
+    fitText(ctx,member,pad+labelW/2,y+groupH/2-12,labelW-16,18,11);
+    ctx.font="800 13px Arial";
+    ctx.fillText(`(${arr.length}개)`,pad+labelW/2,y+groupH/2+15);
+
+    for(let i=0;i<arr.length;i++){
+      const item=arr[i];
+      const col=i%cols;
+      const row=Math.floor(i/cols);
+      const x=pad+labelW+gapX+col*(cardW+gapX);
+      const cy=y+row*(cardH+gapY);
+      await drawViewerCompactCardToCanvas(ctx,item,x,cy,cardW,imgH,textH);
+    }
+    y+=groupH+groupGap;
+  }
+
+  return canvas;
+}
+
+async function drawViewerCompactCardToCanvas(ctx,item,x,y,w,imgH,textH){
+  const h=imgH+textH;
+
+  ctx.fillStyle="#ffffff";
+  ctx.fillRect(x,y,w,h);
+  ctx.strokeStyle="#d0c7b9";
+  ctx.lineWidth=1;
+  ctx.strokeRect(x,y,w,h);
+
+  const img=await getCachedCanvasImage(displayImageUrl(item));
+  coverDraw(ctx,img,x+2,y+2,w-4,imgH-4);
+
+  ctx.fillStyle="#ffffff";
+  ctx.fillRect(x+2,y+imgH,w-4,textH-2);
+
+  const number=String(item.number||"");
+  const name=String(item.name||"");
+
+  ctx.fillStyle="#111111";
+  ctx.textAlign="center";
+  ctx.textBaseline="middle";
+
+  ctx.font="900 19px Arial";
+  ctx.fillText(number,x+w/2,y+imgH+12);
+
+  ctx.font="900 12px Arial";
+  fitText(ctx,name,x+w/2,y+imgH+28,w-8,12,8);
+}
+
+async function drawViewerCardToCanvas(ctx,item,x,y,w,imgH,textH){const h=imgH+textH;ctx.fillStyle="#ffffff";roundRect(ctx,x,y,w,h,4);ctx.fill();ctx.strokeStyle="#d8d1c5";ctx.lineWidth=1.2;ctx.stroke();const img=await getCachedCanvasImage(displayImageUrl(item));coverDraw(ctx,img,x+3,y+3,w-6,imgH-5);ctx.fillStyle="#ffffff";ctx.fillRect(x+3,y+imgH,w-6,textH-3);ctx.fillStyle="#3f3a33";ctx.textAlign="center";ctx.textBaseline="middle";fitText(ctx,`${item.number||""} ${item.name||""}`,x+w/2,y+imgH+textH/2,w-12,13,10)}function fitText(ctx,text,cx,cy,maxWidth,startSize,minSize){let size=startSize;while(size>minSize){ctx.font=`900 ${size}px Arial`;if(ctx.measureText(text).width<=maxWidth)break;size--}let output=text;if(ctx.measureText(output).width>maxWidth){while(output.length>1&&ctx.measureText(output+"…").width>maxWidth){output=output.slice(0,-1)}output+="…"}ctx.fillText(output,cx,cy)}function downloadCanvasAsPng(canvas,fileName){return new Promise((resolve,reject)=>{try{canvas.toBlob(blob=>{if(!blob){reject(new Error("이미지 파일을 만들지 못했습니다."));return}const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download=fileName;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1200);resolve()},"image/png")}catch(error){reject(error)}})}function switchTab(name){document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b.dataset.tab===name));document.querySelectorAll(".panel").forEach(p=>p.classList.toggle("active",p.id===name));if(name==="upload"&&!fileData.length)loadFiles();if(name==="viewer")renderViewer()}document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>switchTab(b.dataset.tab)));loadSignatureData();
+</script>
+</body>
+</html>
