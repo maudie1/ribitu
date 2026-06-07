@@ -241,6 +241,96 @@ a{text-decoration:none;color:inherit}button,input,select{font-family:inherit}.na
 @media(max-width:900px){.personalViewerRow{grid-template-columns:1fr}.personalViewerGrid{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:560px){.personalViewerGrid{grid-template-columns:repeat(2,1fr)}}
 
+
+/* final viewer alignment refinements */
+.head .title{white-space:nowrap;min-width:max-content}
+#signature .head{align-items:center}
+#signature .head .input{min-width:320px}
+
+.viewerTopTitle{
+  margin:0 0 18px;
+  padding:30px 18px 26px;
+  background:linear-gradient(135deg,#171614 0%,#2c2924 55%,#6f5b37 100%);
+  color:#fff;
+  text-align:center;
+  border:1px solid rgba(215,192,140,.48);
+  box-shadow:0 18px 42px rgba(35,31,25,.10);
+}
+.viewerTopTitle .main{
+  font-size:clamp(26px,4vw,44px);
+  font-weight:950;
+  letter-spacing:.03em;
+  color:#f0d596;
+  line-height:1.15;
+}
+.viewerTopTitle .sub{
+  margin-top:8px;
+  color:#eee6d8;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.2em;
+}
+
+.viewerGrid{
+  grid-template-columns:repeat(10,1fr);
+  gap:7px;
+}
+.viewerSectionTitle{
+  margin:18px 0 10px;
+  padding:12px 14px;
+  background:linear-gradient(135deg,#26231f,#4b4131);
+  color:#f2dfae;
+  border:1px solid #b99a5f;
+  font-size:15px;
+  font-weight:950;
+  letter-spacing:.02em;
+}
+.viewerCard{
+  border:1px solid #d8d1c5;
+  background:#fff;
+}
+.viewerCard img{
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  display:block;
+}
+.viewerCardName{
+  min-height:30px;
+  padding:5px 4px 7px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  font-size:10.8px;
+  line-height:1.15;
+  font-weight:950;
+}
+.personalViewerRows{display:grid;gap:14px}
+.personalViewerRow{display:grid;grid-template-columns:138px 1fr;gap:10px;align-items:stretch}
+.personalViewerLabel{min-height:124px}
+.personalViewerLabel.thek{background:linear-gradient(135deg,#f8f0dd,#e5d2ac);border-color:#b99a5f;color:#4c3b20}
+.personalViewerLabel.showk{background:linear-gradient(135deg,#f1eaff,#d8caf8);border-color:#8b6fd1;color:#4b347a}
+.personalViewerRank{font-size:20px;color:#5aa9d3;margin-bottom:7px}
+.personalViewerName{font-size:25px;color:#111}
+.personalViewerGrid{grid-template-columns:repeat(8,1fr);gap:8px}
+.personalViewerGrid .viewerCardName{font-size:11.3px}
+
+@media(max-width:1100px){
+  .viewerGrid{grid-template-columns:repeat(8,1fr)}
+  .personalViewerGrid{grid-template-columns:repeat(6,1fr)}
+}
+@media(max-width:900px){
+  .viewerGrid{grid-template-columns:repeat(5,1fr)}
+  .personalViewerRow{grid-template-columns:1fr}
+  .personalViewerGrid{grid-template-columns:repeat(4,1fr)}
+}
+@media(max-width:560px){
+  #signature .head .input{min-width:0}
+  .viewerGrid{grid-template-columns:repeat(3,1fr)}
+  .personalViewerGrid{grid-template-columns:repeat(2,1fr)}
+}
+
 </style>
 </head>
 <body>
@@ -636,7 +726,7 @@ function viewerFilterItems(items){const kw=(document.getElementById("viewerSearc
   const wrap=document.getElementById("viewerContent");
   if(!wrap)return;
   const sections=getViewerSections();
-  const html=sections.map(section=>{
+  const bodyHtml=sections.map(section=>{
     const items=viewerFilterItems(section.items);
     const visibleCount=items.filter(isViewerVisible).length;
     if(!items.length)return"";
@@ -649,7 +739,8 @@ function viewerFilterItems(items){const kw=(document.getElementById("viewerSearc
     }
     return `<div><div class="viewerSectionTitle"${personalAttr}>${esc(section.label)} (${visibleCount}/${items.length}개)</div><div class="viewerGrid">${items.map(item=>renderViewerCard(item)).join("")}</div></div>`;
   }).join("");
-  wrap.innerHTML=html||`<div class="help">표시할 시그가 없습니다. 시그 데이터를 먼저 불러와주세요.</div>`;
+  const topTitle=`<div class="viewerTopTitle"><div class="main">${esc(viewerMainTitle())}</div><div class="sub">THE K · SHOW K SIGNATURE LIST</div></div>`;
+  wrap.innerHTML=bodyHtml?topTitle+bodyHtml:`<div class="help">표시할 시그가 없습니다. 시그 데이터를 먼저 불러와주세요.</div>`;
 }
 function renderViewerCard(item){
   const off=!isViewerVisible(item);
@@ -692,6 +783,36 @@ function drawViewerMainTitle(ctx,width,y,h){
   ctx.font="900 12px Arial";
   ctx.fillText("THE K · SHOW K SIGNATURE LIST",width/2,y+72);
 }
+function drawCanvasSectionTitle(ctx,x,y,w,h,title,type){
+  let grad=ctx.createLinearGradient(x,y,x+w,y);
+  if(type==="thek"){
+    grad.addColorStop(0,"#f6efe0");
+    grad.addColorStop(1,"#e5d7bd");
+    ctx.fillStyle=grad;
+    ctx.fillRect(x,y,w,h);
+    ctx.strokeStyle="#b99a5f";
+    ctx.fillStyle=grad;
+  }else if(type==="showk"){
+    grad.addColorStop(0,"#efeaff");
+    grad.addColorStop(1,"#d9cef5");
+    ctx.fillStyle=grad;
+    ctx.fillRect(x,y,w,h);
+    ctx.strokeStyle="#8b6fd1";
+  }else{
+    grad.addColorStop(0,"#25231f");
+    grad.addColorStop(1,"#4b4131");
+    ctx.fillStyle=grad;
+    ctx.fillRect(x,y,w,h);
+    ctx.strokeStyle="#b99a5f";
+  }
+  ctx.lineWidth=2;
+  ctx.strokeRect(x,y,w,h);
+  ctx.fillStyle=type==="normal"?"#f2dfae":"#2f2b25";
+  ctx.font="900 24px Arial";
+  ctx.textAlign="left";
+  ctx.textBaseline="middle";
+  ctx.fillText(title,x+14,y+h/2);
+}
 function viewerFileName(section,count){const safe=section.label.replace(/[\\/:*?"<>|]/g,"").replace(/\s+/g,"");return `thek${safe}${count}개${viewerToday()}.png`}function sleep(ms){return new Promise(resolve=>setTimeout(resolve,ms))}function loadCanvasImage(src){const key=String(src||"");if(viewerImageCache.has(key))return viewerImageCache.get(key);const promise=new Promise(resolve=>{if(!key){resolve(null);return}const img=new Image();img.crossOrigin="anonymous";img.decoding="async";img.onload=()=>resolve(img);img.onerror=()=>resolve(null);img.src=key+(key.includes("?")?"&":"?")+"v="+Date.now()});viewerImageCache.set(key,promise);return promise}async function preloadViewerImages(items){await Promise.all(items.map(item=>loadCanvasImage(displayImageUrl(item))))}function getCachedCanvasImage(src){return viewerImageCache.get(String(src||""))||loadCanvasImage(src)}function coverDraw(ctx,img,x,y,w,h){if(!img){ctx.fillStyle="#f0ece4";ctx.fillRect(x,y,w,h);ctx.fillStyle="#6b6258";ctx.font="800 18px Arial";ctx.textAlign="center";ctx.textBaseline="middle";ctx.fillText("이미지 없음",x+w/2,y+h/2);return}const ir=img.width/img.height;const br=w/h;let sx=0,sy=0,sw=img.width,sh=img.height;if(ir>br){sw=img.height*br;sx=(img.width-sw)/2}else{sh=img.width/br;sy=(img.height-sh)/2}ctx.drawImage(img,sx,sy,sw,sh,x,y,w,h)}function roundRect(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.lineTo(x+w-r,y);ctx.quadraticCurveTo(x+w,y,x+w,y+r);ctx.lineTo(x+w,y+h-r);ctx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);ctx.lineTo(x+r,y+h);ctx.quadraticCurveTo(x,y+h,x,y+h-r);ctx.lineTo(x,y+r);ctx.quadraticCurveTo(x,y,x+r,y);ctx.closePath()}async function makeNormalSectionCanvas(section,items){
   const cols=10;
   const pad=24;
@@ -723,11 +844,7 @@ function viewerFileName(section,count){const safe=section.label.replace(/[\\/:*?
   }
 
   y+=pad;
-  ctx.fillStyle="#111111";
-  ctx.font="900 30px Arial";
-  ctx.textAlign="left";
-  ctx.textBaseline="middle";
-  ctx.fillText(`THE K 시그 ${section.label}`,pad,y+headerH/2-2);
+  drawCanvasSectionTitle(ctx,pad,y,width-pad*2,headerH,`THE K 시그 ${section.label}`,"normal");
   y+=headerH+12;
 
   for(let i=0;i<items.length;i++){
@@ -774,11 +891,7 @@ async function makePersonalSectionCanvas(section,items){
   ctx.fillRect(0,0,width,height);
 
   let y=pad;
-  ctx.fillStyle="#111111";
-  ctx.font="900 34px Arial";
-  ctx.textAlign="left";
-  ctx.textBaseline="middle";
-  ctx.fillText(section.label,pad,y+headerH/2-2);
+  drawCanvasSectionTitle(ctx,pad,y,width-pad*2,headerH,section.label,isTheK?"thek":(isShowK?"showk":"normal"));
   y+=headerH+14;
 
   for(const rowData of rowsData){
@@ -870,7 +983,7 @@ async function drawViewerCompactCardToCanvas(ctx,item,x,y,w,imgH,textH){
   fitText(ctx,name,x+w/2,y+imgH+28,w-8,12,8);
 }
 
-async function drawViewerCardToCanvas(ctx,item,x,y,w,imgH,textH){const h=imgH+textH;ctx.fillStyle="#ffffff";roundRect(ctx,x,y,w,h,4);ctx.fill();ctx.strokeStyle="#d8d1c5";ctx.lineWidth=1.2;ctx.stroke();const img=await getCachedCanvasImage(displayImageUrl(item));coverDraw(ctx,img,x+3,y+3,w-6,imgH-5);ctx.fillStyle="#ffffff";ctx.fillRect(x+3,y+imgH,w-6,textH-3);ctx.fillStyle="#3f3a33";ctx.textAlign="center";ctx.textBaseline="middle";fitText(ctx,`${item.number||""} ${item.name||""}`,x+w/2,y+imgH+textH/2,w-12,13,10)}function fitText(ctx,text,cx,cy,maxWidth,startSize,minSize){let size=startSize;while(size>minSize){ctx.font=`900 ${size}px Arial`;if(ctx.measureText(text).width<=maxWidth)break;size--}let output=text;if(ctx.measureText(output).width>maxWidth){while(output.length>1&&ctx.measureText(output+"…").width>maxWidth){output=output.slice(0,-1)}output+="…"}ctx.fillText(output,cx,cy)}function downloadCanvasAsPng(canvas,fileName){return new Promise((resolve,reject)=>{try{canvas.toBlob(blob=>{if(!blob){reject(new Error("이미지 파일을 만들지 못했습니다."));return}const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download=fileName;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1200);resolve()},"image/png")}catch(error){reject(error)}})}function switchTab(name){document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b.dataset.tab===name));document.querySelectorAll(".panel").forEach(p=>p.classList.toggle("active",p.id===name));if(name==="members"&&!memberData.length)loadMemberData();if(name==="upload"&&!fileData.length)loadFiles();if(name==="viewer"){if(!memberData.length)loadMemberData();renderViewer()}}document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>switchTab(b.dataset.tab)));loadSignatureData();
+async function drawViewerCardToCanvas(ctx,item,x,y,w,imgH,textH){const h=imgH+textH;ctx.fillStyle="#ffffff";roundRect(ctx,x,y,w,h,4);ctx.fill();ctx.strokeStyle="#d8d1c5";ctx.lineWidth=1.2;ctx.stroke();const img=await getCachedCanvasImage(displayImageUrl(item));coverDraw(ctx,img,x+3,y+3,w-6,imgH-5);ctx.fillStyle="#ffffff";ctx.fillRect(x+3,y+imgH,w-6,textH-3);ctx.fillStyle="#3f3a33";ctx.textAlign="center";ctx.textBaseline="middle";fitText(ctx,`${item.number||""} ${item.name||""}`,x+w/2,y+imgH+textH/2,w-12,13,10)}function fitText(ctx,text,cx,cy,maxWidth,startSize,minSize){let size=startSize;while(size>minSize){ctx.font=`900 ${size}px Arial`;if(ctx.measureText(text).width<=maxWidth)break;size--}let output=text;if(ctx.measureText(output).width>maxWidth){while(output.length>1&&ctx.measureText(output+"…").width>maxWidth){output=output.slice(0,-1)}output+="…"}ctx.fillText(output,cx,cy)}function downloadCanvasAsPng(canvas,fileName){return new Promise((resolve,reject)=>{try{canvas.toBlob(blob=>{if(!blob){reject(new Error("이미지 파일을 만들지 못했습니다."));return}const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download=fileName;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1200);resolve()},"image/png")}catch(error){reject(error)}})}function switchTab(name){document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b.dataset.tab===name));document.querySelectorAll(".panel").forEach(p=>p.classList.toggle("active",p.id===name));if(name==="members"&&!memberData.length)loadMemberData();if(name==="upload"&&!fileData.length)loadFiles();if(name==="viewer"){if(!memberData.length)loadMemberData();renderViewer()}}document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>switchTab(b.dataset.tab)));loadSignatureData();loadMemberData();
 </script>
 </body>
 </html>
