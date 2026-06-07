@@ -328,7 +328,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
     });
     const data = await res.json().catch(() => ({}));
     if(res.ok && data.ok){
-      location.href = data.redirect || "/thek/";
+      location.href = "/thek/links/";
       return;
     }
     message.textContent = data.message || "비밀번호가 맞지 않습니다.";
