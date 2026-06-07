@@ -225,6 +225,22 @@ a{text-decoration:none;color:inherit}button,input,select{font-family:inherit}.na
 @media(max-width:900px){.memberAdminGrid{grid-template-columns:1fr}.memberCard{grid-template-columns:30px 1fr 1fr}.memberCard .memberRankInput{grid-column:2/4}.memberMoveBtns{grid-column:1/4;justify-content:flex-end}}
 @media(max-width:560px){.memberCard{grid-template-columns:1fr}.memberHandle,.memberMoveBtns,.memberCard .memberRankInput{grid-column:auto}}
 
+
+/* personal signature rank layout */
+.personalViewerRows{display:grid;gap:12px}
+.personalViewerRow{display:grid;grid-template-columns:132px 1fr;gap:10px;align-items:stretch}
+.personalViewerLabel{min-height:118px;border:1px solid #d8d1c5;background:#f6f1e8;color:#302c26;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-weight:950}
+.personalViewerLabel.thek{background:linear-gradient(135deg,#f6efe0,#e5d7bd);border-color:#b99a5f;color:#4c3b20}
+.personalViewerLabel.showk{background:linear-gradient(135deg,#efeaff,#d9cef5);border-color:#8b6fd1;color:#4b347a}
+.personalViewerRank{display:block;font-size:19px;line-height:1.05;color:#6aaed6;margin-bottom:7px;font-weight:950}
+.personalViewerName{display:block;font-size:24px;line-height:1.05;color:#111;font-weight:950;word-break:keep-all}
+.personalViewerCount{display:block;margin-top:8px;font-size:11px;color:#746f68;font-weight:900}
+.personalViewerGrid{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;align-items:start}
+.personalViewerGrid .viewerCardName{font-size:11.5px;padding:5px 4px 7px}
+@media(max-width:1100px){.personalViewerGrid{grid-template-columns:repeat(6,1fr)}}
+@media(max-width:900px){.personalViewerRow{grid-template-columns:1fr}.personalViewerGrid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:560px){.personalViewerGrid{grid-template-columns:repeat(2,1fr)}}
+
 </style>
 </head>
 <body>
@@ -236,7 +252,7 @@ a{text-decoration:none;color:inherit}button,input,select{font-family:inherit}.na
 <section id="signature" class="panel active"><div class="box"><div class="head"><div><div class="title">시그 관리</div><div class="help">파일이름은 확장자 없이 입력합니다. 예: 200000_svip / 이미지와 음원은 같은 파일이름을 사용합니다.</div></div><div class="row"><button class="btn light" onclick="loadSignatureData()">불러오기</button><button class="btn gold" onclick="saveSignatureData()">저장</button></div></div><div class="form"><input id="newNumber" class="input" type="number" placeholder="숫자"><input id="newName" class="input" type="text" placeholder="이름"><input id="newBj" class="input" type="text" placeholder="개인방송"><input id="newMember" class="input" type="text" placeholder="멤버"><select id="newGroup" class="select"><option value="">그룹 없음</option><option value="더케이">더케이</option><option value="쇼케이">쇼케이</option></select><input id="newFileBase" class="input" type="text" placeholder="파일이름"><select id="newImageExt" class="select"><option value="png">png</option><option value="gif">gif</option></select><button class="btn" onclick="addSignatureItem()">추가</button></div></div><div class="box"><div class="head"><div class="title">시그 목록</div><input id="signatureSearch" class="input" type="text" placeholder="번호, 이름, 멤버, 그룹, 파일이름 검색" oninput="renderSignatureTable()"></div><div class="scroll"><table><thead><tr><th>이미지</th><th>번호</th><th>이름</th><th>개인방송</th><th>멤버</th><th>그룹</th><th>파일이름</th><th>이미지</th><th>관리</th></tr></thead><tbody id="signatureTableBody"></tbody></table></div></div></section>
 <section id="members" class="panel"><div class="box"><div class="head"><div><div class="title">멤버 관리</div><div class="help">멤버 존파일을 관리합니다. 저장 형식은 name, group, team, rank 입니다. 좌측은 더케이, 우측은 쇼케이이며 드래그로 순서를 바꿀 수 있습니다.</div></div><div class="row"><button class="btn light" onclick="loadMemberData()">불러오기</button><button class="btn gold" onclick="saveMemberData()">저장</button><button class="btn light" onclick="downloadMemberJson()">JSON 다운로드</button></div></div><div class="form" style="grid-template-columns:1fr 1fr 1fr 1fr auto"><input id="newMemberName" class="input" type="text" placeholder="이름"><input id="newMemberRank" class="input" type="text" placeholder="직급 예: 과장"><input id="newMemberGroup" class="input" type="text" placeholder="그룹 예: 멤버"><select id="newMemberTeam" class="select"><option value="더케이">더케이</option><option value="쇼케이">쇼케이</option></select><button class="btn" onclick="addMemberItem()">추가</button></div><div class="help">예: { "name": "에디양", "rank": "과장", "group": "멤버", "team": "더케이" }</div></div><div class="box"><div class="head"><div><div class="title">멤버 목록</div><div class="help">카드 왼쪽 손잡이를 잡고 같은 칸 안에서 순서를 바꾸거나, 다른 팀 칸으로 옮길 수 있습니다.</div></div><input id="memberSearch" class="input" type="text" placeholder="이름, 그룹, 팀, 직급 검색" oninput="renderMemberColumns()"></div><div class="memberAdminGrid"><div class="memberColumn" data-member-team="더케이"><div class="memberColumnTitle thek"><span>더케이</span><small id="memberCountThek">0명</small></div><div id="memberListThek" class="memberList" data-member-list="더케이"></div></div><div class="memberColumn" data-member-team="쇼케이"><div class="memberColumnTitle showk"><span>쇼케이</span><small id="memberCountShowk">0명</small></div><div id="memberListShowk" class="memberList" data-member-list="쇼케이"></div></div></div><pre id="memberJsonPreview" class="memberJsonPreview">[]</pre></div></section>
 <section id="upload" class="panel"><div class="box"><div class="head"><div><div class="title">업로드</div><div class="help">가능 파일: mp3, png, gif / 음원과 이미지는 같은 파일이름을 사용합니다 / 파일명 규칙: 숫자_소문자영문숫자.확장자</div></div><button class="btn light" onclick="loadFiles()">목록 새로고침</button></div><div class="upload"><input id="uploadFile" class="input" type="file" accept=".mp3,.png,.gif"><button class="btn" onclick="uploadFile()">업로드</button></div><div class="help">예: 200000_svip.mp3 와 200000_svip.png처럼 음원과 이미지는 이름을 같게 맞춥니다.</div></div><div class="box"><div class="head"><div class="title">파일 목록</div><input id="fileSearch" class="input" type="text" placeholder="파일 검색" oninput="renderFiles()"></div><div id="fileList" class="files"></div></div></section>
-<section id="viewer" class="panel"><div class="box"><div class="head"><div><div class="title">시그 뷰어</div><div class="help">게시판 업로드용 시그니처 목록 이미지를 만듭니다. 눈을 끈 시그는 다운로드 이미지에 포함되지 않습니다.</div></div><div class="viewerToolbar"><button class="btn light" onclick="loadSignatureData()">불러오기</button><button class="btn" onclick="openViewerDownloadModal()">선택 다운로드</button><button class="btn light" onclick="downloadAllViewerSections()">전체 다운로드</button></div></div><div class="row" style="margin-bottom:10px"><input id="viewerSearch" class="input" type="text" placeholder="번호, 이름, 멤버 검색" oninput="renderViewer()"><button class="btn light" onclick="showAllViewerCards()">전체 켜기</button><button class="btn light" onclick="hideVisibleViewerCards()">보이는 것 끄기</button></div><div class="memberNote">다운로드는 ZIP이 아니라 섹션별 PNG 파일로 따로 저장됩니다. 크롬에서 여러 파일 다운로드 허용 안내가 뜨면 허용을 눌러주세요.</div></div><div class="box"><div id="viewerContent" class="viewerSections"></div></div></section>
+<section id="viewer" class="panel"><div class="box"><div class="head"><div><div class="title">시그 뷰어</div><div class="help">게시판 업로드용 시그니처 목록 이미지를 만듭니다. 개인시그는 멤버 존파일의 직급 순서로 표시됩니다. 눈을 끈 시그는 다운로드 이미지에 포함되지 않습니다.</div></div><div class="viewerToolbar"><button class="btn light" onclick="loadSignatureData();loadMemberData();">불러오기</button><button class="btn" onclick="openViewerDownloadModal()">선택 다운로드</button><button class="btn light" onclick="downloadAllViewerSections()">전체 다운로드</button></div></div><div class="row" style="margin-bottom:10px"><input id="viewerSearch" class="input" type="text" placeholder="번호, 이름, 멤버 검색" oninput="renderViewer()"><button class="btn light" onclick="showAllViewerCards()">전체 켜기</button><button class="btn light" onclick="hideVisibleViewerCards()">보이는 것 끄기</button></div><div class="memberNote">다운로드는 ZIP이 아니라 섹션별 PNG 파일로 따로 저장됩니다. 크롬에서 여러 파일 다운로드 허용 안내가 뜨면 허용을 눌러주세요.</div></div><div class="box"><div id="viewerContent" class="viewerSections"></div></div></section>
 <div id="viewerDownloadModal" class="viewerModal"><div class="viewerModalBox"><div class="viewerModalHead"><div class="viewerModalTitle">다운로드 할 섹션 선택</div><button class="viewerClose" onclick="closeViewerDownloadModal()">×</button></div><div id="viewerDownloadChecks" class="viewerChecks"></div><div class="row"><button class="btn light" onclick="setViewerChecks(true)">전체 선택</button><button class="btn light" onclick="setViewerChecks(false)">전체 해제</button></div><div class="viewerModalActions"><button class="btn light" onclick="closeViewerDownloadModal()">취소</button><button class="btn" onclick="downloadCheckedViewerSections()">다운로드</button></div></div></div>
 </main>
 <script>
@@ -412,6 +428,7 @@ async function loadMemberData(){
     }
     memberData=Array.isArray(data)?data.map(normalizeMemberItem):[];
     renderMemberColumns();
+    renderViewer();
     setStatus(`멤버 ${memberData.length}명을 불러왔습니다.`);
   }catch(e){
     console.error(e);
@@ -585,6 +602,36 @@ let viewerHiddenNumbers=new Set();const viewerImageCache=new Map();function view
 
   return sections;
 }
+function memberNameKey(v){return String(v||"").trim().toLowerCase()}
+function getMemberInfoByName(name){
+  const key=memberNameKey(name);
+  const idx=memberData.findIndex(m=>memberNameKey(m.name)===key);
+  if(idx<0)return {name:String(name||"기타").trim()||"기타",rank:"",team:"",order:999999};
+  const m=memberData[idx];
+  return {name:m.name||name,rank:m.rank||"",team:normalizeTeam(m.team),order:idx};
+}
+function getPersonalRows(items,section){
+  const team=section.id==="thekpersonal"?"더케이":(section.id==="showkpersonal"?"쇼케이":"");
+  const groups=new Map();
+  items.forEach(item=>{
+    const member=String(item.member||"기타").trim()||"기타";
+    if(!groups.has(member))groups.set(member,[]);
+    groups.get(member).push(item);
+  });
+  const rows=[...groups.entries()].map(([member,arr])=>{
+    const info=getMemberInfoByName(member);
+    arr.sort((a,b)=>Number(a.number||0)-Number(b.number||0));
+    return {member,rank:info.rank,team:info.team||team,order:info.order,items:arr};
+  });
+  rows.sort((a,b)=>{
+    const ao=a.order,bo=b.order;
+    if(ao!==bo)return ao-bo;
+    const rr=String(a.rank||"").localeCompare(String(b.rank||""),"ko");
+    if(rr)return rr;
+    return String(a.member||"").localeCompare(String(b.member||""),"ko");
+  });
+  return rows;
+}
 function viewerFilterItems(items){const kw=(document.getElementById("viewerSearch")?.value||"").trim().toLowerCase();if(!kw)return items;return items.filter(item=>`${item.number||""} ${item.name||""} ${item.member||""} ${item.bj||""}`.toLowerCase().includes(kw))}function renderViewer(){
   const wrap=document.getElementById("viewerContent");
   if(!wrap)return;
@@ -594,6 +641,12 @@ function viewerFilterItems(items){const kw=(document.getElementById("viewerSearc
     const visibleCount=items.filter(isViewerVisible).length;
     if(!items.length)return"";
     const personalAttr=section.id==="thekpersonal"?' data-personal="thek"':(section.id==="showkpersonal"?' data-personal="showk"':"");
+    if(section.type==="personal"){
+      const rows=getPersonalRows(items,section);
+      const cls=section.id==="thekpersonal"?"thek":(section.id==="showkpersonal"?"showk":"");
+      const rowHtml=rows.map(row=>`<div class="personalViewerRow"><div class="personalViewerLabel ${cls}"><span class="personalViewerRank">${esc(row.rank||"직급")}</span><span class="personalViewerName">${esc(row.member)}</span><span class="personalViewerCount">${row.items.filter(isViewerVisible).length}/${row.items.length}개</span></div><div class="personalViewerGrid">${row.items.map(item=>renderViewerCard(item)).join("")}</div></div>`).join("");
+      return `<div><div class="viewerSectionTitle"${personalAttr}>${esc(section.label)} (${visibleCount}/${items.length}개)</div><div class="personalViewerRows">${rowHtml}</div></div>`;
+    }
     return `<div><div class="viewerSectionTitle"${personalAttr}>${esc(section.label)} (${visibleCount}/${items.length}개)</div><div class="viewerGrid">${items.map(item=>renderViewerCard(item)).join("")}</div></div>`;
   }).join("");
   wrap.innerHTML=html||`<div class="help">표시할 시그가 없습니다. 시그 데이터를 먼저 불러와주세요.</div>`;
@@ -688,34 +741,28 @@ function viewerFileName(section,count){const safe=section.label.replace(/[\\/:*?
   return canvas;
 }
 async function makePersonalSectionCanvas(section,items){
-  const groups=new Map();
-  items.forEach(item=>{
-    const member=String(item.member||"기타").trim()||"기타";
-    if(!groups.has(member))groups.set(member,[]);
-    groups.get(member).push(item);
-  });
-
+  const rowsData=getPersonalRows(items,section);
   const isShowK=section.id==="showkpersonal";
   const isTheK=section.id==="thekpersonal";
 
-  const cols=9;
+  const cols=8;
   const pad=24;
-  const gapX=8;
-  const gapY=10;
-  const labelW=118;
-  const cardW=118;
-  const imgH=66;
-  const textH=36;
+  const gapX=10;
+  const gapY=12;
+  const labelW=136;
+  const cardW=136;
+  const imgH=76;
+  const textH=42;
   const cardH=imgH+textH;
-  const headerH=44;
-  const groupGap=13;
+  const headerH=46;
+  const groupGap=14;
 
   const width=pad*2+labelW+gapX+cols*cardW+(cols-1)*gapX;
   let height=pad+headerH+14+pad;
 
-  for(const arr of groups.values()){
-    const rows=Math.max(1,Math.ceil(arr.length/cols));
-    height+=rows*cardH+Math.max(0,rows-1)*gapY+groupGap;
+  for(const row of rowsData){
+    const lineRows=Math.max(1,Math.ceil(row.items.length/cols));
+    height+=lineRows*cardH+Math.max(0,lineRows-1)*gapY+groupGap;
   }
 
   const canvas=document.createElement("canvas");
@@ -727,8 +774,6 @@ async function makePersonalSectionCanvas(section,items){
   ctx.fillRect(0,0,width,height);
 
   let y=pad;
-
-  // 개인시그 제목도 좌측 정렬
   ctx.fillStyle="#111111";
   ctx.font="900 34px Arial";
   ctx.textAlign="left";
@@ -736,11 +781,11 @@ async function makePersonalSectionCanvas(section,items){
   ctx.fillText(section.label,pad,y+headerH/2-2);
   y+=headerH+14;
 
-  for(const [member,arr] of groups){
-    const rows=Math.max(1,Math.ceil(arr.length/cols));
-    const groupH=rows*cardH+Math.max(0,rows-1)*gapY;
+  for(const rowData of rowsData){
+    const arr=rowData.items;
+    const lineRows=Math.max(1,Math.ceil(arr.length/cols));
+    const groupH=lineRows*cardH+Math.max(0,lineRows-1)*gapY;
 
-    // 더케이 / 쇼케이 이름 카드 디자인 구분
     if(isTheK){
       const grad=ctx.createLinearGradient(pad,y,pad+labelW,y+groupH);
       grad.addColorStop(0,"#f6efe0");
@@ -770,12 +815,17 @@ async function makePersonalSectionCanvas(section,items){
       ctx.fillStyle="#4c3b20";
     }
 
-    ctx.font="900 18px Arial";
     ctx.textAlign="center";
     ctx.textBaseline="middle";
-    fitText(ctx,member,pad+labelW/2,y+groupH/2-12,labelW-16,18,11);
-    ctx.font="800 13px Arial";
-    ctx.fillText(`(${arr.length}개)`,pad+labelW/2,y+groupH/2+15);
+    ctx.fillStyle="#6aaed6";
+    ctx.font="900 21px Arial";
+    fitText(ctx,rowData.rank||"직급",pad+labelW/2,y+groupH/2-24,labelW-16,21,12);
+    ctx.fillStyle="#111111";
+    ctx.font="900 26px Arial";
+    fitText(ctx,rowData.member,pad+labelW/2,y+groupH/2+4,labelW-16,26,14);
+    ctx.fillStyle="#746f68";
+    ctx.font="800 12px Arial";
+    ctx.fillText(`(${arr.length}개)`,pad+labelW/2,y+groupH/2+31);
 
     for(let i=0;i<arr.length;i++){
       const item=arr[i];
@@ -820,7 +870,7 @@ async function drawViewerCompactCardToCanvas(ctx,item,x,y,w,imgH,textH){
   fitText(ctx,name,x+w/2,y+imgH+28,w-8,12,8);
 }
 
-async function drawViewerCardToCanvas(ctx,item,x,y,w,imgH,textH){const h=imgH+textH;ctx.fillStyle="#ffffff";roundRect(ctx,x,y,w,h,4);ctx.fill();ctx.strokeStyle="#d8d1c5";ctx.lineWidth=1.2;ctx.stroke();const img=await getCachedCanvasImage(displayImageUrl(item));coverDraw(ctx,img,x+3,y+3,w-6,imgH-5);ctx.fillStyle="#ffffff";ctx.fillRect(x+3,y+imgH,w-6,textH-3);ctx.fillStyle="#3f3a33";ctx.textAlign="center";ctx.textBaseline="middle";fitText(ctx,`${item.number||""} ${item.name||""}`,x+w/2,y+imgH+textH/2,w-12,13,10)}function fitText(ctx,text,cx,cy,maxWidth,startSize,minSize){let size=startSize;while(size>minSize){ctx.font=`900 ${size}px Arial`;if(ctx.measureText(text).width<=maxWidth)break;size--}let output=text;if(ctx.measureText(output).width>maxWidth){while(output.length>1&&ctx.measureText(output+"…").width>maxWidth){output=output.slice(0,-1)}output+="…"}ctx.fillText(output,cx,cy)}function downloadCanvasAsPng(canvas,fileName){return new Promise((resolve,reject)=>{try{canvas.toBlob(blob=>{if(!blob){reject(new Error("이미지 파일을 만들지 못했습니다."));return}const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download=fileName;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1200);resolve()},"image/png")}catch(error){reject(error)}})}function switchTab(name){document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b.dataset.tab===name));document.querySelectorAll(".panel").forEach(p=>p.classList.toggle("active",p.id===name));if(name==="members"&&!memberData.length)loadMemberData();if(name==="upload"&&!fileData.length)loadFiles();if(name==="viewer")renderViewer()}document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>switchTab(b.dataset.tab)));loadSignatureData();
+async function drawViewerCardToCanvas(ctx,item,x,y,w,imgH,textH){const h=imgH+textH;ctx.fillStyle="#ffffff";roundRect(ctx,x,y,w,h,4);ctx.fill();ctx.strokeStyle="#d8d1c5";ctx.lineWidth=1.2;ctx.stroke();const img=await getCachedCanvasImage(displayImageUrl(item));coverDraw(ctx,img,x+3,y+3,w-6,imgH-5);ctx.fillStyle="#ffffff";ctx.fillRect(x+3,y+imgH,w-6,textH-3);ctx.fillStyle="#3f3a33";ctx.textAlign="center";ctx.textBaseline="middle";fitText(ctx,`${item.number||""} ${item.name||""}`,x+w/2,y+imgH+textH/2,w-12,13,10)}function fitText(ctx,text,cx,cy,maxWidth,startSize,minSize){let size=startSize;while(size>minSize){ctx.font=`900 ${size}px Arial`;if(ctx.measureText(text).width<=maxWidth)break;size--}let output=text;if(ctx.measureText(output).width>maxWidth){while(output.length>1&&ctx.measureText(output+"…").width>maxWidth){output=output.slice(0,-1)}output+="…"}ctx.fillText(output,cx,cy)}function downloadCanvasAsPng(canvas,fileName){return new Promise((resolve,reject)=>{try{canvas.toBlob(blob=>{if(!blob){reject(new Error("이미지 파일을 만들지 못했습니다."));return}const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download=fileName;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1200);resolve()},"image/png")}catch(error){reject(error)}})}function switchTab(name){document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b.dataset.tab===name));document.querySelectorAll(".panel").forEach(p=>p.classList.toggle("active",p.id===name));if(name==="members"&&!memberData.length)loadMemberData();if(name==="upload"&&!fileData.length)loadFiles();if(name==="viewer"){if(!memberData.length)loadMemberData();renderViewer()}}document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>switchTab(b.dataset.tab)));loadSignatureData();
 </script>
 </body>
 </html>
