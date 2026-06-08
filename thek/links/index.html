@@ -382,7 +382,7 @@ h1 {
   right: 18px;
   bottom: 18px;
   z-index: 65;
-  width: 260px;
+  width: 278px;
   min-height: 46px;
   padding: 10px 12px;
   display: flex;
@@ -401,11 +401,14 @@ h1 {
   white-space: nowrap;
 }
 #volumeText {
-  width: 34px;
+  flex: 0 0 36px;
+  width: 36px;
   text-align: right;
 }
 .volumecontrol input {
+  flex: 0 0 110px;
   width: 110px;
+  min-width: 0;
   accent-color: var(--gold);
 }
 .volumestop, .topbtn {
@@ -486,14 +489,14 @@ h1 {
   .volumecontrol {
     right: 9px;
     bottom: 9px;
-    width: 202px;
+    width: 222px;
     min-height: 38px;
     padding: 7px 8px;
     gap: 5px;
   }
   .volumecontrol span { font-size: 9px; }
-  #volumeText { width: 28px; }
-  .volumecontrol input { width: 70px; }
+  #volumeText { flex-basis: 30px; width: 30px; }
+  .volumecontrol input { flex-basis: 76px; width: 76px; min-width: 0; }
   .volumestop { min-width: 29px; height: 21px; padding: 0 4px; font-size: 8px; }
   .topbtn { min-width: 21px; width: 21px; height: 21px; font-size: 10px; }
 }
