@@ -161,10 +161,13 @@ h1 {
   letter-spacing: .08em;
 }
 .topbox {
+  position: sticky;
+  top: 86px;
+  z-index: 18;
   margin-top: 18px;
   padding: 14px;
   border: 1px solid rgba(31,29,25,.13);
-  background: rgba(255,255,255,.66);
+  background: rgba(255,255,255,.84);
   backdrop-filter: blur(18px);
   box-shadow: 0 16px 44px rgba(29,25,18,.08);
   display: grid;
@@ -346,12 +349,12 @@ h1 {
   right: 18px;
   bottom: 18px;
   z-index: 65;
-  min-width: 230px;
+  min-width: 260px;
   min-height: 46px;
   padding: 10px 12px;
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 7px;
   border: 1px solid rgba(31,29,25,.16);
   background: rgba(255,255,255,.86);
   color: #3d382f;
@@ -368,7 +371,7 @@ h1 {
   width: 110px;
   accent-color: var(--gold);
 }
-.volumestop {
+.volumestop, .topbtn {
   flex: none;
   min-width: 34px;
   height: 24px;
@@ -380,7 +383,13 @@ h1 {
   font-weight: 950;
   cursor: pointer;
 }
-.volumestop:hover {
+.topbtn {
+  min-width: 24px;
+  width: 24px;
+  padding: 0;
+  font-size: 12px;
+}
+.volumestop:hover, .topbtn:hover {
   background: #1f1d19;
   color: #fffaf0;
 }
@@ -420,7 +429,7 @@ h1 {
   .kicker { font-size: 9px; letter-spacing: .20em; margin-bottom: 8px; }
   h1 { font-size: 34px; letter-spacing: .14em; }
   .herosub { margin-top: 9px; font-size: 11px; }
-  .topbox { margin-top: 10px; padding: 8px; gap: 6px; grid-template-columns: 1fr 1fr; }
+  .topbox { top: 70px; margin-top: 10px; padding: 8px; gap: 6px; grid-template-columns: 1fr 1fr; }
   #searchInput { grid-column: 1 / -1; min-height: 36px; font-size: 11px; padding: 0 10px; }
   .guide, .sortbtn { min-height: 34px; padding: 0 8px; font-size: 10px; }
   .rangetabs { margin-top: 7px; gap: 5px; }
@@ -436,14 +445,15 @@ h1 {
   .volumecontrol {
     right: 9px;
     bottom: 9px;
-    min-width: 178px;
+    min-width: 202px;
     min-height: 38px;
     padding: 7px 8px;
-    gap: 6px;
+    gap: 5px;
   }
   .volumecontrol span { font-size: 9px; }
-  .volumecontrol input { width: 78px; }
+  .volumecontrol input { width: 70px; }
   .volumestop { min-width: 29px; height: 21px; padding: 0 4px; font-size: 8px; }
+  .topbtn { min-width: 21px; width: 21px; height: 21px; font-size: 10px; }
 }
 @media (max-width: 420px) {
   .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -484,6 +494,7 @@ h1 {
   <span>음량</span>
   <input id="volumeControl" type="range" min="0" max="1" step="0.01" value="0.3" />
   <span id="volumeText">30%</span>
+  <button id="volumeTopBtn" class="topbtn" type="button" aria-label="맨 위로 이동">↑</button>
   <button id="volumeStopBtn" class="volumestop" type="button">끄기</button>
 </div>
 <audio id="player" playsinline preload="none"></audio>
@@ -520,6 +531,7 @@ const toast = document.getElementById("toast");
 const player = document.getElementById("player");
 const volumeControl = document.getElementById("volumeControl");
 const volumeText = document.getElementById("volumeText");
+const volumeTopBtn = document.getElementById("volumeTopBtn");
 const volumeStopBtn = document.getElementById("volumeStopBtn");
 
 function showToast(text) {
@@ -823,6 +835,10 @@ volumeControl.addEventListener("input", event => {
   volume = Number(event.target.value);
   volumeText.textContent = Math.round(volume * 100) + "%";
   player.volume = volume;
+});
+
+volumeTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 volumeStopBtn.addEventListener("click", stopAudio);
