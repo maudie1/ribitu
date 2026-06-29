@@ -406,6 +406,141 @@ h1 {
   font-size: 14px;
   font-weight: 950;
 }
+
+.random-player-btn {
+  position: fixed;
+  right: 18px;
+  bottom: 76px;
+  z-index: 66;
+  width: 278px;
+  min-height: 42px;
+  border: 1px solid rgba(31,29,25,.16);
+  background: linear-gradient(135deg, #191713, #837052);
+  color: #fffaf0;
+  font-size: 12px;
+  font-weight: 950;
+  letter-spacing: .04em;
+  cursor: pointer;
+  box-shadow: 0 18px 40px rgba(29,25,18,.16);
+  backdrop-filter: blur(16px);
+  transition: .14s ease;
+}
+.random-player-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 22px 46px rgba(29,25,18,.20);
+}
+.random-modal-backdrop {
+  position: fixed;
+  right: 18px;
+  bottom: 126px;
+  z-index: 67;
+  display: none;
+  width: 278px;
+  padding: 0;
+  background: transparent;
+  pointer-events: none;
+}
+.random-modal-backdrop.show { display: block; }
+.random-modal {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(31,29,25,.16);
+  background: rgba(255,255,255,.92);
+  color: var(--ink);
+  box-shadow: 0 18px 40px rgba(29,25,18,.18);
+  backdrop-filter: blur(16px);
+  pointer-events: auto;
+}
+.random-close-btn {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgba(31,29,25,.14);
+  background: rgba(31,29,25,.07);
+  color: #3d382f;
+  font-size: 14px;
+  font-weight: 950;
+  line-height: 1;
+  cursor: pointer;
+}
+.random-close-btn:hover {
+  background: #1f1d19;
+  color: #fffaf0;
+}
+.random-image-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(31,29,25,.12);
+  background: linear-gradient(135deg, #ded8cc, #f6f2ea);
+}
+.random-image-wrap .noimage {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+}
+.random-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+.random-title {
+  min-height: 28px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #25221d;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 950;
+  line-height: 1.25;
+  word-break: keep-all;
+}
+.random-controls {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1.25fr 1fr;
+  gap: 5px;
+}
+.random-control-btn {
+  min-height: 31px;
+  border: 1px solid rgba(31,29,25,.15);
+  background: rgba(255,255,255,.74);
+  color: #3d382f;
+  font-size: 10px;
+  font-weight: 950;
+  cursor: pointer;
+  transition: .14s ease;
+}
+.random-control-btn:hover {
+  transform: translateY(-1px);
+  background: #1f1d19;
+  color: #fffaf0;
+}
+.random-control-btn.main {
+  border-color: transparent;
+  background: linear-gradient(135deg, #191713, #837052);
+  color: #fffaf0;
+}
+.random-volume-row {
+  display: none;
+}
+.random-status {
+  min-height: 16px;
+  margin-top: 7px;
+  color: #706b61;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 850;
+}
+
 .volumecontrol {
   position: fixed;
   right: 18px;
@@ -531,6 +666,43 @@ h1 {
   .volumestop { min-width: 29px; height: 21px; padding: 0 4px; font-size: 8px; }
   .topbtn { min-width: 21px; width: 21px; height: 21px; font-size: 10px; }
 }
+
+@media (max-width: 560px) {
+  .random-player-btn {
+    right: 9px;
+    bottom: 55px;
+    width: 222px;
+    min-height: 34px;
+    font-size: 10px;
+  }
+  .random-modal-backdrop {
+    right: 9px;
+    bottom: 94px;
+    width: 222px;
+  }
+  .random-modal {
+    padding: 8px;
+  }
+  .random-title {
+    min-height: 24px;
+    margin-top: 7px;
+    font-size: 10px;
+  }
+  .random-controls {
+    margin-top: 7px;
+    gap: 4px;
+  }
+  .random-control-btn {
+    min-height: 28px;
+    font-size: 9px;
+  }
+  .random-status {
+    min-height: 14px;
+    margin-top: 6px;
+    font-size: 8px;
+  }
+}
+
 @media (max-width: 420px) {
   .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
@@ -573,6 +745,28 @@ h1 {
   <section class="content" id="content"></section>
 </main>
 <div class="toast" id="toast">복사되었습니다</div>
+
+<button id="randomPlayerBtn" class="random-player-btn" type="button">🎲 랜덤 재생</button>
+<div id="randomModal" class="random-modal-backdrop" aria-hidden="true">
+  <div class="random-modal" role="dialog" aria-modal="true" aria-label="랜덤 시그 재생">
+    <button id="randomCloseBtn" class="random-close-btn" type="button" aria-label="랜덤 재생 닫기">×</button>
+    <div id="randomImageWrap" class="random-image-wrap">
+      <div class="noimage">재생 대기 중</div>
+    </div>
+    <div id="randomTitle" class="random-title">랜덤 시그 재생</div>
+    <div class="random-controls">
+      <button id="randomPrevBtn" class="random-control-btn" type="button">이전</button>
+      <button id="randomPlayToggleBtn" class="random-control-btn main" type="button">재생</button>
+      <button id="randomNextBtn" class="random-control-btn" type="button">다음</button>
+    </div>
+    <div class="random-volume-row">
+      <span>볼륨</span>
+      <input id="randomVolumeControl" type="range" min="0" max="1" step="0.01" value="0.3" />
+      <span id="randomVolumeText">30%</span>
+    </div>
+    <div id="randomStatus" class="random-status">버튼을 누르면 랜덤으로 재생됩니다</div>
+  </div>
+</div>
 <div class="volumecontrol" aria-label="음량 조절">
   <span>음량</span>
   <input id="volumeControl" type="range" min="0" max="1" step="0.01" value="0.3" />
@@ -623,6 +817,25 @@ const volumeTopBtn = document.getElementById("volumeTopBtn");
 const volumeStopBtn = document.getElementById("volumeStopBtn");
 const noticeBar = document.getElementById("noticeBar");
 const noticeText = document.getElementById("noticeText");
+
+const randomPlayerBtn = document.getElementById("randomPlayerBtn");
+const randomModal = document.getElementById("randomModal");
+const randomCloseBtn = document.getElementById("randomCloseBtn");
+const randomImageWrap = document.getElementById("randomImageWrap");
+const randomTitle = document.getElementById("randomTitle");
+const randomPrevBtn = document.getElementById("randomPrevBtn");
+const randomPlayToggleBtn = document.getElementById("randomPlayToggleBtn");
+const randomNextBtn = document.getElementById("randomNextBtn");
+const randomVolumeControl = document.getElementById("randomVolumeControl");
+const randomVolumeText = document.getElementById("randomVolumeText");
+const randomStatus = document.getElementById("randomStatus");
+
+let randomQueue = [];
+let randomHistory = [];
+let randomHistoryIndex = -1;
+let randomCurrentItem = null;
+let randomActive = false;
+
 
 
 function applyNotice() {
@@ -716,7 +929,12 @@ function prepareAudioFirst(url) {
   document.head.appendChild(preloadLink);
 }
 
-function playAudio(url, card) {
+function playAudio(url, card, options = {}) {
+  if (!options.random) {
+    randomActive = false;
+    updateRandomPlayButton();
+  }
+
   if (!url) {
     showToast("등록된 음원이 없습니다");
     return;
@@ -764,6 +982,170 @@ function stopAudio() {
 
   currentUrl = "";
   currentCard = null;
+}
+
+
+function getPlayableRandomItems() {
+  return allData.filter(item => item && item.audio && String(item.audio).trim() !== "");
+}
+
+function shuffleItems(items) {
+  const arr = [...items];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function openRandomModal() {
+  randomModal.classList.add("show");
+  randomModal.setAttribute("aria-hidden", "false");
+}
+
+function closeRandomModal() {
+  randomActive = false;
+  randomModal.classList.remove("show");
+  randomModal.setAttribute("aria-hidden", "true");
+  stopAudio();
+  updateRandomPlayButton();
+}
+
+function updateRandomPlayButton() {
+  if (!randomPlayToggleBtn) return;
+  randomPlayToggleBtn.textContent = randomActive && !player.paused ? "일시정지" : "재생";
+}
+
+function setRandomStatus(text) {
+  randomStatus.textContent = text || "";
+}
+
+function renderRandomImage(item) {
+  randomImageWrap.innerHTML = "";
+  const candidates = getImageCandidates(item && item.image);
+  if (!candidates.length) {
+    randomImageWrap.appendChild(createNoImage());
+    return;
+  }
+  const img = document.createElement("img");
+  img.className = "random-image";
+  img.alt = item.name || "";
+  applyImageWithFallback(img, candidates);
+  randomImageWrap.appendChild(img);
+}
+
+function updateRandomView(item) {
+  if (!item) {
+    randomImageWrap.innerHTML = "";
+    randomImageWrap.appendChild(createNoImage());
+    randomTitle.textContent = "랜덤 시그 재생";
+    setRandomStatus("재생할 시그가 없습니다");
+    return;
+  }
+  renderRandomImage(item);
+  randomTitle.textContent = `${item.number || "-"} ${item.name || "이름 없음"}`;
+  setRandomStatus("랜덤 반복 재생 중");
+}
+
+function rebuildRandomQueue() {
+  const playable = getPlayableRandomItems();
+  const currentAudio = randomCurrentItem && randomCurrentItem.audio;
+  randomQueue = shuffleItems(playable.filter(item => item.audio !== currentAudio));
+  if (!randomQueue.length && playable.length) randomQueue = shuffleItems(playable);
+}
+
+function playRandomItem(item, fromHistory = false) {
+  if (!item || !item.audio) {
+    showToast("재생할 음원이 없습니다");
+    return;
+  }
+
+  randomCurrentItem = item;
+  randomActive = true;
+  updateRandomView(item);
+
+  if (!fromHistory) {
+    randomHistory = randomHistory.slice(0, randomHistoryIndex + 1);
+    randomHistory.push(item);
+    randomHistoryIndex = randomHistory.length - 1;
+  }
+
+  playAudio(item.audio, null, { random: true });
+  updateRandomPlayButton();
+}
+
+function playRandomNext() {
+  if (randomHistoryIndex < randomHistory.length - 1) {
+    randomHistoryIndex += 1;
+    playRandomItem(randomHistory[randomHistoryIndex], true);
+    return;
+  }
+
+  if (!randomQueue.length) rebuildRandomQueue();
+  const nextItem = randomQueue.shift();
+  playRandomItem(nextItem, false);
+}
+
+function playRandomPrev() {
+  if (randomHistoryIndex <= 0) {
+    showToast("이전 시그가 없습니다");
+    return;
+  }
+  randomHistoryIndex -= 1;
+  playRandomItem(randomHistory[randomHistoryIndex], true);
+}
+
+function startRandomPlayer() {
+  openRandomModal();
+  const playable = getPlayableRandomItems();
+  if (!playable.length) {
+    updateRandomView(null);
+    showToast("재생할 음원이 없습니다");
+    return;
+  }
+
+  if (randomCurrentItem && currentUrl === randomCurrentItem.audio && player.src) {
+    randomActive = true;
+    updateRandomView(randomCurrentItem);
+    player.play().catch(() => {
+      randomActive = false;
+      updateRandomPlayButton();
+    });
+    updateRandomPlayButton();
+    return;
+  }
+
+  randomQueue = [];
+  playRandomNext();
+}
+
+function toggleRandomPlay() {
+  if (!randomCurrentItem || !currentUrl) {
+    playRandomNext();
+    return;
+  }
+
+  if (player.paused) {
+    randomActive = true;
+    player.play().catch(() => {
+      randomActive = false;
+      updateRandomPlayButton();
+    });
+  } else {
+    randomActive = false;
+    player.pause();
+  }
+  updateRandomPlayButton();
+}
+
+function syncVolumeDisplays(value) {
+  const safeValue = Math.max(0, Math.min(1, Number(value) || 0));
+  volume = safeValue;
+  volumeControl.value = safeValue;
+  randomVolumeControl.value = safeValue;
+  volumeText.textContent = Math.round(safeValue * 100) + "%";
+  randomVolumeText.textContent = Math.round(safeValue * 100) + "%";
+  player.volume = safeValue;
 }
 
 function createTabs() {
@@ -938,20 +1320,35 @@ bjSortBtn.addEventListener("click", () => {
   render();
 });
 volumeControl.addEventListener("input", event => {
-  volume = Number(event.target.value);
-  volumeText.textContent = Math.round(volume * 100) + "%";
-  player.volume = volume;
+  syncVolumeDisplays(event.target.value);
 });
 
 volumeTopBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-volumeStopBtn.addEventListener("click", stopAudio);
+volumeStopBtn.addEventListener("click", () => {
+  randomActive = false;
+  stopAudio();
+  updateRandomPlayButton();
+});
 
-player.addEventListener("playing", setPlayingState);
-player.addEventListener("ended", stopAudio);
-player.addEventListener("error", stopAudio);
+player.addEventListener("playing", () => {
+  setPlayingState();
+  updateRandomPlayButton();
+});
+player.addEventListener("ended", () => {
+  if (randomActive) {
+    playRandomNext();
+  } else {
+    stopAudio();
+  }
+});
+player.addEventListener("error", () => {
+  randomActive = false;
+  stopAudio();
+  updateRandomPlayButton();
+});
 
 searchInput.addEventListener("input", () => {
   updateSearchClearButton();
@@ -963,6 +1360,37 @@ searchClearBtn.addEventListener("click", () => {
   updateSearchClearButton();
   render();
   searchInput.focus();
+});
+
+
+randomPlayerBtn.addEventListener("click", () => {
+  if (randomModal.classList.contains("show") && randomCurrentItem) {
+    randomActive = true;
+    if (player.paused) {
+      player.play().catch(() => {
+        randomActive = false;
+        updateRandomPlayButton();
+      });
+    }
+    updateRandomPlayButton();
+    return;
+  }
+  startRandomPlayer();
+});
+randomCloseBtn.addEventListener("click", closeRandomModal);
+randomPrevBtn.addEventListener("click", playRandomPrev);
+randomPlayToggleBtn.addEventListener("click", toggleRandomPlay);
+randomNextBtn.addEventListener("click", playRandomNext);
+randomVolumeControl.addEventListener("input", event => {
+  syncVolumeDisplays(event.target.value);
+});
+randomModal.addEventListener("click", event => {
+  if (event.target === randomModal) closeRandomModal();
+});
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape" && randomModal.classList.contains("show")) {
+    closeRandomModal();
+  }
 });
 
 init();
