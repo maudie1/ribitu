@@ -2,7 +2,7 @@
   "version": 1,
   "teamId": "showkey",
   "teamName": "쇼케이",
-  "updatedAt": "2026-07-20 14:37:27",
+  "updatedAt": "2026-07-20 14:47:23",
   "seasons": [
     {
       "season": 10,
@@ -5691,6 +5691,41 @@
             "salary": 11572653,
             "bonusFactor": 373424,
             "rate": "31.0"
+          },
+          {
+            "rank": 11,
+            "name": "한유나",
+            "salary": 6997245,
+            "bonusFactor": 224229,
+            "rate": "31.2"
+          },
+          {
+            "rank": 12,
+            "name": "도예빈",
+            "salary": 4908255,
+            "bonusFactor": 252875,
+            "rate": "19.4"
+          },
+          {
+            "rank": 13,
+            "name": "노두식",
+            "salary": 2475049,
+            "bonusFactor": 184018,
+            "rate": "13.5"
+          },
+          {
+            "rank": 14,
+            "name": "송유이",
+            "salary": 949400,
+            "bonusFactor": 259798,
+            "rate": "3.7"
+          },
+          {
+            "rank": 15,
+            "name": "강바비",
+            "salary": -5851460,
+            "bonusFactor": 72357,
+            "rate": "-80.9"
           }
         ]
       },
