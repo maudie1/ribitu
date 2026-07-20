@@ -1,0 +1,5495 @@
+{
+  "version": 1,
+  "teamId": "showkey",
+  "teamName": "쇼케이",
+  "updatedAt": "2026-07-20 14:22:56",
+  "seasons": [
+    {
+      "season": 10,
+      "sheetName": "시즌 10",
+      "completedRound": 3,
+      "rounds": [
+        {
+          "index": 0,
+          "key": "rank_match",
+          "label": "직급전",
+          "date": "",
+          "content": "직급전"
+        },
+        {
+          "index": 1,
+          "key": "round_1",
+          "label": "1회",
+          "date": "",
+          "content": "1회"
+        },
+        {
+          "index": 2,
+          "key": "round_2",
+          "label": "2회",
+          "date": "",
+          "content": "2회"
+        },
+        {
+          "index": 3,
+          "key": "round_3",
+          "label": "3회",
+          "date": "",
+          "content": "3회"
+        }
+      ],
+      "ranking": {
+        "contribution": [],
+        "salary": []
+      },
+      "members": [
+        {
+          "order": 1,
+          "no": 1,
+          "name": "제니",
+          "position": "부장",
+          "rate": "13.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "",
+              "content": "직급전",
+              "position": "부장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "",
+              "content": "1회",
+              "position": "부장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "",
+              "content": "2회",
+              "position": "부장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "",
+              "content": "3회",
+              "position": "부장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 0,
+            "contribution": 0,
+            "bonusPenalty": 0,
+            "salary": 0,
+            "totalSalary": 0,
+            "diff": 0
+          }
+        },
+        {
+          "order": 2,
+          "no": 2,
+          "name": "도예빈",
+          "position": "차장",
+          "rate": "10.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "",
+              "content": "직급전",
+              "position": "차장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "",
+              "content": "1회",
+              "position": "차장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "",
+              "content": "2회",
+              "position": "차장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "",
+              "content": "3회",
+              "position": "차장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 0,
+            "contribution": 0,
+            "bonusPenalty": 0,
+            "salary": 0,
+            "totalSalary": 0,
+            "diff": 0
+          }
+        },
+        {
+          "order": 3,
+          "no": 3,
+          "name": "재온",
+          "position": "과장",
+          "rate": "8.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "",
+              "content": "직급전",
+              "position": "과장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "",
+              "content": "1회",
+              "position": "과장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "",
+              "content": "2회",
+              "position": "과장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "",
+              "content": "3회",
+              "position": "과장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 0,
+            "contribution": 0,
+            "bonusPenalty": 0,
+            "salary": 0,
+            "totalSalary": 0,
+            "diff": 0
+          }
+        },
+        {
+          "order": 4,
+          "no": 4,
+          "name": "서단",
+          "position": "팀장",
+          "rate": "6.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "",
+              "content": "직급전",
+              "position": "팀장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "",
+              "content": "1회",
+              "position": "팀장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "",
+              "content": "2회",
+              "position": "팀장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "",
+              "content": "3회",
+              "position": "팀장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 0,
+            "contribution": 0,
+            "bonusPenalty": 0,
+            "salary": 0,
+            "totalSalary": 0,
+            "diff": 0
+          }
+        },
+        {
+          "order": 5,
+          "no": 5,
+          "name": "정인",
+          "position": "비실",
+          "rate": "4.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "",
+              "content": "직급전",
+              "position": "비실",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "",
+              "content": "1회",
+              "position": "비실",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "",
+              "content": "2회",
+              "position": "비실",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "",
+              "content": "3회",
+              "position": "비실",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 0,
+            "contribution": 0,
+            "bonusPenalty": 0,
+            "salary": 0,
+            "totalSalary": 0,
+            "diff": 0
+          }
+        },
+        {
+          "order": 6,
+          "no": 6,
+          "name": "쏘피",
+          "position": "대리",
+          "rate": "2.2%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "",
+              "content": "직급전",
+              "position": "대리",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "",
+              "content": "1회",
+              "position": "대리",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "",
+              "content": "2회",
+              "position": "대리",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "",
+              "content": "3회",
+              "position": "대리",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 0,
+            "contribution": 0,
+            "bonusPenalty": 0,
+            "salary": 0,
+            "totalSalary": 0,
+            "diff": 0
+          }
+        },
+        {
+          "order": 7,
+          "no": 7,
+          "name": "이로",
+          "position": "주임",
+          "rate": "1.8%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "",
+              "content": "직급전",
+              "position": "주임",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "",
+              "content": "1회",
+              "position": "주임",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "",
+              "content": "2회",
+              "position": "주임",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "",
+              "content": "3회",
+              "position": "주임",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 0,
+            "contribution": 0,
+            "bonusPenalty": 0,
+            "salary": 0,
+            "totalSalary": 0,
+            "diff": 0
+          }
+        },
+        {
+          "order": 8,
+          "no": 8,
+          "name": "송유이",
+          "position": "상사원",
+          "rate": "1.5%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "",
+              "content": "직급전",
+              "position": "상사원",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "",
+              "content": "1회",
+              "position": "상사원",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "",
+              "content": "2회",
+              "position": "상사원",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "",
+              "content": "3회",
+              "position": "상사원",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 0,
+            "contribution": 0,
+            "bonusPenalty": 0,
+            "salary": 0,
+            "totalSalary": 0,
+            "diff": 0
+          }
+        },
+        {
+          "order": 9,
+          "no": 9,
+          "name": "코코",
+          "position": "하사원",
+          "rate": "1.2%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "",
+              "content": "직급전",
+              "position": "하사원",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "",
+              "content": "1회",
+              "position": "하사원",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "",
+              "content": "2회",
+              "position": "하사원",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "",
+              "content": "3회",
+              "position": "하사원",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 0,
+            "contribution": 0,
+            "bonusPenalty": 0,
+            "salary": 0,
+            "totalSalary": 0,
+            "diff": 0
+          }
+        },
+        {
+          "order": 10,
+          "no": 10,
+          "name": "새봄",
+          "position": "인턴장",
+          "rate": "1.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "",
+              "content": "직급전",
+              "position": "인턴장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "",
+              "content": "1회",
+              "position": "인턴장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "",
+              "content": "2회",
+              "position": "인턴장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "",
+              "content": "3회",
+              "position": "인턴장",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 0,
+            "contribution": 0,
+            "bonusPenalty": 0,
+            "salary": 0,
+            "totalSalary": 0,
+            "diff": 0
+          }
+        },
+        {
+          "order": 11,
+          "no": 11,
+          "name": "도하정",
+          "position": "상인턴",
+          "rate": "1.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "",
+              "content": "직급전",
+              "position": "상인턴",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "",
+              "content": "1회",
+              "position": "상인턴",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "",
+              "content": "2회",
+              "position": "상인턴",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "",
+              "content": "3회",
+              "position": "상인턴",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 0,
+            "contribution": 0,
+            "bonusPenalty": 0,
+            "salary": 0,
+            "totalSalary": 0,
+            "diff": 0
+          }
+        },
+        {
+          "order": 12,
+          "no": 12,
+          "name": "유은",
+          "position": "하인턴",
+          "rate": "시급",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "",
+              "content": "직급전",
+              "position": "하인턴",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "",
+              "content": "1회",
+              "position": "하인턴",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "",
+              "content": "2회",
+              "position": "하인턴",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "",
+              "content": "3회",
+              "position": "하인턴",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 0,
+            "contribution": 0,
+            "bonusPenalty": 0,
+            "salary": 0,
+            "totalSalary": 0,
+            "diff": 0
+          }
+        },
+        {
+          "order": 13,
+          "no": 13,
+          "name": "송화양",
+          "position": "",
+          "rate": "",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "",
+              "content": "직급전",
+              "position": "",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "",
+              "content": "1회",
+              "position": "",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "",
+              "content": "2회",
+              "position": "",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "",
+              "content": "3회",
+              "position": "",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 0,
+            "contribution": 0,
+            "bonusPenalty": 0,
+            "salary": 0,
+            "totalSalary": 0,
+            "diff": 0
+          }
+        },
+        {
+          "order": 14,
+          "no": 14,
+          "name": "유이나",
+          "position": "",
+          "rate": "",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "",
+              "content": "직급전",
+              "position": "",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "",
+              "content": "1회",
+              "position": "",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "",
+              "content": "2회",
+              "position": "",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "",
+              "content": "3회",
+              "position": "",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 0,
+            "contribution": 0,
+            "bonusPenalty": 0,
+            "salary": 0,
+            "totalSalary": 0,
+            "diff": 0
+          }
+        }
+      ],
+      "totals": {
+        "rounds": [
+          {
+            "roundKey": "rank_match",
+            "label": "직급전",
+            "date": "",
+            "content": "직급전",
+            "score": 0,
+            "bonusPenalty": 0,
+            "salary": 0
+          },
+          {
+            "roundKey": "round_1",
+            "label": "1회",
+            "date": "",
+            "content": "1회",
+            "score": 0,
+            "bonusPenalty": 0,
+            "salary": 0
+          },
+          {
+            "roundKey": "round_2",
+            "label": "2회",
+            "date": "",
+            "content": "2회",
+            "score": 0,
+            "bonusPenalty": 0,
+            "salary": 0
+          },
+          {
+            "roundKey": "round_3",
+            "label": "3회",
+            "date": "",
+            "content": "3회",
+            "score": 0,
+            "bonusPenalty": 0,
+            "salary": 0
+          }
+        ],
+        "total": {
+          "score": 0,
+          "contribution": 0,
+          "bonusPenalty": 0,
+          "salary": 0,
+          "totalSalary": 0
+        }
+      }
+    },
+    {
+      "season": 9,
+      "sheetName": "시즌9",
+      "completedRound": 3,
+      "rounds": [
+        {
+          "index": 0,
+          "key": "rank_match",
+          "label": "직급전",
+          "date": "6/9",
+          "content": "직급전"
+        },
+        {
+          "index": 1,
+          "key": "round_1",
+          "label": "1회",
+          "date": "6/16",
+          "content": "룰렛"
+        },
+        {
+          "index": 2,
+          "key": "round_2",
+          "label": "2회",
+          "date": "6/23",
+          "content": "팀전"
+        },
+        {
+          "index": 3,
+          "key": "round_3",
+          "label": "3회",
+          "date": "6/30",
+          "content": "워라밸"
+        }
+      ],
+      "ranking": {
+        "contribution": [],
+        "salary": []
+      },
+      "members": [
+        {
+          "order": 1,
+          "no": 1,
+          "name": "제니",
+          "position": "부장",
+          "rate": "13.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "6/9",
+              "content": "직급전",
+              "position": "부장",
+              "score": 317334,
+              "bonusPenalty": 0,
+              "salary": 11424024
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "6/16",
+              "content": "룰렛",
+              "position": "부장",
+              "score": 347334,
+              "bonusPenalty": 2100000,
+              "salary": 12735940
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "6/23",
+              "content": "팀전",
+              "position": "부장",
+              "score": 285374,
+              "bonusPenalty": 3000000,
+              "salary": 17417949
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "6/30",
+              "content": "워라밸",
+              "position": "부장",
+              "score": 306819,
+              "bonusPenalty": 0,
+              "salary": 10025425
+            }
+          ],
+          "total": {
+            "score": 1256861,
+            "contribution": 676459,
+            "bonusPenalty": 5100000,
+            "salary": 51603338,
+            "totalSalary": 56793964,
+            "diff": 0
+          }
+        },
+        {
+          "order": 2,
+          "no": 2,
+          "name": "도예빈",
+          "position": "차장",
+          "rate": "10.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "6/9",
+              "content": "직급전",
+              "position": "차장",
+              "score": 132936,
+              "bonusPenalty": 2000000,
+              "salary": 6785696
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "6/16",
+              "content": "룰렛",
+              "position": "차장",
+              "score": 210268,
+              "bonusPenalty": 3100000,
+              "salary": 11608752
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "6/23",
+              "content": "팀전",
+              "position": "차장",
+              "score": 146073,
+              "bonusPenalty": -300000,
+              "salary": 2472683
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "6/30",
+              "content": "워라밸",
+              "position": "차장",
+              "score": 267809,
+              "bonusPenalty": 0,
+              "salary": 7711865
+            }
+          ],
+          "total": {
+            "score": 757086,
+            "contribution": 445790,
+            "bonusPenalty": 4800000,
+            "salary": 28578996,
+            "totalSalary": 28578996,
+            "diff": 0
+          }
+        },
+        {
+          "order": 3,
+          "no": 3,
+          "name": "재온",
+          "position": "과장",
+          "rate": "8.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "6/9",
+              "content": "직급전",
+              "position": "과장",
+              "score": 95390,
+              "bonusPenalty": 1000000,
+              "salary": 4434040
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "6/16",
+              "content": "룰렛",
+              "position": "과장",
+              "score": 40317,
+              "bonusPenalty": 0,
+              "salary": 957235
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "6/23",
+              "content": "팀전",
+              "position": "과장",
+              "score": 72113,
+              "bonusPenalty": -500000,
+              "salary": 400000
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "6/30",
+              "content": "워라밸",
+              "position": "과장",
+              "score": 53838,
+              "bonusPenalty": 0,
+              "salary": 3084746
+            }
+          ],
+          "total": {
+            "score": 261658,
+            "contribution": 118410,
+            "bonusPenalty": 500000,
+            "salary": 8876021,
+            "totalSalary": 8876021,
+            "diff": 0
+          }
+        },
+        {
+          "order": 4,
+          "no": 4,
+          "name": "서단",
+          "position": "팀장",
+          "rate": "6.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "6/9",
+              "content": "직급전",
+              "position": "팀장",
+              "score": 59276,
+              "bonusPenalty": 500000,
+              "salary": 2633936
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "6/16",
+              "content": "룰렛",
+              "position": "팀장",
+              "score": 73296,
+              "bonusPenalty": 0,
+              "salary": 4254376
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "6/23",
+              "content": "팀전",
+              "position": "팀장",
+              "score": 127488,
+              "bonusPenalty": 1000000,
+              "salary": 7654438
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "6/30",
+              "content": "워라밸",
+              "position": "팀장",
+              "score": 61170,
+              "bonusPenalty": 0,
+              "salary": 4627119
+            }
+          ],
+          "total": {
+            "score": 321230,
+            "contribution": 188607,
+            "bonusPenalty": 1500000,
+            "salary": 19169869,
+            "totalSalary": 19169869,
+            "diff": 0
+          }
+        },
+        {
+          "order": 5,
+          "no": 5,
+          "name": "정인",
+          "position": "비실",
+          "rate": "4.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "6/9",
+              "content": "직급전",
+              "position": "비실",
+              "score": 112762,
+              "bonusPenalty": 300000,
+              "salary": 4359432
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "6/16",
+              "content": "룰렛",
+              "position": "비실",
+              "score": 115100,
+              "bonusPenalty": 500000,
+              "salary": 6881564
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "6/23",
+              "content": "팀전",
+              "position": "비실",
+              "score": 70674,
+              "bonusPenalty": 200000,
+              "salary": 1198166
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "6/30",
+              "content": "워라밸",
+              "position": "비실",
+              "score": 37675,
+              "bonusPenalty": 0,
+              "salary": 1619492
+            }
+          ],
+          "total": {
+            "score": 336211,
+            "contribution": 160883,
+            "bonusPenalty": 1000000,
+            "salary": 14058653,
+            "totalSalary": 14058653,
+            "diff": 0
+          }
+        },
+        {
+          "order": 6,
+          "no": 6,
+          "name": "쏘피",
+          "position": "대리",
+          "rate": "2.2%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "6/9",
+              "content": "직급전",
+              "position": "대리",
+              "score": 73344,
+              "bonusPenalty": 200000,
+              "salary": 2840384
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "6/16",
+              "content": "룰렛",
+              "position": "대리",
+              "score": 468510,
+              "bonusPenalty": 13000000,
+              "salary": 26826722
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "6/23",
+              "content": "팀전",
+              "position": "대리",
+              "score": 137755,
+              "bonusPenalty": -200000,
+              "salary": 4236292
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "6/30",
+              "content": "워라밸",
+              "position": "대리",
+              "score": 253552,
+              "bonusPenalty": 0,
+              "salary": 6169492
+            }
+          ],
+          "total": {
+            "score": 933161,
+            "contribution": 616979,
+            "bonusPenalty": 13000000,
+            "salary": 40072890,
+            "totalSalary": 40072890,
+            "diff": 0
+          }
+        },
+        {
+          "order": 7,
+          "no": 7,
+          "name": "이로",
+          "position": "주임",
+          "rate": "1.8%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "6/9",
+              "content": "직급전",
+              "position": "주임",
+              "score": 61061,
+              "bonusPenalty": -100000,
+              "salary": 2098196
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "6/16",
+              "content": "룰렛",
+              "position": "주임",
+              "score": 28177,
+              "bonusPenalty": 390000,
+              "salary": 1090000
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "6/23",
+              "content": "팀전",
+              "position": "주임",
+              "score": 285009,
+              "bonusPenalty": -100000,
+              "salary": 10990730
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "6/30",
+              "content": "워라밸",
+              "position": "주임",
+              "score": 47648,
+              "bonusPenalty": 0,
+              "salary": 1927966
+            }
+          ],
+          "total": {
+            "score": 421895,
+            "contribution": 258330,
+            "bonusPenalty": 190000,
+            "salary": 16106892,
+            "totalSalary": 16106892,
+            "diff": 0
+          }
+        },
+        {
+          "order": 8,
+          "no": 8,
+          "name": "송유이",
+          "position": "상사원",
+          "rate": "1.5%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "6/9",
+              "content": "직급전",
+              "position": "상사원",
+              "score": 50389,
+              "bonusPenalty": -200000,
+              "salary": 1614004
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "6/16",
+              "content": "룰렛",
+              "position": "상사원",
+              "score": 56465,
+              "bonusPenalty": 300000,
+              "salary": 2958985
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "6/23",
+              "content": "팀전",
+              "position": "상사원",
+              "score": 86768,
+              "bonusPenalty": 500000,
+              "salary": 2829053
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "6/30",
+              "content": "워라밸",
+              "position": "상사원",
+              "score": 26645,
+              "bonusPenalty": 0,
+              "salary": 1002542
+            }
+          ],
+          "total": {
+            "score": 220267,
+            "contribution": 122312,
+            "bonusPenalty": 600000,
+            "salary": 8404585,
+            "totalSalary": 8404585,
+            "diff": 0
+          }
+        },
+        {
+          "order": 9,
+          "no": 9,
+          "name": "코코",
+          "position": "하사원",
+          "rate": "1.2%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "6/9",
+              "content": "직급전",
+              "position": "하사원",
+              "score": 42071,
+              "bonusPenalty": -300000,
+              "salary": 1214556
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "6/16",
+              "content": "룰렛",
+              "position": "하사원",
+              "score": 26678,
+              "bonusPenalty": 0,
+              "salary": 700000
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "6/23",
+              "content": "팀전",
+              "position": "하사원",
+              "score": 26604,
+              "bonusPenalty": -800000,
+              "salary": 100000
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "6/30",
+              "content": "워라밸",
+              "position": "하사원",
+              "score": 2440,
+              "bonusPenalty": 0,
+              "salary": 385593
+            }
+          ],
+          "total": {
+            "score": 97793,
+            "contribution": 39927,
+            "bonusPenalty": -1100000,
+            "salary": 2400149,
+            "totalSalary": 2400149,
+            "diff": 0
+          }
+        },
+        {
+          "order": 10,
+          "no": 10,
+          "name": "새봄",
+          "position": "인턴장",
+          "rate": "1.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "6/9",
+              "content": "직급전",
+              "position": "인턴장",
+              "score": 26321,
+              "bonusPenalty": -400000,
+              "salary": 547556
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "6/16",
+              "content": "룰렛",
+              "position": "인턴장",
+              "score": 52283,
+              "bonusPenalty": 500000,
+              "salary": 2308110
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "6/23",
+              "content": "팀전",
+              "position": "인턴장",
+              "score": 79120,
+              "bonusPenalty": 300000,
+              "salary": 2185424
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "6/30",
+              "content": "워라밸",
+              "position": "인턴장",
+              "score": 27693,
+              "bonusPenalty": 0,
+              "salary": 1311017
+            }
+          ],
+          "total": {
+            "score": 185417,
+            "contribution": 114549,
+            "bonusPenalty": 400000,
+            "salary": 6352107,
+            "totalSalary": 6352107,
+            "diff": 0
+          }
+        },
+        {
+          "order": 11,
+          "no": 11,
+          "name": "도하정",
+          "position": "상인턴",
+          "rate": "1.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "6/9",
+              "content": "직급전",
+              "position": "상인턴",
+              "score": 39530,
+              "bonusPenalty": -500000,
+              "salary": 923080
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "6/16",
+              "content": "룰렛",
+              "position": "상인턴",
+              "score": 55438,
+              "bonusPenalty": 3000000,
+              "salary": 5233547
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "6/23",
+              "content": "팀전",
+              "position": "상인턴",
+              "score": 174240,
+              "bonusPenalty": 1500000,
+              "salary": 10372584
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "6/30",
+              "content": "워라밸",
+              "position": "상인턴",
+              "score": 1293,
+              "bonusPenalty": 0,
+              "salary": 300000
+            }
+          ],
+          "total": {
+            "score": 270501,
+            "contribution": 166299,
+            "bonusPenalty": 4000000,
+            "salary": 16829211,
+            "totalSalary": 16829211,
+            "diff": 0
+          }
+        },
+        {
+          "order": 12,
+          "no": 12,
+          "name": "유은",
+          "position": "하인턴",
+          "rate": "시급",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "6/9",
+              "content": "직급전",
+              "position": "하인턴",
+              "score": 41488,
+              "bonusPenalty": 0,
+              "salary": 1493568
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "6/16",
+              "content": "룰렛",
+              "position": "하인턴",
+              "score": 45554,
+              "bonusPenalty": 100000,
+              "salary": 1482672
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "6/23",
+              "content": "팀전",
+              "position": "하인턴",
+              "score": 93172,
+              "bonusPenalty": -400000,
+              "salary": 1041795
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "6/30",
+              "content": "워라밸",
+              "position": "하인턴",
+              "score": 15113,
+              "bonusPenalty": 0,
+              "salary": 694068
+            }
+          ],
+          "total": {
+            "score": 195327,
+            "contribution": 108364,
+            "bonusPenalty": -300000,
+            "salary": 4712103,
+            "totalSalary": 4712103,
+            "diff": 0
+          }
+        },
+        {
+          "order": 13,
+          "no": 13,
+          "name": "송화양",
+          "position": "",
+          "rate": "",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "6/9",
+              "content": "직급전",
+              "position": "",
+              "score": 412630,
+              "bonusPenalty": 0,
+              "salary": 14854680
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "6/16",
+              "content": "룰렛",
+              "position": "",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "6/23",
+              "content": "팀전",
+              "position": "",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "6/30",
+              "content": "워라밸",
+              "position": "",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 412630,
+            "contribution": 0,
+            "bonusPenalty": 0,
+            "salary": 14854680,
+            "totalSalary": 14854680,
+            "diff": 0
+          }
+        },
+        {
+          "order": 14,
+          "no": 14,
+          "name": "유이나",
+          "position": "",
+          "rate": "",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "6/9",
+              "content": "직급전",
+              "position": "",
+              "score": 97326,
+              "bonusPenalty": 100000,
+              "salary": 3603736
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "6/16",
+              "content": "룰렛",
+              "position": "",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "6/23",
+              "content": "팀전",
+              "position": "",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "6/30",
+              "content": "워라밸",
+              "position": "",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 97326,
+            "contribution": 0,
+            "bonusPenalty": 100000,
+            "salary": 3603736,
+            "totalSalary": 3603736,
+            "diff": 0
+          }
+        }
+      ],
+      "totals": {
+        "rounds": [
+          {
+            "roundKey": "rank_match",
+            "label": "직급전",
+            "date": "6/9",
+            "content": "직급전",
+            "score": 1561858,
+            "bonusPenalty": 2600000,
+            "salary": 58826888
+          },
+          {
+            "roundKey": "round_1",
+            "label": "1회",
+            "date": "6/16",
+            "content": "룰렛",
+            "score": 1519420,
+            "bonusPenalty": 22990000,
+            "salary": 77037903
+          },
+          {
+            "roundKey": "round_2",
+            "label": "2회",
+            "date": "6/23",
+            "content": "팀전",
+            "score": 1584390,
+            "bonusPenalty": 4200000,
+            "salary": 60899114
+          },
+          {
+            "roundKey": "round_3",
+            "label": "3회",
+            "date": "6/30",
+            "content": "워라밸",
+            "score": 1101695,
+            "bonusPenalty": 0,
+            "salary": 38859325
+          }
+        ],
+        "total": {
+          "score": 5767363,
+          "contribution": 3016909,
+          "bonusPenalty": 29790000,
+          "salary": 235623230,
+          "totalSalary": 240813856
+        }
+      }
+    },
+    {
+      "season": 8,
+      "sheetName": "시즌 8",
+      "completedRound": 3,
+      "rounds": [
+        {
+          "index": 0,
+          "key": "rank_match",
+          "label": "직급전",
+          "date": "5/5",
+          "content": "직급전"
+        },
+        {
+          "index": 1,
+          "key": "round_1",
+          "label": "1회",
+          "date": "5/12",
+          "content": "룰렛"
+        },
+        {
+          "index": 2,
+          "key": "round_2",
+          "label": "2회",
+          "date": "5/19",
+          "content": "팀전"
+        },
+        {
+          "index": 3,
+          "key": "round_3",
+          "label": "3회",
+          "date": "5/31",
+          "content": "슈엑"
+        }
+      ],
+      "ranking": {
+        "contribution": [],
+        "salary": []
+      },
+      "members": [
+        {
+          "order": 1,
+          "no": 1,
+          "name": "송화양",
+          "position": "부장",
+          "rate": "13.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "5/5",
+              "content": "직급전",
+              "position": "부장",
+              "score": 460072,
+              "bonusPenalty": 0,
+              "salary": 16562592
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "5/12",
+              "content": "룰렛",
+              "position": "부장",
+              "score": 337860,
+              "bonusPenalty": 4000000,
+              "salary": 16064543
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "5/19",
+              "content": "팀전",
+              "position": "부장",
+              "score": 277150,
+              "bonusPenalty": 3000000,
+              "salary": 16620516
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "5/31",
+              "content": "슈엑",
+              "position": "부장",
+              "score": 2410964,
+              "bonusPenalty": 25000000,
+              "salary": 126260488
+            }
+          ],
+          "total": {
+            "score": 3486046,
+            "contribution": 2176682,
+            "bonusPenalty": 32000000,
+            "salary": 175508139,
+            "totalSalary": 192245839,
+            "diff": 0
+          }
+        },
+        {
+          "order": 2,
+          "no": 2,
+          "name": "재온",
+          "position": "차장",
+          "rate": "10.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "5/5",
+              "content": "직급전",
+              "position": "차장",
+              "score": 304642,
+              "bonusPenalty": 0,
+              "salary": 10967112
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "5/12",
+              "content": "룰렛",
+              "position": "차장",
+              "score": 282834,
+              "bonusPenalty": 2000000,
+              "salary": 11280418
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "5/19",
+              "content": "팀전",
+              "position": "차장",
+              "score": 190964,
+              "bonusPenalty": -200000,
+              "salary": 6086392
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "5/31",
+              "content": "슈엑",
+              "position": "차장",
+              "score": 118346,
+              "bonusPenalty": 600000,
+              "salary": 5570532
+            }
+          ],
+          "total": {
+            "score": 896786,
+            "contribution": 424936,
+            "bonusPenalty": 2400000,
+            "salary": 33904454,
+            "totalSalary": 42273304,
+            "diff": 0
+          }
+        },
+        {
+          "order": 3,
+          "no": 3,
+          "name": "서단",
+          "position": "과장",
+          "rate": "8.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "5/5",
+              "content": "직급전",
+              "position": "과장",
+              "score": 245222,
+              "bonusPenalty": 2000000,
+              "salary": 10827992
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "5/12",
+              "content": "룰렛",
+              "position": "과장",
+              "score": 127427,
+              "bonusPenalty": 0,
+              "salary": 3712167
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "5/19",
+              "content": "팀전",
+              "position": "과장",
+              "score": 247104,
+              "bonusPenalty": -100000,
+              "salary": 8281856
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "5/31",
+              "content": "슈엑",
+              "position": "과장",
+              "score": 133391,
+              "bonusPenalty": 700000,
+              "salary": 6302422
+            }
+          ],
+          "total": {
+            "score": 753144,
+            "contribution": 357894,
+            "bonusPenalty": 2600000,
+            "salary": 29124437,
+            "totalSalary": 29124437,
+            "diff": 0
+          }
+        },
+        {
+          "order": 4,
+          "no": 4,
+          "name": "제니",
+          "position": "팀장",
+          "rate": "6.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "5/5",
+              "content": "직급전",
+              "position": "팀장",
+              "score": 176578,
+              "bonusPenalty": 500000,
+              "salary": 6856808
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "5/12",
+              "content": "룰렛",
+              "position": "팀장",
+              "score": 131313,
+              "bonusPenalty": 1000000,
+              "salary": 8424334
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "5/19",
+              "content": "팀전",
+              "position": "팀장",
+              "score": 290575,
+              "bonusPenalty": 1500000,
+              "salary": 11977320
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "5/31",
+              "content": "슈엑",
+              "position": "팀장",
+              "score": 645933,
+              "bonusPenalty": 7000000,
+              "salary": 34129186
+            }
+          ],
+          "total": {
+            "score": 1244399,
+            "contribution": 762921,
+            "bonusPenalty": 10000000,
+            "salary": 61387648,
+            "totalSalary": 61387648,
+            "diff": 0
+          }
+        },
+        {
+          "order": 5,
+          "no": 5,
+          "name": "정인",
+          "position": "비실",
+          "rate": "4.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "5/5",
+              "content": "직급전",
+              "position": "비실",
+              "score": 212924,
+              "bonusPenalty": 300000,
+              "salary": 7965264
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "5/12",
+              "content": "룰렛",
+              "position": "비실",
+              "score": 72217,
+              "bonusPenalty": 400000,
+              "salary": 2441692
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "5/19",
+              "content": "팀전",
+              "position": "비실",
+              "score": 100077,
+              "bonusPenalty": -500000,
+              "salary": 547732
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "5/31",
+              "content": "슈엑",
+              "position": "비실",
+              "score": 188658,
+              "bonusPenalty": 1000000,
+              "salary": 8923636
+            }
+          ],
+          "total": {
+            "score": 573876,
+            "contribution": 250497,
+            "bonusPenalty": 1200000,
+            "salary": 19878324,
+            "totalSalary": 19878324,
+            "diff": 0
+          }
+        },
+        {
+          "order": 6,
+          "no": 6,
+          "name": "쏘피",
+          "position": "대리",
+          "rate": "2.2%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "5/5",
+              "content": "직급전",
+              "position": "대리",
+              "score": 112664,
+              "bonusPenalty": 100000,
+              "salary": 4155904
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "5/12",
+              "content": "룰렛",
+              "position": "대리",
+              "score": 72624,
+              "bonusPenalty": 0,
+              "salary": 1670475
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "5/19",
+              "content": "팀전",
+              "position": "대리",
+              "score": 103826,
+              "bonusPenalty": -300000,
+              "salary": 3890928
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "5/31",
+              "content": "슈엑",
+              "position": "대리",
+              "score": 218789,
+              "bonusPenalty": 1500000,
+              "salary": 10689138
+            }
+          ],
+          "total": {
+            "score": 507903,
+            "contribution": 279335,
+            "bonusPenalty": 1300000,
+            "salary": 20406445,
+            "totalSalary": 20406445,
+            "diff": 0
+          }
+        },
+        {
+          "order": 7,
+          "no": 7,
+          "name": "이로",
+          "position": "주임",
+          "rate": "1.8%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "5/5",
+              "content": "직급전",
+              "position": "주임",
+              "score": 103262,
+              "bonusPenalty": -100000,
+              "salary": 3617432
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "5/12",
+              "content": "룰렛",
+              "position": "주임",
+              "score": 31700,
+              "bonusPenalty": 300000,
+              "salary": 1413650
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "5/19",
+              "content": "팀전",
+              "position": "주임",
+              "score": 67008,
+              "bonusPenalty": 500000,
+              "salary": 2385918
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "5/31",
+              "content": "슈엑",
+              "position": "주임",
+              "score": 89799,
+              "bonusPenalty": 400000,
+              "salary": 4171558
+            }
+          ],
+          "total": {
+            "score": 291769,
+            "contribution": 135043,
+            "bonusPenalty": 1100000,
+            "salary": 11588558,
+            "totalSalary": 11588558,
+            "diff": 0
+          }
+        },
+        {
+          "order": 8,
+          "no": 8,
+          "name": "도예빈",
+          "position": "상사원",
+          "rate": "1.5%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "5/5",
+              "content": "직급전",
+              "position": "상사원",
+              "score": 70657,
+              "bonusPenalty": -200000,
+              "salary": 2343652
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "5/12",
+              "content": "룰렛",
+              "position": "상사원",
+              "score": 155604,
+              "bonusPenalty": 0,
+              "salary": 5568251
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "5/19",
+              "content": "팀전",
+              "position": "상사원",
+              "score": 77392,
+              "bonusPenalty": 1000000,
+              "salary": 3305010
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "5/31",
+              "content": "슈엑",
+              "position": "상사원",
+              "score": 291620,
+              "bonusPenalty": 3000000,
+              "salary": 15248040
+            }
+          ],
+          "total": {
+            "score": 595273,
+            "contribution": 372947,
+            "bonusPenalty": 3800000,
+            "salary": 26464953,
+            "totalSalary": 26464953,
+            "diff": 0
+          }
+        },
+        {
+          "order": 9,
+          "no": 9,
+          "name": "송유이",
+          "position": "하사원",
+          "rate": "1.2%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "5/5",
+              "content": "직급전",
+              "position": "하사원",
+              "score": 69304,
+              "bonusPenalty": -300000,
+              "salary": 2194944
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "5/12",
+              "content": "룰렛",
+              "position": "하사원",
+              "score": 39046,
+              "bonusPenalty": 0,
+              "salary": 928042
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "5/19",
+              "content": "팀전",
+              "position": "하사원",
+              "score": 64445,
+              "bonusPenalty": -400000,
+              "salary": 1171598
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "5/31",
+              "content": "슈엑",
+              "position": "하사원",
+              "score": 104378,
+              "bonusPenalty": 500000,
+              "salary": 4883876
+            }
+          ],
+          "total": {
+            "score": 277173,
+            "contribution": 145000,
+            "bonusPenalty": -200000,
+            "salary": 9178460,
+            "totalSalary": 9178460,
+            "diff": 0
+          }
+        },
+        {
+          "order": 10,
+          "no": 10,
+          "name": "유이나",
+          "position": "인턴장",
+          "rate": "1.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "5/5",
+              "content": "직급전",
+              "position": "인턴장",
+              "score": 135469,
+              "bonusPenalty": -400000,
+              "salary": 4476884
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "5/12",
+              "content": "룰렛",
+              "position": "인턴장",
+              "score": 31800,
+              "bonusPenalty": 200000,
+              "salary": 1592063
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "5/19",
+              "content": "팀전",
+              "position": "인턴장",
+              "score": 33959,
+              "bonusPenalty": 300000,
+              "salary": 1557278
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "5/31",
+              "content": "슈엑",
+              "position": "인턴장",
+              "score": 52656,
+              "bonusPenalty": 200000,
+              "salary": 2411552
+            }
+          ],
+          "total": {
+            "score": 253884,
+            "contribution": 84445,
+            "bonusPenalty": 300000,
+            "salary": 10037777,
+            "totalSalary": 10037777,
+            "diff": 0
+          }
+        },
+        {
+          "order": 11,
+          "no": 11,
+          "name": "새봄",
+          "position": "상인턴",
+          "rate": "1.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "5/5",
+              "content": "직급전",
+              "position": "상인턴",
+              "score": 72847,
+              "bonusPenalty": -500000,
+              "salary": 2122492
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "5/12",
+              "content": "룰렛",
+              "position": "상인턴",
+              "score": 19163,
+              "bonusPenalty": 0,
+              "salary": 464021
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "5/19",
+              "content": "팀전",
+              "position": "상인턴",
+              "score": 18218,
+              "bonusPenalty": -1000000,
+              "salary": -476134
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "5/31",
+              "content": "슈엑",
+              "position": "상인턴",
+              "score": 63375,
+              "bonusPenalty": 300000,
+              "salary": 2961750
+            }
+          ],
+          "total": {
+            "score": 173603,
+            "contribution": 69974,
+            "bonusPenalty": -1200000,
+            "salary": 5072129,
+            "totalSalary": 5072129,
+            "diff": 0
+          }
+        },
+        {
+          "order": 12,
+          "no": 12,
+          "name": "코코",
+          "position": "신입",
+          "rate": "시급",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "5/5",
+              "content": "직급전",
+              "position": "신입",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "5/12",
+              "content": "룰렛",
+              "position": "신입",
+              "score": 24186,
+              "bonusPenalty": 0,
+              "salary": 742433
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "5/19",
+              "content": "팀전",
+              "position": "신입",
+              "score": 26042,
+              "bonusPenalty": 200000,
+              "salary": 1038186
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "5/31",
+              "content": "슈엑",
+              "position": "신입",
+              "score": 31291,
+              "bonusPenalty": 100000,
+              "salary": 1414222
+            }
+          ],
+          "total": {
+            "score": 81519,
+            "contribution": 47095,
+            "bonusPenalty": 300000,
+            "salary": 3194841,
+            "totalSalary": 3194841,
+            "diff": 0
+          }
+        },
+        {
+          "order": 13,
+          "no": 13,
+          "name": "도하정",
+          "position": "수습",
+          "rate": "시급",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "5/5",
+              "content": "직급전",
+              "position": "수습",
+              "score": 1654,
+              "bonusPenalty": -1000000,
+              "salary": -940456
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "5/12",
+              "content": "룰렛",
+              "position": "수습",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "5/19",
+              "content": "팀전",
+              "position": "수습",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "5/31",
+              "content": "슈엑",
+              "position": "수습",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 1654,
+            "contribution": 0,
+            "bonusPenalty": -1000000,
+            "salary": -940456,
+            "totalSalary": -940456,
+            "diff": 0
+          }
+        },
+        {
+          "order": 14,
+          "no": 14,
+          "name": "한유나",
+          "position": "퇴직",
+          "rate": "시급",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "5/5",
+              "content": "직급전",
+              "position": "퇴직",
+              "score": 164819,
+              "bonusPenalty": 1000000,
+              "salary": 6933484
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "5/12",
+              "content": "룰렛",
+              "position": "퇴직",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "5/19",
+              "content": "팀전",
+              "position": "퇴직",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "5/31",
+              "content": "슈엑",
+              "position": "퇴직",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 164819,
+            "contribution": 0,
+            "bonusPenalty": 1000000,
+            "salary": 6933484,
+            "totalSalary": 6933484,
+            "diff": 0
+          }
+        }
+      ],
+      "totals": {
+        "rounds": [
+          {
+            "roundKey": "rank_match",
+            "label": "직급전",
+            "date": "5/5",
+            "content": "직급전",
+            "score": 2130114,
+            "bonusPenalty": 1400000,
+            "salary": 78084104
+          },
+          {
+            "roundKey": "round_1",
+            "label": "1회",
+            "date": "5/12",
+            "content": "룰렛",
+            "score": 1325774,
+            "bonusPenalty": 7900000,
+            "salary": 54302089
+          },
+          {
+            "roundKey": "round_2",
+            "label": "2회",
+            "date": "5/19",
+            "content": "팀전",
+            "score": 1496760,
+            "bonusPenalty": 4000000,
+            "salary": 56386600
+          },
+          {
+            "roundKey": "round_3",
+            "label": "3회",
+            "date": "5/31",
+            "content": "슈엑",
+            "score": 4349200,
+            "bonusPenalty": 40300000,
+            "salary": 222966400
+          }
+        ],
+        "total": {
+          "score": 9301848,
+          "contribution": 5106769,
+          "bonusPenalty": 53600000,
+          "salary": 411739193,
+          "totalSalary": 436845743
+        }
+      }
+    },
+    {
+      "season": 7,
+      "sheetName": "시즌7",
+      "completedRound": 3,
+      "rounds": [
+        {
+          "index": 0,
+          "key": "rank_match",
+          "label": "직급전",
+          "date": "3/17",
+          "content": "직급전"
+        },
+        {
+          "index": 1,
+          "key": "round_1",
+          "label": "1회",
+          "date": "3/24",
+          "content": "벌칙"
+        },
+        {
+          "index": 2,
+          "key": "round_2",
+          "label": "2회",
+          "date": "3/31",
+          "content": "팀전"
+        },
+        {
+          "index": 3,
+          "key": "round_3",
+          "label": "3회",
+          "date": "4/14",
+          "content": "펌핑"
+        }
+      ],
+      "ranking": {
+        "contribution": [],
+        "salary": []
+      },
+      "members": [
+        {
+          "order": 1,
+          "no": 1,
+          "name": "송화양",
+          "position": "부장",
+          "rate": "13.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "3/17",
+              "content": "직급전",
+              "position": "부장",
+              "score": 226632,
+              "bonusPenalty": 2300000,
+              "salary": 10458752
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "3/24",
+              "content": "벌칙",
+              "position": "부장",
+              "score": 355523,
+              "bonusPenalty": 4000000,
+              "salary": 19493360
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/31",
+              "content": "팀전",
+              "position": "부장",
+              "score": 300000,
+              "bonusPenalty": 4000000,
+              "salary": 20330332
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "4/14",
+              "content": "펌핑",
+              "position": "부장",
+              "score": 1244105,
+              "bonusPenalty": 6000000,
+              "salary": 30440489
+            }
+          ],
+          "total": {
+            "score": 1552166,
+            "contribution": 1367732,
+            "bonusPenalty": 16300000,
+            "salary": 80722933,
+            "totalSalary": 95574533,
+            "diff": 0
+          }
+        },
+        {
+          "order": 2,
+          "no": 2,
+          "name": "서단",
+          "position": "차장",
+          "rate": "10.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "3/17",
+              "content": "직급전",
+              "position": "차장",
+              "score": 205533,
+              "bonusPenalty": 1400000,
+              "salary": 8799188
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "3/24",
+              "content": "벌칙",
+              "position": "차장",
+              "score": 216740,
+              "bonusPenalty": 2000000,
+              "salary": 11534375
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/31",
+              "content": "팀전",
+              "position": "차장",
+              "score": 79950,
+              "bonusPenalty": -500000,
+              "salary": 756179
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "4/14",
+              "content": "펌핑",
+              "position": "차장",
+              "score": 798677,
+              "bonusPenalty": 2000000,
+              "salary": 17040301
+            }
+          ],
+          "total": {
+            "score": 902312,
+            "contribution": 785790,
+            "bonusPenalty": 4900000,
+            "salary": 38130043,
+            "totalSalary": 45555844,
+            "diff": 0
+          }
+        },
+        {
+          "order": 3,
+          "no": 3,
+          "name": "쏘피",
+          "position": "과장",
+          "rate": "8.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "3/17",
+              "content": "직급전",
+              "position": "과장",
+              "score": 180174,
+              "bonusPenalty": 1900000,
+              "salary": 8386264
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "3/24",
+              "content": "벌칙",
+              "position": "과장",
+              "score": 141295,
+              "bonusPenalty": 1000000,
+              "salary": 5903393
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/31",
+              "content": "팀전",
+              "position": "과장",
+              "score": 138752,
+              "bonusPenalty": 500000,
+              "salary": 5524718
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "4/14",
+              "content": "펌핑",
+              "position": "과장",
+              "score": 211458,
+              "bonusPenalty": -100000,
+              "salary": 2720056
+            }
+          ],
+          "total": {
+            "score": 574887,
+            "contribution": 353884,
+            "bonusPenalty": 3300000,
+            "salary": 22534431,
+            "totalSalary": 22534431,
+            "diff": 0
+          }
+        },
+        {
+          "order": 4,
+          "no": 4,
+          "name": "도하정",
+          "position": "팀장",
+          "rate": "6.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "3/17",
+              "content": "직급전",
+              "position": "팀장",
+              "score": 133136,
+              "bonusPenalty": 1400000,
+              "salary": 6192896
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "3/24",
+              "content": "벌칙",
+              "position": "팀장",
+              "score": 10000,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/31",
+              "content": "팀전",
+              "position": "팀장",
+              "score": 71419,
+              "bonusPenalty": -400000,
+              "salary": 1107415
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "4/14",
+              "content": "펌핑",
+              "position": "팀장",
+              "score": 20000,
+              "bonusPenalty": -750000,
+              "salary": -750000
+            }
+          ],
+          "total": {
+            "score": 229555,
+            "contribution": 72515,
+            "bonusPenalty": 250000,
+            "salary": 6550311,
+            "totalSalary": 6550311,
+            "diff": 0
+          }
+        },
+        {
+          "order": 5,
+          "no": 5,
+          "name": "송유이",
+          "position": "비실",
+          "rate": "4.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "3/17",
+              "content": "직급전",
+              "position": "비실",
+              "score": 202458,
+              "bonusPenalty": 1800000,
+              "salary": 9088488
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "3/24",
+              "content": "벌칙",
+              "position": "비실",
+              "score": 27024,
+              "bonusPenalty": 0,
+              "salary": 953438
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/31",
+              "content": "팀전",
+              "position": "비실",
+              "score": 45475,
+              "bonusPenalty": -800000,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "4/14",
+              "content": "펌핑",
+              "position": "비실",
+              "score": 292309,
+              "bonusPenalty": 300000,
+              "salary": 4436083
+            }
+          ],
+          "total": {
+            "score": 445349,
+            "contribution": 261058,
+            "bonusPenalty": 1300000,
+            "salary": 14478008,
+            "totalSalary": 14478008,
+            "diff": 0
+          }
+        },
+        {
+          "order": 6,
+          "no": 6,
+          "name": "제니",
+          "position": "대리",
+          "rate": "2.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "3/17",
+              "content": "직급전",
+              "position": "대리",
+              "score": 128724,
+              "bonusPenalty": -300000,
+              "salary": 4334064
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "3/24",
+              "content": "벌칙",
+              "position": "대리",
+              "score": 223754,
+              "bonusPenalty": 0,
+              "salary": 7150781
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/31",
+              "content": "팀전",
+              "position": "대리",
+              "score": 215851,
+              "bonusPenalty": 2000000,
+              "salary": 14561794
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "4/14",
+              "content": "펌핑",
+              "position": "대리",
+              "score": 131568,
+              "bonusPenalty": 200000,
+              "salary": 3584068
+            }
+          ],
+          "total": {
+            "score": 692673,
+            "contribution": 407502,
+            "bonusPenalty": 1900000,
+            "salary": 29630707,
+            "totalSalary": 29630707,
+            "diff": 0
+          }
+        },
+        {
+          "order": 7,
+          "no": 7,
+          "name": "재온",
+          "position": "상주임",
+          "rate": "1.8%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "3/17",
+              "content": "직급전",
+              "position": "상주임",
+              "score": 172930,
+              "bonusPenalty": 800000,
+              "salary": 7025480
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "3/24",
+              "content": "벌칙",
+              "position": "상주임",
+              "score": 271940,
+              "bonusPenalty": 1000000,
+              "salary": 13258482
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/31",
+              "content": "팀전",
+              "position": "상주임",
+              "score": 225460,
+              "bonusPenalty": -100000,
+              "salary": 7437076
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "4/14",
+              "content": "펌핑",
+              "position": "상주임",
+              "score": 915096,
+              "bonusPenalty": 3000000,
+              "salary": 21800376
+            }
+          ],
+          "total": {
+            "score": 1277928,
+            "contribution": 1009914,
+            "bonusPenalty": 4700000,
+            "salary": 49521415,
+            "totalSalary": 49521415,
+            "diff": 0
+          }
+        },
+        {
+          "order": 8,
+          "no": 8,
+          "name": "도예빈",
+          "position": "하주임",
+          "rate": "1.6%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "3/17",
+              "content": "직급전",
+              "position": "하주임",
+              "score": 53525,
+              "bonusPenalty": -300000,
+              "salary": 1626900
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "3/24",
+              "content": "벌칙",
+              "position": "하주임",
+              "score": 63720,
+              "bonusPenalty": 0,
+              "salary": 1471018
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/31",
+              "content": "팀전",
+              "position": "하주임",
+              "score": 134003,
+              "bonusPenalty": 400000,
+              "salary": 3163595
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "4/14",
+              "content": "펌핑",
+              "position": "하주임",
+              "score": 188754,
+              "bonusPenalty": -200000,
+              "salary": 2056045
+            }
+          ],
+          "total": {
+            "score": 355047,
+            "contribution": 276463,
+            "bonusPenalty": -100000,
+            "salary": 8317558,
+            "totalSalary": 8317558,
+            "diff": 0
+          }
+        },
+        {
+          "order": 9,
+          "no": 9,
+          "name": "정인",
+          "position": "상사원",
+          "rate": "1.4%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "3/17",
+              "content": "직급전",
+              "position": "상사원",
+              "score": 137894,
+              "bonusPenalty": -2500000,
+              "salary": 2464184
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "3/24",
+              "content": "벌칙",
+              "position": "상사원",
+              "score": 106620,
+              "bonusPenalty": 3110000,
+              "salary": 5316527
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/31",
+              "content": "팀전",
+              "position": "상사원",
+              "score": 193189,
+              "bonusPenalty": 1000000,
+              "salary": 11049435
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "4/14",
+              "content": "펌핑",
+              "position": "상사원",
+              "score": 104651,
+              "bonusPenalty": -300000,
+              "salary": 1580038
+            }
+          ],
+          "total": {
+            "score": 495287,
+            "contribution": 288712,
+            "bonusPenalty": 1310000,
+            "salary": 20410184,
+            "totalSalary": 20410184,
+            "diff": 0
+          }
+        },
+        {
+          "order": 10,
+          "no": 10,
+          "name": "한유나",
+          "position": "하사원",
+          "rate": "1.2%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "3/17",
+              "content": "직급전",
+              "position": "하사원",
+              "score": 60508,
+              "bonusPenalty": -300000,
+              "salary": 1878288
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "3/24",
+              "content": "벌칙",
+              "position": "하사원",
+              "score": 160000,
+              "bonusPenalty": 550000,
+              "salary": 3246866
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/31",
+              "content": "팀전",
+              "position": "하사원",
+              "score": 167567,
+              "bonusPenalty": -200000,
+              "salary": 2061123
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "4/14",
+              "content": "펌핑",
+              "position": "하사원",
+              "score": 306988,
+              "bonusPenalty": 500000,
+              "salary": 8020150
+            }
+          ],
+          "total": {
+            "score": 563689,
+            "contribution": 448653,
+            "bonusPenalty": 550000,
+            "salary": 15206427,
+            "totalSalary": 15206427,
+            "diff": 0
+          }
+        },
+        {
+          "order": 11,
+          "no": 11,
+          "name": "이로",
+          "position": "인턴장",
+          "rate": "1.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "3/17",
+              "content": "직급전",
+              "position": "인턴장",
+              "score": 94353,
+              "bonusPenalty": -2500000,
+              "salary": 896708
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "3/24",
+              "content": "벌칙",
+              "position": "인턴장",
+              "score": 21334,
+              "bonusPenalty": 100000,
+              "salary": 1291797
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/31",
+              "content": "팀전",
+              "position": "인턴장",
+              "score": 62440,
+              "bonusPenalty": -600000,
+              "salary": 404944
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "4/14",
+              "content": "펌핑",
+              "position": "인턴장",
+              "score": 407548,
+              "bonusPenalty": 1000000,
+              "salary": 12280226
+            }
+          ],
+          "total": {
+            "score": 382622,
+            "contribution": 351606,
+            "bonusPenalty": -2000000,
+            "salary": 14873674,
+            "totalSalary": 14873674,
+            "diff": 0
+          }
+        },
+        {
+          "order": 12,
+          "no": 12,
+          "name": "유톨",
+          "position": "상인턴",
+          "rate": "시급",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "3/17",
+              "content": "직급전",
+              "position": "상인턴",
+              "score": 80122,
+              "bonusPenalty": -2300000,
+              "salary": 584392
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "3/24",
+              "content": "벌칙",
+              "position": "상인턴",
+              "score": 84813,
+              "bonusPenalty": 300000,
+              "salary": 2138772
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/31",
+              "content": "팀전",
+              "position": "상인턴",
+              "score": 118790,
+              "bonusPenalty": -300000,
+              "salary": 1584269
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "4/14",
+              "content": "펌핑",
+              "position": "상인턴",
+              "score": 0,
+              "bonusPenalty": -1000000,
+              "salary": -1000000
+            }
+          ],
+          "total": {
+            "score": 283725,
+            "contribution": 146156,
+            "bonusPenalty": -3300000,
+            "salary": 3307433,
+            "totalSalary": 3307433,
+            "diff": 0
+          }
+        },
+        {
+          "order": 13,
+          "no": 13,
+          "name": "유이나",
+          "position": "하인턴",
+          "rate": "시급",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "3/17",
+              "content": "직급전",
+              "position": "하인턴",
+              "score": 29069,
+              "bonusPenalty": -4800000,
+              "salary": -3753516
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "3/24",
+              "content": "벌칙",
+              "position": "하인턴",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/31",
+              "content": "팀전",
+              "position": "하인턴",
+              "score": 17255,
+              "bonusPenalty": 200000,
+              "salary": 900000
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "4/14",
+              "content": "펌핑",
+              "position": "하인턴",
+              "score": 29280,
+              "bonusPenalty": -400000,
+              "salary": 1104030
+            }
+          ],
+          "total": {
+            "score": 66830,
+            "contribution": 33505,
+            "bonusPenalty": -5000000,
+            "salary": -1749486,
+            "totalSalary": -1749486,
+            "diff": 0
+          }
+        },
+        {
+          "order": 14,
+          "no": 14,
+          "name": "새봄",
+          "position": "수습",
+          "rate": "시급",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "3/17",
+              "content": "직급전",
+              "position": "수습",
+              "score": 32524,
+              "bonusPenalty": -450000,
+              "salary": 720864
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "3/24",
+              "content": "벌칙",
+              "position": "수습",
+              "score": 19804,
+              "bonusPenalty": 0,
+              "salary": 612924
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/31",
+              "content": "팀전",
+              "position": "수습",
+              "score": 24391,
+              "bonusPenalty": 300000,
+              "salary": 930000
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "4/14",
+              "content": "펌핑",
+              "position": "수습",
+              "score": 31014,
+              "bonusPenalty": -500000,
+              "salary": 440019
+            }
+          ],
+          "total": {
+            "score": 98389,
+            "contribution": 53427,
+            "bonusPenalty": -650000,
+            "salary": 2703807,
+            "totalSalary": 2703807,
+            "diff": 0
+          }
+        },
+        {
+          "order": 15,
+          "no": 15,
+          "name": "한유나",
+          "position": "수습",
+          "rate": "시급",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "3/17",
+              "content": "직급전",
+              "position": "수습",
+              "score": 330430,
+              "bonusPenalty": 0,
+              "salary": 11895480
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "3/24",
+              "content": "벌칙",
+              "position": "수습",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/31",
+              "content": "팀전",
+              "position": "수습",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "4/14",
+              "content": "펌핑",
+              "position": "수습",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 330430,
+            "contribution": 0,
+            "bonusPenalty": 0,
+            "salary": 11895480,
+            "totalSalary": 11895480,
+            "diff": 0
+          }
+        }
+      ],
+      "totals": {
+        "rounds": [
+          {
+            "roundKey": "rank_match",
+            "label": "직급전",
+            "date": "3/17",
+            "content": "직급전",
+            "score": 2068012,
+            "bonusPenalty": -3850000,
+            "salary": 70598432
+          },
+          {
+            "roundKey": "round_1",
+            "label": "1회",
+            "date": "3/24",
+            "content": "벌칙",
+            "score": 1702567,
+            "bonusPenalty": 12060000,
+            "salary": 72371733
+          },
+          {
+            "roundKey": "round_2",
+            "label": "2회",
+            "date": "3/31",
+            "content": "팀전",
+            "score": 1794542,
+            "bonusPenalty": 5500000,
+            "salary": 69810880
+          },
+          {
+            "roundKey": "round_3",
+            "label": "3회",
+            "date": "4/14",
+            "content": "펌핑",
+            "score": 4681448,
+            "bonusPenalty": 9750000,
+            "salary": 103751881
+          }
+        ],
+        "total": {
+          "score": 8250889,
+          "contribution": 5856917,
+          "bonusPenalty": 23460000,
+          "salary": 316532925,
+          "totalSalary": 338810326
+        }
+      }
+    },
+    {
+      "season": 6,
+      "sheetName": "시즌6",
+      "completedRound": 3,
+      "rounds": [
+        {
+          "index": 0,
+          "key": "rank_match",
+          "label": "직급전",
+          "date": "2/18",
+          "content": "직급전"
+        },
+        {
+          "index": 1,
+          "key": "round_1",
+          "label": "1회",
+          "date": "2/24",
+          "content": "벌칙퐁당"
+        },
+        {
+          "index": 2,
+          "key": "round_2",
+          "label": "2회",
+          "date": "3/3",
+          "content": "1:1데쓰"
+        },
+        {
+          "index": 3,
+          "key": "round_3",
+          "label": "3회",
+          "date": "3/10",
+          "content": "팀전"
+        }
+      ],
+      "ranking": {
+        "contribution": [],
+        "salary": []
+      },
+      "members": [
+        {
+          "order": 1,
+          "no": 1,
+          "name": "송화양",
+          "position": "부장",
+          "rate": "13.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "2/18",
+              "content": "직급전",
+              "position": "부장",
+              "score": 366216,
+              "bonusPenalty": 0,
+              "salary": 13183776
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "2/24",
+              "content": "벌칙퐁당",
+              "position": "부장",
+              "score": 602271,
+              "bonusPenalty": 8000000,
+              "salary": 31724719
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/3",
+              "content": "1:1데쓰",
+              "position": "부장",
+              "score": 398646,
+              "bonusPenalty": 3000000,
+              "salary": 17351256
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "3/10",
+              "content": "팀전",
+              "position": "부장",
+              "score": 264496,
+              "bonusPenalty": 4000000,
+              "salary": 18354768
+            }
+          ],
+          "total": {
+            "score": 1631629,
+            "contribution": 911097,
+            "bonusPenalty": 15000000,
+            "salary": 80614519,
+            "totalSalary": 95622768,
+            "diff": 0
+          }
+        },
+        {
+          "order": 2,
+          "no": 2,
+          "name": "서단",
+          "position": "차장",
+          "rate": "10.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "2/18",
+              "content": "직급전",
+              "position": "차장",
+              "score": 255849,
+              "bonusPenalty": 0,
+              "salary": 9210564
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "2/24",
+              "content": "벌칙퐁당",
+              "position": "차장",
+              "score": 476698,
+              "bonusPenalty": 4000000,
+              "salary": 22249784
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/3",
+              "content": "1:1데쓰",
+              "position": "차장",
+              "score": 361321,
+              "bonusPenalty": -100000,
+              "salary": 12907556
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "3/10",
+              "content": "팀전",
+              "position": "차장",
+              "score": 208730,
+              "bonusPenalty": -200000,
+              "salary": 8633703
+            }
+          ],
+          "total": {
+            "score": 1302598,
+            "contribution": 747499,
+            "bonusPenalty": 3700000,
+            "salary": 53001607,
+            "totalSalary": 60505732,
+            "diff": 0
+          }
+        },
+        {
+          "order": 3,
+          "no": 3,
+          "name": "도하정",
+          "position": "과장",
+          "rate": "8.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "2/18",
+              "content": "직급전",
+              "position": "과장",
+              "score": 139619,
+              "bonusPenalty": 2000000,
+              "salary": 7026284
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "2/24",
+              "content": "벌칙퐁당",
+              "position": "과장",
+              "score": 137891,
+              "bonusPenalty": 400000,
+              "salary": 2652545
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/3",
+              "content": "1:1데쓰",
+              "position": "과장",
+              "score": 301089,
+              "bonusPenalty": 1500000,
+              "salary": 12339204
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "3/10",
+              "content": "팀전",
+              "position": "과장",
+              "score": 105849,
+              "bonusPenalty": 1000000,
+              "salary": 3429268
+            }
+          ],
+          "total": {
+            "score": 684448,
+            "contribution": 392277,
+            "bonusPenalty": 4900000,
+            "salary": 25447301,
+            "totalSalary": 25447301,
+            "diff": 0
+          }
+        },
+        {
+          "order": 4,
+          "no": 4,
+          "name": "유톨",
+          "position": "팀장",
+          "rate": "6.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "2/18",
+              "content": "직급전",
+              "position": "팀장",
+              "score": 174729,
+              "bonusPenalty": 1000000,
+              "salary": 7290244
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "2/24",
+              "content": "벌칙퐁당",
+              "position": "팀장",
+              "score": 59836,
+              "bonusPenalty": 200000,
+              "salary": 1138560
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/3",
+              "content": "1:1데쓰",
+              "position": "팀장",
+              "score": 45667,
+              "bonusPenalty": -1000000,
+              "salary": 644012
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "3/10",
+              "content": "팀전",
+              "position": "팀장",
+              "score": 79013,
+              "bonusPenalty": 400000,
+              "salary": 2056319
+            }
+          ],
+          "total": {
+            "score": 359245,
+            "contribution": 129008,
+            "bonusPenalty": 600000,
+            "salary": 11129136,
+            "totalSalary": 11129136,
+            "diff": 0
+          }
+        },
+        {
+          "order": 5,
+          "no": 5,
+          "name": "재온",
+          "position": "비실",
+          "rate": "4.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "2/18",
+              "content": "직급전",
+              "position": "비실",
+              "score": 191212,
+              "bonusPenalty": 500000,
+              "salary": 7383632
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "2/24",
+              "content": "벌칙퐁당",
+              "position": "비실",
+              "score": 152212,
+              "bonusPenalty": 0,
+              "salary": 3284961
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/3",
+              "content": "1:1데쓰",
+              "position": "비실",
+              "score": 190666,
+              "bonusPenalty": 1000000,
+              "salary": 7863976
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "3/10",
+              "content": "팀전",
+              "position": "비실",
+              "score": 64621,
+              "bonusPenalty": -400000,
+              "salary": 483370
+            }
+          ],
+          "total": {
+            "score": 598711,
+            "contribution": 292670,
+            "bonusPenalty": 1100000,
+            "salary": 19015939,
+            "totalSalary": 19015939,
+            "diff": 0
+          }
+        },
+        {
+          "order": 6,
+          "no": 6,
+          "name": "도예빈",
+          "position": "대리",
+          "rate": "2.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "2/18",
+              "content": "직급전",
+              "position": "대리",
+              "score": 195284,
+              "bonusPenalty": 300000,
+              "salary": 7330224
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "2/24",
+              "content": "벌칙퐁당",
+              "position": "대리",
+              "score": 172344,
+              "bonusPenalty": 0,
+              "salary": 7299914
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/3",
+              "content": "1:1데쓰",
+              "position": "대리",
+              "score": 101944,
+              "bonusPenalty": -500000,
+              "salary": 3169984
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "3/10",
+              "content": "팀전",
+              "position": "대리",
+              "score": 84188,
+              "bonusPenalty": 500000,
+              "salary": 2487583
+            }
+          ],
+          "total": {
+            "score": 553760,
+            "contribution": 255703,
+            "bonusPenalty": 300000,
+            "salary": 20287705,
+            "totalSalary": 20287705,
+            "diff": 0
+          }
+        },
+        {
+          "order": 7,
+          "no": 7,
+          "name": "제니",
+          "position": "상주임",
+          "rate": "1.8%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "2/18",
+              "content": "직급전",
+              "position": "상주임",
+              "score": 194121,
+              "bonusPenalty": 200000,
+              "salary": 7188356
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "2/24",
+              "content": "벌칙퐁당",
+              "position": "상주임",
+              "score": 214144,
+              "bonusPenalty": 2000000,
+              "salary": 13262724
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/3",
+              "content": "1:1데쓰",
+              "position": "상주임",
+              "score": 97436,
+              "bonusPenalty": 300000,
+              "salary": 3807696
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "3/10",
+              "content": "팀전",
+              "position": "상주임",
+              "score": 185298,
+              "bonusPenalty": -300000,
+              "salary": 4116852
+            }
+          ],
+          "total": {
+            "score": 690999,
+            "contribution": 355567,
+            "bonusPenalty": 2200000,
+            "salary": 28375627,
+            "totalSalary": 28375627,
+            "diff": 0
+          }
+        },
+        {
+          "order": 8,
+          "no": 8,
+          "name": "유이나",
+          "position": "하주임",
+          "rate": "1.6%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "2/18",
+              "content": "직급전",
+              "position": "하주임",
+              "score": 73488,
+              "bonusPenalty": 100000,
+              "salary": 2745568
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "2/24",
+              "content": "벌칙퐁당",
+              "position": "하주임",
+              "score": 80214,
+              "bonusPenalty": 0,
+              "salary": 1501697
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/3",
+              "content": "1:1데쓰",
+              "position": "하주임",
+              "score": 89668,
+              "bonusPenalty": -750000,
+              "salary": 2478048
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "3/10",
+              "content": "팀전",
+              "position": "하주임",
+              "score": 43081,
+              "bonusPenalty": -500000,
+              "salary": 100000
+            }
+          ],
+          "total": {
+            "score": 286451,
+            "contribution": 150385,
+            "bonusPenalty": -1150000,
+            "salary": 6825313,
+            "totalSalary": 6825313,
+            "diff": 0
+          }
+        },
+        {
+          "order": 9,
+          "no": 9,
+          "name": "정인",
+          "position": "상사원",
+          "rate": "1.4%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "2/18",
+              "content": "직급전",
+              "position": "상사원",
+              "score": 106558,
+              "bonusPenalty": -100000,
+              "salary": 3736088
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "2/24",
+              "content": "벌칙퐁당",
+              "position": "상사원",
+              "score": 47452,
+              "bonusPenalty": 0,
+              "salary": 1000000
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/3",
+              "content": "1:1데쓰",
+              "position": "상사원",
+              "score": 121466,
+              "bonusPenalty": -400000,
+              "salary": 3972776
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "3/10",
+              "content": "팀전",
+              "position": "상사원",
+              "score": 61905,
+              "bonusPenalty": 200000,
+              "salary": 1304213
+            }
+          ],
+          "total": {
+            "score": 337381,
+            "contribution": 162424,
+            "bonusPenalty": -300000,
+            "salary": 10013077,
+            "totalSalary": 10013077,
+            "diff": 0
+          }
+        },
+        {
+          "order": 10,
+          "no": 10,
+          "name": "이로",
+          "position": "하사원",
+          "rate": "1.2%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "2/18",
+              "content": "직급전",
+              "position": "하사원",
+              "score": 76437,
+              "bonusPenalty": -200000,
+              "salary": 2551732
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "2/24",
+              "content": "벌칙퐁당",
+              "position": "하사원",
+              "score": 10199,
+              "bonusPenalty": 100000,
+              "salary": 1000000
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/3",
+              "content": "1:1데쓰",
+              "position": "하사원",
+              "score": 106387,
+              "bonusPenalty": 200000,
+              "salary": 4029932
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "3/10",
+              "content": "팀전",
+              "position": "하사원",
+              "score": 27247,
+              "bonusPenalty": -800000,
+              "salary": -260000
+            }
+          ],
+          "total": {
+            "score": 220270,
+            "contribution": 103440,
+            "bonusPenalty": -700000,
+            "salary": 7321664,
+            "totalSalary": 7321664,
+            "diff": 0
+          }
+        },
+        {
+          "order": 11,
+          "no": 11,
+          "name": "쏘피",
+          "position": "인턴장",
+          "rate": "1.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "2/18",
+              "content": "직급전",
+              "position": "인턴장",
+              "score": 115857,
+              "bonusPenalty": -300000,
+              "salary": 3870852
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "2/24",
+              "content": "벌칙퐁당",
+              "position": "인턴장",
+              "score": 165135,
+              "bonusPenalty": 0,
+              "salary": 4014952
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/3",
+              "content": "1:1데쓰",
+              "position": "인턴장",
+              "score": 102799,
+              "bonusPenalty": -300000,
+              "salary": 3400764
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "3/10",
+              "content": "팀전",
+              "position": "인턴장",
+              "score": 268335,
+              "bonusPenalty": -100000,
+              "salary": 10942129
+            }
+          ],
+          "total": {
+            "score": 652126,
+            "contribution": 375853,
+            "bonusPenalty": -700000,
+            "salary": 22228697,
+            "totalSalary": 22228697,
+            "diff": 0
+          }
+        },
+        {
+          "order": 12,
+          "no": 12,
+          "name": "송유이",
+          "position": "상인턴",
+          "rate": "시급",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "2/18",
+              "content": "직급전",
+              "position": "상인턴",
+              "score": 85567,
+              "bonusPenalty": -400000,
+              "salary": 2680412
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "2/24",
+              "content": "벌칙퐁당",
+              "position": "상인턴",
+              "score": 120999,
+              "bonusPenalty": 300000,
+              "salary": 2177121
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/3",
+              "content": "1:1데쓰",
+              "position": "상인턴",
+              "score": 114503,
+              "bonusPenalty": 500000,
+              "salary": 4622108
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "3/10",
+              "content": "팀전",
+              "position": "상인턴",
+              "score": 171520,
+              "bonusPenalty": 2000000,
+              "salary": 8625277
+            }
+          ],
+          "total": {
+            "score": 492589,
+            "contribution": 293056,
+            "bonusPenalty": 2400000,
+            "salary": 18104918,
+            "totalSalary": 18104918,
+            "diff": 0
+          }
+        },
+        {
+          "order": 13,
+          "no": 13,
+          "name": "한유나",
+          "position": "하인턴",
+          "rate": "시급",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "2/18",
+              "content": "직급전",
+              "position": "하인턴",
+              "score": 88128,
+              "bonusPenalty": -500000,
+              "salary": 2672608
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "2/24",
+              "content": "벌칙퐁당",
+              "position": "하인턴",
+              "score": 147132,
+              "bonusPenalty": 1000000,
+              "salary": 3815681
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/3",
+              "content": "1:1데쓰",
+              "position": "하인턴",
+              "score": 75485,
+              "bonusPenalty": 100000,
+              "salary": 2817460
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "3/10",
+              "content": "팀전",
+              "position": "하인턴",
+              "score": 67215,
+              "bonusPenalty": 300000,
+              "salary": 1625055
+            }
+          ],
+          "total": {
+            "score": 377960,
+            "contribution": 208679,
+            "bonusPenalty": 900000,
+            "salary": 10930804,
+            "totalSalary": 10930804,
+            "diff": 0
+          }
+        },
+        {
+          "order": 14,
+          "no": 14,
+          "name": "노두식",
+          "position": "수습",
+          "rate": "시급",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "2/18",
+              "content": "직급전",
+              "position": "수습",
+              "score": 35910,
+              "bonusPenalty": -750000,
+              "salary": 542760
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "2/24",
+              "content": "벌칙퐁당",
+              "position": "수습",
+              "score": 219480,
+              "bonusPenalty": 0,
+              "salary": 15016965
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/3",
+              "content": "1:1데쓰",
+              "position": "수습",
+              "score": 160033,
+              "bonusPenalty": -200000,
+              "salary": 5561188
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "3/10",
+              "content": "팀전",
+              "position": "수습",
+              "score": 39864,
+              "bonusPenalty": -600000,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 455287,
+            "contribution": 294031,
+            "bonusPenalty": -1550000,
+            "salary": 21120913,
+            "totalSalary": 21120913,
+            "diff": 0
+          }
+        },
+        {
+          "order": 15,
+          "no": 15,
+          "name": "강바비",
+          "position": "수습",
+          "rate": "시급",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "2/18",
+              "content": "직급전",
+              "position": "수습",
+              "score": 0,
+              "bonusPenalty": -1000000,
+              "salary": -1000000
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "2/24",
+              "content": "벌칙퐁당",
+              "position": "수습",
+              "score": 1105,
+              "bonusPenalty": 0,
+              "salary": 800000
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "3/3",
+              "content": "1:1데쓰",
+              "position": "수습",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "3/10",
+              "content": "팀전",
+              "position": "수습",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            }
+          ],
+          "total": {
+            "score": 1105,
+            "contribution": 796,
+            "bonusPenalty": -1000000,
+            "salary": -200000,
+            "totalSalary": -200000,
+            "diff": 0
+          }
+        }
+      ],
+      "totals": {
+        "rounds": [
+          {
+            "roundKey": "rank_match",
+            "label": "직급전",
+            "date": "2/18",
+            "content": "직급전",
+            "score": 2098975,
+            "bonusPenalty": 850000,
+            "salary": 76413100
+          },
+          {
+            "roundKey": "round_1",
+            "label": "1회",
+            "date": "2/24",
+            "content": "벌칙퐁당",
+            "score": 2607112,
+            "bonusPenalty": 16000000,
+            "salary": 110939623
+          },
+          {
+            "roundKey": "round_2",
+            "label": "2회",
+            "date": "3/3",
+            "content": "1:1데쓰",
+            "score": 2267110,
+            "bonusPenalty": 3350000,
+            "salary": 84965960
+          },
+          {
+            "roundKey": "round_3",
+            "label": "3회",
+            "date": "3/10",
+            "content": "팀전",
+            "score": 1671362,
+            "bonusPenalty": 5500000,
+            "salary": 61898537
+          }
+        ],
+        "total": {
+          "score": 8643454,
+          "contribution": 4672485,
+          "bonusPenalty": 25700000,
+          "salary": 334217220,
+          "totalSalary": 356729594
+        }
+      }
+    },
+    {
+      "season": 5,
+      "sheetName": "시즌5",
+      "completedRound": 3,
+      "rounds": [
+        {
+          "index": 0,
+          "key": "rank_match",
+          "label": "직급전",
+          "date": "1/20",
+          "content": "직급전"
+        },
+        {
+          "index": 1,
+          "key": "round_1",
+          "label": "1회",
+          "date": "1/27",
+          "content": "팀전"
+        },
+        {
+          "index": 2,
+          "key": "round_2",
+          "label": "2회",
+          "date": "2/3",
+          "content": "벌칙"
+        },
+        {
+          "index": 3,
+          "key": "round_3",
+          "label": "3회",
+          "date": "2/10",
+          "content": "펌핑"
+        }
+      ],
+      "ranking": {
+        "contribution": [],
+        "salary": []
+      },
+      "members": [
+        {
+          "order": 1,
+          "no": 1,
+          "name": "송화양",
+          "position": "부장",
+          "rate": "13.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "1/20",
+              "content": "직급전",
+              "position": "부장",
+              "score": 823733,
+              "bonusPenalty": 8000000,
+              "salary": 37654388
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "1/27",
+              "content": "팀전",
+              "position": "부장",
+              "score": 500603,
+              "bonusPenalty": 5000000,
+              "salary": 22643535
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "2/3",
+              "content": "벌칙",
+              "position": "부장",
+              "score": 851107,
+              "bonusPenalty": 8000000,
+              "salary": 31607184
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "2/10",
+              "content": "펌핑",
+              "position": "부장",
+              "score": 1318074,
+              "bonusPenalty": 8000000,
+              "salary": 27978404
+            }
+          ],
+          "total": {
+            "score": 2960235,
+            "contribution": 1922244,
+            "bonusPenalty": 29000000,
+            "salary": 119883511,
+            "totalSalary": 136367797,
+            "diff": 0
+          }
+        },
+        {
+          "order": 2,
+          "no": 2,
+          "name": "서단",
+          "position": "차장",
+          "rate": "10.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "1/20",
+              "content": "직급전",
+              "position": "차장",
+              "score": 531693,
+              "bonusPenalty": 5000000,
+              "salary": 24140948
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "1/27",
+              "content": "팀전",
+              "position": "차장",
+              "score": 417229,
+              "bonusPenalty": -100000,
+              "salary": 13471950
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "2/3",
+              "content": "벌칙",
+              "position": "차장",
+              "score": 462024,
+              "bonusPenalty": 4000000,
+              "salary": 22159372
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "2/10",
+              "content": "펌핑",
+              "position": "차장",
+              "score": 619801,
+              "bonusPenalty": 3000000,
+              "salary": 18368003
+            }
+          ],
+          "total": {
+            "score": 1721897,
+            "contribution": 1068838,
+            "bonusPenalty": 11900000,
+            "salary": 78140273,
+            "totalSalary": 86382416,
+            "diff": -712216
+          }
+        },
+        {
+          "order": 3,
+          "no": 3,
+          "name": "유이나",
+          "position": "과장",
+          "rate": "8.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "1/20",
+              "content": "직급전",
+              "position": "과장",
+              "score": 450429,
+              "bonusPenalty": 5300000,
+              "salary": 21515444
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "1/27",
+              "content": "팀전",
+              "position": "과장",
+              "score": 174484,
+              "bonusPenalty": -200000,
+              "salary": 10967776
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "2/3",
+              "content": "벌칙",
+              "position": "과장",
+              "score": 80716,
+              "bonusPenalty": 0,
+              "salary": 1452750
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "2/10",
+              "content": "펌핑",
+              "position": "과장",
+              "score": 225893,
+              "bonusPenalty": 400000,
+              "salary": 6547201
+            }
+          ],
+          "total": {
+            "score": 852261,
+            "contribution": 343863,
+            "bonusPenalty": 5500000,
+            "salary": 40483171,
+            "totalSalary": 40483171,
+            "diff": -46626
+          }
+        },
+        {
+          "order": 4,
+          "no": 4,
+          "name": "정인",
+          "position": "팀장",
+          "rate": "6.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "1/20",
+              "content": "직급전",
+              "position": "팀장",
+              "score": 100319,
+              "bonusPenalty": 1000000,
+              "salary": 4611484
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "1/27",
+              "content": "팀전",
+              "position": "팀장",
+              "score": 41711,
+              "bonusPenalty": 200000,
+              "salary": 1100000
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "2/3",
+              "content": "벌칙",
+              "position": "팀장",
+              "score": 178786,
+              "bonusPenalty": 1000000,
+              "salary": 11895623
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "2/10",
+              "content": "펌핑",
+              "position": "팀장",
+              "score": 96298,
+              "bonusPenalty": -200000,
+              "salary": 1336800
+            }
+          ],
+          "total": {
+            "score": 386587,
+            "contribution": 224372,
+            "bonusPenalty": 2000000,
+            "salary": 18943908,
+            "totalSalary": 18943908,
+            "diff": -13058
+          }
+        },
+        {
+          "order": 5,
+          "no": 5,
+          "name": "재온",
+          "position": "비실",
+          "rate": "4.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "1/20",
+              "content": "직급전",
+              "position": "비실",
+              "score": 86859,
+              "bonusPenalty": 500000,
+              "salary": 3626924
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "1/27",
+              "content": "팀전",
+              "position": "비실",
+              "score": 68244,
+              "bonusPenalty": -500000,
+              "salary": 1535793
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "2/3",
+              "content": "벌칙",
+              "position": "비실",
+              "score": 90766,
+              "bonusPenalty": 400000,
+              "salary": 3123906
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "2/10",
+              "content": "펌핑",
+              "position": "비실",
+              "score": 203295,
+              "bonusPenalty": 300000,
+              "salary": 3680961
+            }
+          ],
+          "total": {
+            "score": 373424,
+            "contribution": 259495,
+            "bonusPenalty": 700000,
+            "salary": 11967583,
+            "totalSalary": 11967583,
+            "diff": -30336
+          }
+        },
+        {
+          "order": 6,
+          "no": 6,
+          "name": "제니",
+          "position": "대리",
+          "rate": "2.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "1/20",
+              "content": "직급전",
+              "position": "대리",
+              "score": 106599,
+              "bonusPenalty": 500000,
+              "salary": 4337564
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "1/27",
+              "content": "팀전",
+              "position": "대리",
+              "score": 116914,
+              "bonusPenalty": 1000000,
+              "salary": 6428780
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "2/3",
+              "content": "벌칙",
+              "position": "대리",
+              "score": 80606,
+              "bonusPenalty": 300000,
+              "salary": 2115937
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "2/10",
+              "content": "펌핑",
+              "position": "대리",
+              "score": 78282,
+              "bonusPenalty": -500000,
+              "salary": 100000
+            }
+          ],
+          "total": {
+            "score": 343260,
+            "contribution": 197737,
+            "bonusPenalty": 1300000,
+            "salary": 12982281,
+            "totalSalary": 12982281,
+            "diff": -5052
+          }
+        },
+        {
+          "order": 7,
+          "no": 7,
+          "name": "도하정",
+          "position": "주임",
+          "rate": "1.8%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "1/20",
+              "content": "직급전",
+              "position": "주임",
+              "score": 110200,
+              "bonusPenalty": -2800000,
+              "salary": 1167200
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "1/27",
+              "content": "팀전",
+              "position": "주임",
+              "score": 159626,
+              "bonusPenalty": 2000000,
+              "salary": 10375832
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "2/3",
+              "content": "벌칙",
+              "position": "주임",
+              "score": 145710,
+              "bonusPenalty": 0,
+              "salary": 7263749
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "2/10",
+              "content": "펌핑",
+              "position": "주임",
+              "score": 193306,
+              "bonusPenalty": 100000,
+              "salary": 2405200
+            }
+          ],
+          "total": {
+            "score": 512189,
+            "contribution": 356622,
+            "bonusPenalty": -700000,
+            "salary": 21211981,
+            "totalSalary": 21211981,
+            "diff": -6709
+          }
+        },
+        {
+          "order": 8,
+          "no": 8,
+          "name": "송유이",
+          "position": "상사원",
+          "rate": "1.6%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "1/20",
+              "content": "직급전",
+              "position": "상사원",
+              "score": 30102,
+              "bonusPenalty": -4900000,
+              "salary": -3816328
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "1/27",
+              "content": "팀전",
+              "position": "상사원",
+              "score": 51575,
+              "bonusPenalty": -800000,
+              "salary": 100000
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "2/3",
+              "content": "벌칙",
+              "position": "상사원",
+              "score": 112499,
+              "bonusPenalty": 500000,
+              "salary": 3768687
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "2/10",
+              "content": "펌핑",
+              "position": "상사원",
+              "score": 101791,
+              "bonusPenalty": -300000,
+              "salary": 929440
+            }
+          ],
+          "total": {
+            "score": 259798,
+            "contribution": 189199,
+            "bonusPenalty": -5500000,
+            "salary": 981799,
+            "totalSalary": 981799,
+            "diff": -80055
+          }
+        },
+        {
+          "order": 9,
+          "no": 9,
+          "name": "이로",
+          "position": "하사원",
+          "rate": "1.4%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "1/20",
+              "content": "직급전",
+              "position": "하사원",
+              "score": 24211,
+              "bonusPenalty": -400000,
+              "salary": 471596
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "1/27",
+              "content": "팀전",
+              "position": "하사원",
+              "score": 53281,
+              "bonusPenalty": 400000,
+              "salary": 1757195
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "2/3",
+              "content": "벌칙",
+              "position": "하사원",
+              "score": 30317,
+              "bonusPenalty": 100000,
+              "salary": 910000
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "2/10",
+              "content": "펌핑",
+              "position": "하사원",
+              "score": 297280,
+              "bonusPenalty": 1500000,
+              "salary": 13794402
+            }
+          ],
+          "total": {
+            "score": 304885,
+            "contribution": 272552,
+            "bonusPenalty": 1600000,
+            "salary": 16933193,
+            "totalSalary": 16933193,
+            "diff": 0
+          }
+        },
+        {
+          "order": 10,
+          "no": 10,
+          "name": "유톨",
+          "position": "인턴장",
+          "rate": "1.2%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "1/20",
+              "content": "직급전",
+              "position": "인턴장",
+              "score": 51425,
+              "bonusPenalty": -1400000,
+              "salary": 451300
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "1/27",
+              "content": "팀전",
+              "position": "인턴장",
+              "score": 108108,
+              "bonusPenalty": -300000,
+              "salary": 2685829
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "2/3",
+              "content": "벌칙",
+              "position": "인턴장",
+              "score": 125168,
+              "bonusPenalty": 0,
+              "salary": 3995062
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "2/10",
+              "content": "펌핑",
+              "position": "인턴장",
+              "score": 184669,
+              "bonusPenalty": 500000,
+              "salary": 9720802
+            }
+          ],
+          "total": {
+            "score": 444100,
+            "contribution": 297237,
+            "bonusPenalty": -1200000,
+            "salary": 16852993,
+            "totalSalary": 16852993,
+            "diff": 0
+          }
+        },
+        {
+          "order": 11,
+          "no": 11,
+          "name": "쏘피",
+          "position": "상인턴",
+          "rate": "1.0%",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "1/20",
+              "content": "직급전",
+              "position": "상인턴",
+              "score": 63438,
+              "bonusPenalty": -1100000,
+              "salary": 1183768
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "1/27",
+              "content": "팀전",
+              "position": "상인턴",
+              "score": 52533,
+              "bonusPenalty": -600000,
+              "salary": 485756
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "2/3",
+              "content": "벌칙",
+              "position": "상인턴",
+              "score": 200091,
+              "bonusPenalty": 0,
+              "salary": 14527498
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "2/10",
+              "content": "펌핑",
+              "position": "상인턴",
+              "score": 34660,
+              "bonusPenalty": -750000,
+              "salary": -210000
+            }
+          ],
+          "total": {
+            "score": 334965,
+            "contribution": 202789,
+            "bonusPenalty": -2450000,
+            "salary": 15987022,
+            "totalSalary": 15987022,
+            "diff": 0
+          }
+        },
+        {
+          "order": 12,
+          "no": 12,
+          "name": "노두식",
+          "position": "하인턴",
+          "rate": "시급",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "1/20",
+              "content": "직급전",
+              "position": "하인턴",
+              "score": 24254,
+              "bonusPenalty": -700000,
+              "salary": 173144
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "1/27",
+              "content": "팀전",
+              "position": "하인턴",
+              "score": 31996,
+              "bonusPenalty": 100000,
+              "salary": 910000
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "2/3",
+              "content": "벌칙",
+              "position": "하인턴",
+              "score": 70847,
+              "bonusPenalty": 200000,
+              "salary": 1107969
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "2/10",
+              "content": "펌핑",
+              "position": "하인턴",
+              "score": 67412,
+              "bonusPenalty": -400000,
+              "salary": 368400
+            }
+          ],
+          "total": {
+            "score": 184018,
+            "contribution": 121384,
+            "bonusPenalty": -800000,
+            "salary": 2559513,
+            "totalSalary": 2559513,
+            "diff": 0
+          }
+        },
+        {
+          "order": 13,
+          "no": 13,
+          "name": "강바비",
+          "position": "수습",
+          "rate": "시급",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "1/20",
+              "content": "직급전",
+              "position": "수습",
+              "score": 11357,
+              "bonusPenalty": -5900000,
+              "salary": -5491148
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "1/27",
+              "content": "팀전",
+              "position": "수습",
+              "score": 39228,
+              "bonusPenalty": -1000000,
+              "salary": -280000
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "2/3",
+              "content": "벌칙",
+              "position": "수습",
+              "score": 20772,
+              "bonusPenalty": 0,
+              "salary": 720000
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "2/10",
+              "content": "펌핑",
+              "position": "수습",
+              "score": 2000,
+              "bonusPenalty": -1000000,
+              "salary": -1000000
+            }
+          ],
+          "total": {
+            "score": 72357,
+            "contribution": 41328,
+            "bonusPenalty": -7900000,
+            "salary": -6051148,
+            "totalSalary": -6051148,
+            "diff": 0
+          }
+        },
+        {
+          "order": 14,
+          "no": 14,
+          "name": "도예빈",
+          "position": "수습",
+          "rate": "시급",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "1/20",
+              "content": "직급전",
+              "position": "수습",
+              "score": 14843,
+              "bonusPenalty": -1500000,
+              "salary": -965652
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "1/27",
+              "content": "팀전",
+              "position": "수습",
+              "score": 53982,
+              "bonusPenalty": 500000,
+              "salary": 2175166
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "2/3",
+              "content": "벌칙",
+              "position": "수습",
+              "score": 59037,
+              "bonusPenalty": 0,
+              "salary": 900000
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "2/10",
+              "content": "펌핑",
+              "position": "수습",
+              "score": 242410,
+              "bonusPenalty": 200000,
+              "salary": 2966241
+            }
+          ],
+          "total": {
+            "score": 252875,
+            "contribution": 254709,
+            "bonusPenalty": -800000,
+            "salary": 5075755,
+            "totalSalary": 5075755,
+            "diff": 0
+          }
+        },
+        {
+          "order": 15,
+          "no": 15,
+          "name": "한유나",
+          "position": "수습",
+          "rate": "시급",
+          "rounds": [
+            {
+              "roundKey": "rank_match",
+              "label": "직급전",
+              "date": "1/20",
+              "content": "직급전",
+              "position": "수습",
+              "score": 0,
+              "bonusPenalty": 0,
+              "salary": 0
+            },
+            {
+              "roundKey": "round_1",
+              "label": "1회",
+              "date": "1/27",
+              "content": "팀전",
+              "position": "수습",
+              "score": 69336,
+              "bonusPenalty": 800000,
+              "salary": 3312750
+            },
+            {
+              "roundKey": "round_2",
+              "label": "2회",
+              "date": "2/3",
+              "content": "벌칙",
+              "position": "수습",
+              "score": 85750,
+              "bonusPenalty": 0,
+              "salary": 2179125
+            },
+            {
+              "roundKey": "round_3",
+              "label": "3회",
+              "date": "2/10",
+              "content": "펌핑",
+              "position": "수습",
+              "score": 118675,
+              "bonusPenalty": -100000,
+              "salary": 1744160
+            }
+          ],
+          "total": {
+            "score": 224229,
+            "contribution": 195908,
+            "bonusPenalty": 700000,
+            "salary": 7236035,
+            "totalSalary": 7236035,
+            "diff": 0
+          }
+        }
+      ],
+      "totals": {
+        "rounds": [
+          {
+            "roundKey": "rank_match",
+            "label": "직급전",
+            "date": "1/20",
+            "content": "직급전",
+            "score": 2429462,
+            "bonusPenalty": 1600000,
+            "salary": 89060632
+          },
+          {
+            "roundKey": "round_1",
+            "label": "1회",
+            "date": "1/27",
+            "content": "팀전",
+            "score": 1938850,
+            "bonusPenalty": 6500000,
+            "salary": 77670362
+          },
+          {
+            "roundKey": "round_2",
+            "label": "2회",
+            "date": "2/3",
+            "content": "벌칙",
+            "score": 2594196,
+            "bonusPenalty": 14500000,
+            "salary": 107726862
+          },
+          {
+            "roundKey": "round_3",
+            "label": "3회",
+            "date": "2/10",
+            "content": "펌핑",
+            "score": 3783846,
+            "bonusPenalty": 10750000,
+            "salary": 88730014
+          }
+        ],
+        "total": {
+          "score": 9002851,
+          "contribution": 5948277,
+          "bonusPenalty": 33350000,
+          "salary": 363187870,
+          "totalSalary": 387914299
+        }
+      }
+    }
+  ]
+}
